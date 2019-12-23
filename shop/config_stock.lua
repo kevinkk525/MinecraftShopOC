@@ -34,7 +34,7 @@ config.identity_empty              = shopconfig.identity_empty
 
 -- Timeouts
 config.timeout_export              = 60
-
+config.crafting_timeout            = 300 -- 5 minutes, only for error message, no actions
 
 --
 config.path_logfile                = "/home/stock.log"
@@ -46,7 +46,6 @@ config.version                     = "0.2Beta"
 config.scanning_interval           = 120 -- 2 minutes
 config.crafting_cpus_left          = 3
 config.crafting_batch_size         = 32
-config.crafting_timeout            = 120 -- 2 minutes
 
 -- install GUI library from: pastebin run ryhyXUKZ
 -- OpenOS updater: pastebin run -f icKy25PF

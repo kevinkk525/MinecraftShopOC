@@ -89,6 +89,7 @@ local function refresh_textbox_requested()
             gui.textBox_scheduled.lines[#gui.textBox_scheduled.lines + 1] = item.ident .. "    " .. tostring(item.amount)
         end
     end
+    table.sort(gui.textBox_scheduled.lines)
     gui.application:draw()
 end
 
@@ -96,9 +97,10 @@ local function refresh_textbox_errors()
     gui.textBox_errors.lines = {}
     for i, item in pairs(items) do
         if item.error then
-            gui.textBox_errors.lines[#gui.textBox_errors.lines + 1] = item.ident .. "    " .. tostring(item.error)
+            gui.textBox_errors.lines[#gui.textBox_errors.lines + 1] = item.ident .. "    " .. tostring(item.amount) .. "    " .. tostring(item.error)
         end
     end
+    table.sort(gui.textBox_errors.lines)
     gui.application:draw()
 end
 
@@ -113,6 +115,7 @@ local function refresh_textbox_crafting()
             gui.textBox_crafting.lines[#gui.textBox_crafting.lines + 1] = item.ident .. "  " .. tostring(amount)
         end
     end
+    table.sort(gui.textBox_crafting.lines)
     gui.application:draw()
 end
 
