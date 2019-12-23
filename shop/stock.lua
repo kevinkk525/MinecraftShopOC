@@ -179,8 +179,9 @@ local function startCrafting(item)
     if amount > config.crafting_batch_size then
         amount = config.crafting_batch_size
     end
-    item.task = craft[1].request(amount)
-    item.time = computer.uptime()
+    item.task  = craft[1].request(amount)
+    item.time  = computer.uptime()
+    item.error = nil
     refresh_textbox_crafting()
     refresh_textbox_requested()
     return true
