@@ -124,6 +124,7 @@ local function removeFinishedTasks()
         
         elseif item.task.isDone() or item.task.isCanceled() then
             if item.task.isDone() then
+                item.error = nil
             elseif item.task.isCanceled() then
                 local available = getAmountAvailable(item.nbt)
                 if available == 0 then
