@@ -4,24 +4,13 @@
 --- DateTime: 10.12.2019 17:43
 ---
 
-local GUI    = require("GUI")
-local buffer = require("doubleBuffering")
-local image  = require("image")
-local thread = require("thread")
+local GUI      = require("GUI")
+local buffer   = require("doubleBuffering")
+local image    = require("image")
+local thread   = require("thread")
+local computer = require("computer")
 
-function notice(application, timeout, message, callback)
-    --[[
-    local args = { ... }
-    for i = 1, #args do
-        if type(args[i]) == "table" then
-            args[i] = table.toString(args[i], true)
-        else
-            args[i] = tostring(args[i])
-        end
-    end
-    if #args == 0 then args[1] = "nil" end
-    --]]
-    
+function notice(application, timeout, message, callback, button_active, button_delay)
     local sign                      = image.fromString([[06030000FF 0000FF 00F7FF▟00F7FF▙0000FF 0000FF 0000FF 00F7FF▟F7FF00 F7FF00 00F7FF▙0000FF 00F7FF▟F7FF00NF7FF00oF7FF00tF7FF00e00F7FF▙]])
     local offset                    = 2
     --local lines                     = #args > 1 and "\"" .. table.concat(args, "\", \"") .. "\"" or args[1]
@@ -55,10 +44,29 @@ function notice(application, timeout, message, callback)
         end
         button.onTouch()
     end
+    local function await_button_delay()
+        local st = computer.uptime()
+        while computer.uptime() - st < button_delay do
+            os.sleep(1)
+        end
+        button.hidden = false
+        application:draw()
+    end
     local notice_thread
+    local button_delay_thread
     if timeout then
         notice_thread = thread.create(await_timeout)
     end
+    if button_delay then
+        button.hidden       = true
+        button_delay_thread = thread.create(await_button_delay)
+    end
+    if button_active == false then
+        button.hidden = true
+    elseif button_delay then
+    
+    end
+    
     button.onTouch = function()
         panel:remove()
         panel2:remove()
@@ -70,11 +78,15 @@ function notice(application, timeout, message, callback)
         if notice_thread then
             notice_thread:kill()
         end
+        if button_delay_thread then
+            button_delay_thread:kill()
+        end
         if callback then
             callback()
         end
     end
     application:draw()
+    return button.onTouch
 end
 
 GUI.notice = notice
