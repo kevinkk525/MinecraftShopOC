@@ -6,6 +6,7 @@
 
 local sides  = require("sides")
 local json   = require("json")
+local math   = require("math")
 local config = {}
 
 ------- helper functions
@@ -15,8 +16,15 @@ function config.getItemIdentityName(item, blacklist)
     -- affected: "ic2:lapotron_crystal", "ic2:advanced_re_battery","ic2:re_battery", etc
     local name = ""
     local keys = {}
+    local blk  = {}
+    for key, val in pairs(config.identity_blacklist) do
+        blk[key] = true
+    end
     if blacklist == nil then
         blacklist = {}
+    end
+    for i, key in pairs(blacklist) do
+        blk[key] = true
     end
     for key, value in pairs(item) do
         if key ~= "label" and key ~= "name" and key ~= "size" then
@@ -26,16 +34,15 @@ function config.getItemIdentityName(item, blacklist)
     table.sort(keys)
     table.insert(keys, 1, "label")
     table.insert(keys, 2, "name")
-    for i, k in pairs(blacklist) do
-        table.remove(keys, i)
-    end
     for _, key in pairs(keys) do
-        local it = item[key]
-        if type(it) == "number" then
-            it = it + .0 -- to enforce float representation on all numbers
+        if blk[key] == nil then
+            local it = item[key]
+            if type(it) == "number" then
+                it = it + .0 -- to enforce float representation on all numbers
+            end
+            it   = tostring(it)
+            name = name .. it .. ";"
         end
-        it   = tostring(it)
-        name = name .. it .. ";"
     end
     return name
 end
@@ -67,6 +74,14 @@ local function calculateCellsNeeded(trans)
     trans.leased_cells      = cells
     trans.lease_value       = cells * config.price_lease_storage_cell
     trans.transaction_value = trans.item_value + trans.lease_value
+end
+
+function config.calculateExportActivations(item, size)
+    local full_stack, restf = math.modf(size / item.maxSize)
+    restf                   = size - (full_stack * item.maxSize)
+    local half_stack, resth = math.modf(restf / (item.maxSize / 2))
+    local single            = size - full_stack * item.maxSize - half_stack * (item.maxSize / 2)
+    return full_stack, half_stack, single
 end
 
 function config.newTransaction()
@@ -136,73 +151,71 @@ function config.newTransaction()
 end
 
 -- ME controller Item storage
-config.address_me_storage              = "6ffbe891-07b7-4516-ab54-857b267cbe60"
+config.address_me_storage              = "3f3f80c3-653b-4518-a38a-26bf01b45048"
 -- ME controller for ME Chest
-config.address_me_chest                = "9fd21c13-4d1b-42d8-9c25-06c357868558"
+config.address_me_chest                = "55844f40-6462-4725-b8f4-6ea19d74ec49"
 -- ME controller Money
-config.address_me_money                = "22f7f7a0-e848-40d6-a662-9cb2141aa083"
+config.address_me_money                = "dc969cf5-b749-4da4-91a0-ef79a86397e3"
 -- ME exportbus chest
-config.address_export_stack            = "b4caa6ca-0fc1-41bd-98f4-cc99c3621a02"
-config.side_export_stack               = sides.west
-config.address_export_half             = "d31ef119-48ec-4e49-a5bc-8168aa71fbe2"
-config.side_export_half                = sides.east
-config.address_export_single           = "f5f40931-ab84-467a-bd3f-201529d3b181"
-config.side_export_single              = sides.up
+config.address_export_stack            = "27b4b8fb-0e91-4cce-a705-774abffbcc4d"
+config.side_export_stack               = sides.east
+config.address_export_half             = "40d1445b-1c87-447c-8f75-3011aa1dafd1"
+config.side_export_half                = sides.up
+config.address_export_single           = "2cf1efcc-cb96-40a2-85b8-03c8366f5d16"
+config.side_export_single              = sides.west
 -- ME exportbus single item
-config.address_export_single_dropper   = "b7492057-30f0-489b-aff4-3a789786eb5f"
-config.side_export_dropper             = sides.west
+config.address_export_single_dropper   = "773805e1-43b9-4d90-a8c6-c60e0caea6b6"
+config.side_export_dropper             = sides.east
 -- ME exportbus portable cell
-config.address_export_portable_cell    = "3eccea41-6dc1-4a0b-bfe0-6a95af472093"
-config.side_export_portable_cell       = sides.east
+config.address_export_portable_cell    = "a57be265-1e4f-48e0-9f15-137a2fa2db72"
+config.side_export_portable_cell       = sides.down
 
--- Redstone block export bus
-config.address_redstone_export         = "2034c414-14a8-4acb-9040-6ed55f7f6db6"
-config.side_export_redstone            = sides.north
 -- Redstone block vacuum chest
-config.address_redstone_vacuum_chest   = "de3545bb-c12e-4341-beee-01568f24df3e"
-config.side_redstone_vacuum_chest      = sides.south
+config.address_redstone_vacuum_chest   = "b689de10-2fe1-42ce-b931-c51a648c687c"
+config.side_redstone_vacuum_chest      = sides.north
+-- Redstone block dropper
+config.address_redstone_dropper        = "421fa936-347c-48d1-878e-d5baf48b6f8b"
+config.side_redstone_dropper           = sides.up
 
--- Transposer
-config.address_transposer              = "0e07e3ae-1ecf-4c87-85a9-cabfd1742f09"
-config.side_chest_cell_input           = sides.up -- not used for user input anymore
-config.side_floppy                     = sides.north
-config.side_vacuum_input               = sides.west
-config.side_dropper_transposer         = sides.east
-config.side_ioport_input               = sides.down
-
--- Transposer for system flushing (remainder of export to 4k)
-config.address_transposer_flushing     = "58ff08c5-eb2a-4f66-911e-e4d1bc35cf7d"
-config.side_chest_flushing             = sides.up
-config.side_ioport_flushing            = sides.east
-config.side_mechest_flushing           = sides.down
-
--- Transposer ME Chest export
-config.address_transposer_me_chest     = "8415091f-ca1a-4ab6-908d-c0ab643cadbd"
-config.side_transposer_me_chest        = sides.north
-config.side_transposer_me_chest_input  = sides.south
+-- Transposer ME Chest export/import
+config.address_transposer_me_chest     = "a26ffa56-e265-4105-b217-9306129a37e9"
 config.side_transposer_me_chest_output = sides.up
+config.side_transposer_me_chest_input  = sides.north
+config.side_transposer_me_chest        = sides.south
+-- Transposer input
+config.address_transposer_input        = "04c8f534-167e-4dcf-a7d0-ca085cbfc45d"
+config.side_floppy                     = sides.east
+config.side_dropper_input              = sides.north
+config.side_vacuum_input               = sides.south
+config.side_ioport_input               = sides.up
 
--- Transposer Disk Drive
-config.address_transposer_drive        = "89504ea6-f8a7-4a0c-92c3-ce92cb52566c"
-config.side_drive_transposer_eject     = sides.up
+-- Transposer for system flushing (remainder of export to 4k) --> not used at the moment
+--config.address_transposer_flushing     = "58ff08c5-eb2a-4f66-911e-e4d1bc35cf7d"
+--config.side_chest_flushing             = sides.up
+--config.side_ioport_flushing            = sides.east
+--config.side_mechest_flushing           = sides.down
+
+-- Transposer Disk Drive for input of money
+config.address_transposer_drive        = "04c8f534-167e-4dcf-a7d0-ca085cbfc45d"
+config.side_drive_transposer_eject     = sides.east
 config.side_drive_chest_eject          = sides.west
 
 -- Transposer Money Disk Drive
-config.address_transposer_money_drive  = "2296cb15-7497-47c8-895f-77eaba721594"
+config.address_transposer_money_drive  = "b07eb566-ab41-4f96-8fb3-0e45543b4f85"
 config.side_money_drive                = sides.down
 config.side_money_disk_input           = sides.up
 
 
 -- Disk Drive input for money
-config.address_disk_drive              = "e955d3da-8190-4d2c-92e8-563d37e11793"
+config.address_disk_drive              = "37545ccb-a8ad-4c4b-aa11-26d9f3ba0278"
 
 -- Disk Drive creating money
-config.address_disk_drive_money        = "6ce0fd56-5956-4439-8691-755b8d2893f4"
+config.address_disk_drive_money        = "c2e94c1e-f8fb-48ee-b340-a3497a6fa0af"
 
 -- Identity configurations
 config.identity_blacklist              = { ["isCraftable"] = true, ["size"] = true,
                                            ["amounts"]     = true, ["label_friendly"] = true,
-                                           ["categories"]  = true }
+                                           ["categories"]  = true, ["stock"] = true }
 config.identity_empty                  = "Air;minecraft:air;0.0;false;0.0;64.0;"
 config.identity_portable_cell          = "Portable Cell;appliedenergistics2:portable_cell;0.0;true;32.0;1.0;"
 config.nbt_portable_cell               = {
@@ -217,22 +230,22 @@ config.maxSlots_portableCell           = 63
 config.maxSlots_money_storage          = 63 * 2
 
 -- Timeouts
-config.timeout_buyer                   = 30 -- timeout for keeping buyer valid, might have left or new buyer not recognized
 config.timeout_export                  = 60
-config.price_lease_storage_cell        = 10
+config.price_lease_storage_cell        = 200
 
 
 --
-config.path_file_items                 = "/home/shop/items.json"
-config.path_accounts                   = "/mnt/59b/accounts/"
-config.path_money_disks                = "/mnt/59b/money_disks.json"
-config.path_logfile                    = "/mnt/59b/shop.log"
-config.path_logfile_transactions       = "/mnt/59b/transactions.log"
+config.path_file_items                 = "/home/shop/items_dirtcraft.json"
+config.path_accounts                   = "/mnt/ae7/accounts/"
+config.path_money_disks                = "/mnt/ae7/money_disks.json"
+config.path_logfile                    = "/mnt/ae7/shop.log"
+config.path_logfile_transactions       = "/mnt/ae7/transactions.log"
 config.log_lines_textbox               = 500
 config.max_filesize_log                = 4 * 1024 * 1024 --4 MB
-config.buyer_start_money               = 1000
+config.buyer_start_money               = config.price_lease_storage_cell + 50
 config.owner                           = "kevinkk525"
 config.shop_name                       = "KK's Shop"
+config.stock_scanning_interval         = 300 -- 5 minutes
 
 
 -- Notes ingame:

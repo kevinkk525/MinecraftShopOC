@@ -4,7 +4,9 @@
 --- DateTime: 06.12.2019 21:45
 ---
 
-
+local config = require("shop.config")
+local log    = require("shop.logging")
+log.init(config.path_logfile, config.path_logfile_transactions, config.log_lines_textbox, config.max_filesize_log)
 local thread    = require("thread")
 local component = require("component")
 component.gpu.setResolution(160, 50)
@@ -12,15 +14,13 @@ local gui      = require("shop.shopGUI")
 local GUI      = require("GUI")
 local computer = require("computer")
 local json     = require("json")
-local config   = require("shop.config")
 local accounts = require("shop.accounts")
 local event    = require("event")
-local log      = require("shop.logging")
 local backend  = require("shop.backend")
 local math     = require("math")
 
 log.setTextBox(gui.textBox_logs)
-log.setTextBoxTransactinos(gui.textBox_transactions)
+log.setTextBoxTransactions(gui.textBox_transactions)
 
 local should_terminate = false
 
@@ -84,14 +84,6 @@ gui.tree_items.onItemExpanded = function()
     gui.updateTree(gui.tree_items, items_tree, items)
 end
 
-local function organizeItems(it)
-    items = {}
-    for i, item in pairs(it) do
-        local ident  = config.getItemIdentityName(item)
-        items[ident] = item
-    end
-end
-
 local function getNBT(item)
     local nbt = {}
     for key, val in pairs(item) do
@@ -100,6 +92,34 @@ local function getNBT(item)
         end
     end
     return nbt
+end
+
+local function requestItemToStock(ident, nbt, amount)
+    local item  = {}
+    item.ident  = ident
+    item.nbt    = nbt
+    item.amount = amount
+    component.tunnel.send(json.encode(item))
+end
+
+local function organizeItems(it)
+    items = {}
+    local tunnel
+    if component.isAvailable("tunnel") then
+        tunnel = component.tunnel
+    end
+    for i, item in pairs(it) do
+        local ident  = config.getItemIdentityName(item)
+        items[ident] = item
+        if tunnel and item.stock then
+            local nbt       = getNBT(item)
+            local available = backend.getAmountAvailable(nbt)
+            if available < item.stock then
+                requestItemToStock(ident, nbt, item.stock - available)
+                os.sleep(0.1)
+            end
+        end
+    end
 end
 
 gui.tree_items.onItemSelected   = function(selected, e1, e2, e3, e4, e5, user)
@@ -192,7 +212,7 @@ gui.button_addToCart.onTouch = function(application, button, e1, e2, e3, e4, e5,
     local available = backend.getAmountAvailable(nbt)
     if available < requested then
         --gui.on_alert = true
-        GUI.notice(application, 8, "Can't add this amount because not enough items available in thr shop. Sorry")
+        GUI.notice(application, 8, "Can't add this amount because not enough items available in the shop. Sorry")
         --gui.on_alert = false
         return
     end
@@ -283,8 +303,15 @@ local function exportItems(trans)
                 return false
             end
         end
-        local succes, amount = backend.exportIntoChest(item.item, item.size, showExportProgress)
-        if not succes then
+        local success, amount = backend.exportIntoChest(item.item, item.size, showExportProgress)
+        if component.isAvailable("tunnel") and items[item.ident].stock then
+            local nbt       = getNBT(item.item)
+            local available = backend.getAmountAvailable(nbt)
+            if available < items[item.ident].stock then
+                requestItemToStock(config.getItemIdentityName(item.item), nbt, items[item.ident].stock - available)
+            end
+        end
+        if not success then
             -- calculate percentage that has to be refunded
             item.price = item.price * (item.size - amount) / item.size
             item.size  = item.size - amount
@@ -482,7 +509,7 @@ gui.button_start_vacuum.onTouch = function(application, object, e2, e3, e4, e5, 
     local buyer             = accounts.getBuyer(user)
     vacuum_should_terminate = false
     vacuum_running          = true
-    GUI.notice(application, 30, "Drop your empty Portable Storage Cells or Money Floppy Disks in front of the vacuum chest.\n\nPress ok once done or wait 30 seconds.", kill_vacuum)
+    GUI.notice(application, 30, "Drop your empty Portable Storage Cells or Money Floppy Disks in front of the vacuum chest.\n\nPress ok once done or wait 30 seconds.", kill_vacuum, false, 5)
     local th = thread.create(watch_vacuum, buyer)
 end
 
@@ -503,6 +530,39 @@ local function wrap(name, func, ...)
     end
 end
 
+local function stock()
+    local tunnel
+    if component.isAvailable("tunnel") then
+        tunnel = component.tunnel
+    else
+        log.warn("No tunnel available, can't watch stock")
+        return false
+    end
+    while not should_terminate do
+        local st = computer.uptime()
+        while computer.uptime() - st < config.stock_scanning_interval do
+            os.sleep(5)
+            if should_terminate then
+                print("Stock exited")
+                return
+            end
+        end
+        for ident, item in pairs(items) do
+            if tunnel and item.stock then
+                local nbt       = getNBT(item)
+                local available = backend.getAmountAvailable(nbt)
+                if available < item.stock then
+                    requestItemToStock(ident, nbt, item.stock - available)
+                    os.sleep(1)
+                else
+                    os.sleep(0.5) -- will make function slow but not affect GUI and shop too much
+                end
+            end
+        end
+    end
+    print("Stock exited")
+end
+
 local function main_loop()
     while should_terminate == false do
         pcall(os.sleep, 5)
@@ -513,21 +573,28 @@ local function main_loop()
 end
 
 local function init()
+    local notice = GUI.notice(gui.application, nil, "Starting, please wait...", nil, false)
     backend.ejectPortableCell() -- just in case of error
     local it = loadItems()
     if it then
         organizeItems(it)
         loadItemsForTree()
     end
-    gui.application:draw(true)
-    local thread_gui  = thread.create(wrap, "gui_func", gui_func)
-    local thread_info = thread.create(wrap, "info", info)
+    --gui.application:draw(true)
+    notice()
+end
+
+local function start()
+    local thread_gui   = thread.create(wrap, "gui_func", gui_func)
+    local thread_init  = thread.create(wrap, "init", init)
+    local thread_info  = thread.create(wrap, "info", info)
+    local thread_stock = thread.create(wrap, "stock", stock)
     --local thread_loop   = thread.create(wrap, "main_loop", main_loop)
-    component.proxy(config.address_redstone_export).setOutput(config.side_export_redstone, 0) -- in case of error
+    -- component.proxy(config.address_redstone_export).setOutput(config.side_export_redstone, 0) -- in case of error
     log.info("Started")
 end
 
-init()
+start()
 main_loop()
 --gui_func()
 
@@ -538,3 +605,4 @@ main_loop()
 -- TODO: add search
 -- TODO: use flushing only on startup and after mass export
 -- TODO: use ntptime module
+-- TODO: export to dropper if <=9 item slots and <=16 items are bought so no Cell is needed
