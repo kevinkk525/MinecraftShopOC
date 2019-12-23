@@ -245,6 +245,7 @@ config.max_filesize_log                = 4 * 1024 * 1024 --4 MB
 config.buyer_start_money               = config.price_lease_storage_cell + 50
 config.owner                           = "kevinkk525"
 config.shop_name                       = "KK's Shop"
+config.version                         = "0.2Beta"
 config.stock_scanning_interval         = 300 -- 5 minutes
 
 

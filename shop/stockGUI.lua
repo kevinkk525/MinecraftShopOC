@@ -130,11 +130,11 @@ end
 -- Menu
 --------------------------------------------------------------------------------
 
-menu:addItem(config.shop_name .. " version 0.1Beta", 0x0).onTouch = function()
+menu:addItem(config.shop_name .. " version " .. config.version, 0x0).onTouch = function()
     --GUI.alert("Hello world!")
 end
 
-menu:addItem("Logs").onTouch                                      = function(application, object, e2, e3, e4, e5, e6, user)
+menu:addItem("Logs").onTouch                                                 = function(application, object, e2, e3, e4, e5, e6, user)
     if user == config.owner then
         textBox_logs.hidden = not textBox_logs.hidden
         application:draw()
@@ -144,7 +144,7 @@ menu:addItem("Logs").onTouch                                      = function(app
     GUI.notice(application, 5, "You are not authorized to see the logs!")
     -- gui.on_alert = false
 end
-gui.menu_exit                                                     = menu:addItem("Exit")
+gui.menu_exit                                                                = menu:addItem("Exit")
 
 --------------------------------------------------------------------------------
 

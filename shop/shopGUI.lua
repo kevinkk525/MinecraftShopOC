@@ -212,7 +212,7 @@ end
 
 -- Add menu object to application
 -- Add first item with black color. Attack a callback-function to it
-menu:addItem(config.shop_name .. " version 0.1Beta", 0x0).onTouch = function()
+menu:addItem(config.shop_name .. " version " .. config.version, 0x0).onTouch = function()
     --GUI.alert("Hello world!")
 end
 -- Add context menu and few items to it
