@@ -47,6 +47,7 @@ local function newItem(it)
     local item        = {}
     item.ident        = it.ident
     item.amount       = it.amount
+    item.craftable    = it.craftable
     item.nbt          = getStandardItemNBT(it.nbt)
     item.task         = nil
     item.time         = nil
@@ -193,7 +194,7 @@ local function modem_message(event_name, localAddress, remoteAddress, port, dist
         log.error("Couldn't decode json message " .. message .. ", error:" .. request)
         return
     end
-    if request.nbt == nil or request.amount == nil or request.ident == nil then
+    if request.nbt == nil or request.amount == nil or request.ident == nil or request.craftable == nil then
         log.error("Message incorrectly formatted: " .. message)
         return
     end
@@ -304,7 +305,7 @@ local function item_loop()
                     timeout_thread:kill()
                 else
                     local craft = me.getCraftables(item.nbt)
-                    if craft.n == 1 then
+                    if craft.n == 1 and item.craftable then
                         if getCPUs() then
                             startCrafting(item)
                         else
@@ -393,7 +394,7 @@ local function scan_errors()
                 item.error = nil
             elseif item.task then
                 -- still crafting
-            elseif me.getCraftables(item.nbt).n == 1 then
+            elseif me.getCraftables(item.nbt).n == 1 and item.craftable then
                 if getCPUs() then
                     startCrafting(item)
                 else

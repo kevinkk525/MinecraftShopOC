@@ -94,11 +94,15 @@ local function getNBT(item)
     return nbt
 end
 
-local function requestItemToStock(ident, nbt, amount)
-    local item  = {}
-    item.ident  = ident
-    item.nbt    = nbt
-    item.amount = amount
+local function requestItemToStock(ident, nbt, amount, is_craftable)
+    if is_craftable ~= false then
+        is_craftable = true
+    end
+    local item     = {}
+    item.ident     = ident
+    item.nbt       = nbt
+    item.amount    = amount
+    item.craftable = is_craftable
     component.tunnel.send(json.encode(item))
 end
 
@@ -552,7 +556,7 @@ local function stock()
                 local nbt       = getNBT(item)
                 local available = backend.getAmountAvailable(nbt)
                 if available < item.stock then
-                    requestItemToStock(ident, nbt, item.stock - available)
+                    requestItemToStock(ident, nbt, item.stock - available, item.craftable)
                     os.sleep(1)
                 else
                     os.sleep(0.5) -- will make function slow but not affect GUI and shop too much
