@@ -238,7 +238,7 @@ config.maxSlots_money_storage          = 63 * 2
 
 -- Timeouts
 config.timeout_export                  = 60
-config.price_lease_storage_cell        = 200
+config.price_lease_storage_cell        = 50
 
 
 --

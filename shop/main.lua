@@ -112,10 +112,16 @@ local function organizeItems(it)
     if component.isAvailable("tunnel") then
         tunnel = component.tunnel
     end
+    local cells        = backend.getAmountAvailable(config.nbt_portable_cell)
+    local me_available = true
+    if cells == 0 then
+        log.debug("No cells in network on startup, assuming network currently offline")
+        me_available = false
+    end
     for i, item in pairs(it) do
         local ident  = config.getItemIdentityName(item)
         items[ident] = item
-        if tunnel and item.stock then
+        if tunnel and item.stock and me_available then
             local nbt       = getNBT(item)
             local available = backend.getAmountAvailable(nbt)
             if available < item.stock then
@@ -586,15 +592,20 @@ local function stock()
                 return
             end
         end
-        for ident, item in pairs(items) do
-            if tunnel and item.stock then
-                local nbt       = getNBT(item)
-                local available = backend.getAmountAvailable(nbt)
-                if available < item.stock then
-                    requestItemToStock(ident, nbt, item.stock - available, item.craftable)
-                    os.sleep(1)
-                else
-                    os.sleep(0.5) -- will make function slow but not affect GUI and shop too much
+        local cells = backend.getAmountAvailable(config.nbt_portable_cell)
+        if cells == 0 then
+            log.debug("No cells in network, assuming network currently offline")
+        else
+            for ident, item in pairs(items) do
+                if tunnel and item.stock then
+                    local nbt       = getNBT(item)
+                    local available = backend.getAmountAvailable(nbt)
+                    if available < item.stock then
+                        requestItemToStock(ident, nbt, item.stock - available, item.craftable)
+                        os.sleep(1)
+                    else
+                        os.sleep(0.5) -- will make function slow but not affect GUI and shop too much
+                    end
                 end
             end
         end
@@ -644,4 +655,5 @@ main_loop()
 -- TODO: add search
 -- TODO: use flushing only on startup and after mass export
 -- TODO: use ntptime module
--- TODO: export to dropper if <=9 item slots and <=16 items are bought so no Cell is needed
+
+-- TODO: check if enough storage cells are available for a transaction

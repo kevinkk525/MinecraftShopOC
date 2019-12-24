@@ -10,6 +10,8 @@ local image    = require("image")
 local thread   = require("thread")
 local computer = require("computer")
 
+-- notice will leave menu accessible
+
 function notice(application, timeout, message, callback, button_active, button_delay)
     local sign                      = image.fromString([[06030000FF 0000FF 00F7FF▟00F7FF▙0000FF 0000FF 0000FF 00F7FF▟F7FF00 F7FF00 00F7FF▙0000FF 00F7FF▟F7FF00NF7FF00oF7FF00tF7FF00e00F7FF▙]])
     local offset                    = 2
