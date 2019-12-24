@@ -282,6 +282,10 @@ local function item_loop()
                     local timeout_thread              = thread.create(timeout_export, config.timeout_export)
                     local success, amount_transferred = exportItem(item.ident, item.nbt, item.amount)
                     gui.label_current_export.setValue("")
+                    if amount_transferred > item.amount then
+                        log.warn("Exported more items than requested, exported " .. tostring(amount_transferred) .. " instead of " .. tostring(item.amount) .. " for item " .. item.ident)
+                        amount_transferred = item.amount
+                    end
                     if success or amount_transferred > 0 then
                         local short = false
                         if item.amount ~= tmp_amount then
