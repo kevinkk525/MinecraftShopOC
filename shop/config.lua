@@ -71,9 +71,16 @@ local function calculateCellsNeeded(trans)
             end
         end
     end
-    trans.leased_cells      = cells
-    trans.lease_value       = cells * config.price_lease_storage_cell
-    trans.transaction_value = trans.item_value + trans.lease_value
+    if cells == 1 and cell_slots_used <= config.dropper_export_max_slots and cell_items_stored <= config.dropper_export_max_items then
+        -- no cell needed
+        trans.leased_cells      = 0
+        trans.leased_value      = 0
+        trans.transaction_value = trans.item_value
+    else
+        trans.leased_cells      = cells
+        trans.lease_value       = cells * config.price_lease_storage_cell
+        trans.transaction_value = trans.item_value + trans.lease_value
+    end
 end
 
 function config.calculateExportActivations(item, size)
@@ -174,8 +181,8 @@ config.side_export_portable_cell       = sides.down
 config.address_redstone_vacuum_chest   = "b689de10-2fe1-42ce-b931-c51a648c687c"
 config.side_redstone_vacuum_chest      = sides.north
 -- Redstone block dropper
-config.address_redstone_dropper        = "421fa936-347c-48d1-878e-d5baf48b6f8b"
-config.side_redstone_dropper           = sides.up
+config.address_redstone_dropper        = "194d8cf9-26ea-48f5-b9b0-dc7601d95f57"
+config.side_redstone_dropper           = sides.down
 
 -- Transposer ME Chest export/import
 config.address_transposer_me_chest     = "a26ffa56-e265-4105-b217-9306129a37e9"
@@ -247,6 +254,8 @@ config.owner                           = "kevinkk525"
 config.shop_name                       = "KK's Shop"
 config.version                         = "0.2Beta"
 config.stock_scanning_interval         = 300 -- 5 minutes
+config.dropper_export_max_slots        = 9
+config.dropper_export_max_items        = 16
 
 
 -- Notes ingame:

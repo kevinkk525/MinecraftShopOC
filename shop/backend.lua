@@ -237,7 +237,7 @@ function backend.storeItemInDB(item)
     return true
 end
 
-function backend.exportToDropper(item, size)
+function backend.exportToDropper(item, size, progress_func)
     backend.storeItemInDB(item)
     local export             = component.proxy(config.address_export_single_dropper)
     local amount_transferred = 0
@@ -253,6 +253,9 @@ function backend.exportToDropper(item, size)
             return false, amount_transferred
         end
         amount_transferred = amount_transferred + amount
+        if progress_func then
+            progress_func(amount_transferred, size)
+        end
     end
     return true, amount_transferred
 end

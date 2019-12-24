@@ -282,59 +282,94 @@ local function exportItems(trans)
     gui.progressBarItem.value        = 0
     gui.application:draw()
     local temp_until_ejected = {}
-    if not backend.exportPortableCell() then
-        rollbackTransaction(trans)
-        return false
-    end
-    for i, item in pairs(trans.item_pairs) do
-        if cell_items_stored + item.size > config.maxSize_portableCell or cell_slots_used >= config.maxSlots_portableCell then
-            if not backend.ejectPortableCell() then
-                rollbackTransaction(trans)
-                return false
-            end
-            -- successfully exported and ejected
-            for _, j in pairs(temp_until_ejected) do
-                trans.item_pairs[j].size  = 0
-                trans.item_pairs[j].price = 0
-            end
-            temp_until_ejected = {}
-            trans.leased_cells = trans.leased_cells - 1
-            trans.lease_value  = trans.leased_cells * config.price_lease_storage_cell
-            cell_slots_used    = 0
-            cell_items_stored  = 0
-            if not backend.exportPortableCell() then
-                rollbackTransaction(trans)
-                return false
-            end
-        end
-        local success, amount = backend.exportIntoChest(item.item, item.size, showExportProgress)
-        if component.isAvailable("tunnel") and items[item.ident].stock then
-            local nbt       = getNBT(item.item)
-            local available = backend.getAmountAvailable(nbt)
-            if available < items[item.ident].stock then
-                requestItemToStock(config.getItemIdentityName(item.item), nbt, items[item.ident].stock - available)
-            end
-        end
-        if not success then
-            -- calculate percentage that has to be refunded
-            item.price = item.price * (item.size - amount) / item.size
-            item.size  = item.size - amount
+    local to_dropper         = true
+    local redstone           = component.proxy(config.address_redstone_dropper)
+    if trans.leased_cells > 0 then
+        to_dropper = false
+        if not backend.exportPortableCell() then
             rollbackTransaction(trans)
             return false
+        end
+    end
+    if to_dropper then
+        redstone.setOutput(config.side_redstone_dropper, 255)
+    end
+    for i, item in pairs(trans.item_pairs) do
+        if not to_dropper then
+            if cell_items_stored + item.size > config.maxSize_portableCell or cell_slots_used >= config.maxSlots_portableCell then
+                if not backend.ejectPortableCell() then
+                    rollbackTransaction(trans)
+                    return false
+                end
+                -- successfully exported and ejected
+                for _, j in pairs(temp_until_ejected) do
+                    trans.item_pairs[j].size  = 0
+                    trans.item_pairs[j].price = 0
+                end
+                temp_until_ejected = {}
+                trans.leased_cells = trans.leased_cells - 1
+                trans.lease_value  = trans.leased_cells * config.price_lease_storage_cell
+                cell_slots_used    = 0
+                cell_items_stored  = 0
+                if not backend.exportPortableCell() then
+                    rollbackTransaction(trans)
+                    return false
+                end
+            end
+            local success, amount = backend.exportIntoChest(item.item, item.size, showExportProgress)
+            if component.isAvailable("tunnel") and items[item.ident].stock then
+                local nbt       = getNBT(item.item)
+                local available = backend.getAmountAvailable(nbt)
+                if available < items[item.ident].stock then
+                    requestItemToStock(config.getItemIdentityName(item.item), nbt, items[item.ident].stock - available)
+                end
+            end
+            if not success then
+                -- calculate percentage that has to be refunded
+                item.price = item.price * (item.size - amount) / item.size
+                item.size  = item.size - amount
+                rollbackTransaction(trans)
+                return false
+            else
+                cell_slots_used                             = cell_slots_used + 1
+                cell_items_stored                           = cell_items_stored + item.size
+                temp_until_ejected[#temp_until_ejected + 1] = i
+            end
         else
-            cell_slots_used                             = cell_slots_used + 1
-            cell_items_stored                           = cell_items_stored + item.size
-            temp_until_ejected[#temp_until_ejected + 1] = i
+            local success, amount = backend.exportToDropper(item.item, item.size, showExportProgress)
+            if component.isAvailable("tunnel") and items[item.ident].stock then
+                local nbt       = getNBT(item.item)
+                local available = backend.getAmountAvailable(nbt)
+                if available < items[item.ident].stock then
+                    requestItemToStock(config.getItemIdentityName(item.item), nbt, items[item.ident].stock - available)
+                end
+            end
+            if not success then
+                -- calculate percentage that has to be refunded
+                item.price = item.price * (item.size - amount) / item.size
+                item.size  = item.size - amount
+                rollbackTransaction(trans)
+                redstone.setOutput(config.side_redstone_dropper, 0)
+                return false
+            else
+                item.size  = 0
+                item.price = 0
+            end
         end
         gui.progressBar.value        = math.floor(i / #trans.item_pairs * 100)
         gui.progressBar.valuePostfix = "%, " .. tostring(i) .. "/" .. tostring(#trans.item_pairs) .. " items"
         gui.application:draw()
     end
-    if not backend.ejectPortableCell() then
-        rollbackTransaction(trans)
-        return false
+    if to_dropper then
+        redstone.setOutput(config.side_redstone_dropper, 0)
+        return true
+    else
+        if not backend.ejectPortableCell() then
+            rollbackTransaction(trans)
+            return false
+        end
+        return true
     end
-    return true
 end
 
 local function freezeGUI()
