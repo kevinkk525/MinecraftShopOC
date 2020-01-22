@@ -672,3 +672,5 @@ main_loop()
 -- TODO: use ntptime module
 
 -- TODO: check if enough storage cells are available for a transaction
+-- TODO: add confirmation/abort dialog GUI component
+-- TODO: use confirmation dialog before dropping items to ensure only the user gets the items/clearlagg confirmation
