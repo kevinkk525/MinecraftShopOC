@@ -1032,10 +1032,9 @@
       "32": 20,
       "64": 41,
       "256": 164,
-      "1024": 656,
-      "4032": 2583
+      "1024": 656
     },
-    "stock": 8064
+    "stock": 4000
   },
   {
     "name": "minecraft:ghast_tear",
@@ -1201,7 +1200,7 @@
       "64": 256,
       "256": 1024
     },
-    "stock": 8064
+    "stock": 4096
   },
   {
     "name": "enderio:block_enderman_skull",
@@ -1349,9 +1348,11 @@
       "16": 6,
       "32": 13,
       "64": 26,
-      "256": 104
+      "256": 104,
+      "1024": 416
     },
-    "stock": 2048
+    "label_friendly": "Clay (Ball)",
+    "stock": 4096
   },
   {
     "name": "minecraft:feather",
@@ -1449,10 +1450,9 @@
       "8": 7,
       "16": 15,
       "32": 30,
-      "64": 60,
-      "256": 240
+      "64": 60
     },
-    "stock": 2048
+    "stock": 1024
   },
   {
     "name": "minecraft:cactus",
@@ -1515,5 +1515,360 @@
       "32": 2560
     },
     "stock": 256
+  },
+  {
+    "name": "minecraft:obsidian",
+    "maxDamage": 0,
+    "label": "Obsidian",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 3,
+      "8": 24,
+      "32": 96,
+      "64": 192,
+      "256": 768
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "stock": 2048
+  },
+  {
+    "name": "minecraft:glowstone_dust",
+    "maxDamage": 0,
+    "label": "Glowstone Dust",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 4,
+      "8": 32,
+      "32": 128,
+      "64": 256,
+      "256": 1024
+    },
+    "stock": 2048
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Silicon",
+    "maxSize": 64,
+    "damage": 5,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "8": 8,
+      "32": 32,
+      "64": 64,
+      "256": 256
+    },
+    "stock": 2048
+  },
+  {
+    "name": "ic2:resource",
+    "maxDamage": 0,
+    "label": "Uranium Ore",
+    "maxSize": 64,
+    "damage": 4,
+    "hasTag": false,
+    "amounts": {
+      "1": 3,
+      "8": 25,
+      "32": 100,
+      "64": 200,
+      "256": 800
+    },
+    "stock": 2048
+  },
+  {
+    "name": "actuallyadditions:item_misc",
+    "maxDamage": 0,
+    "label": "Black Quartz",
+    "maxSize": 64,
+    "damage": 5,
+    "hasTag": false,
+    "amounts": {
+      "1": 10,
+      "8": 80,
+      "32": 320,
+      "64": 640,
+      "256": 2560
+    },
+    "stock": 2048
+  },
+  {
+    "name": "minecraft:sponge",
+    "maxDamage": 0,
+    "label": "Sponge",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 25,
+      "8": 200,
+      "32": 800,
+      "64": 1600,
+      "256": 6400
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "stock": 2048
+  },
+  {
+    "name": "minecraft:stone",
+    "maxDamage": 0,
+    "label": "Granite",
+    "maxSize": 64,
+    "damage": 1,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 3,
+      "64": 12,
+      "256": 48,
+      "1024": 192,
+      "4032": 756
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "stock": 16128
+  },
+  {
+    "name": "minecraft:stone",
+    "maxDamage": 0,
+    "label": "Diorite",
+    "maxSize": 64,
+    "damage": 3,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 8,
+      "64": 32,
+      "256": 128,
+      "1024": 512,
+      "4032": 2016
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "stock": 16128
+  },
+  {
+    "name": "chisel:marble2",
+    "maxDamage": 0,
+    "label": "Marble",
+    "maxSize": 64,
+    "damage": 7,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 8,
+      "64": 32,
+      "256": 128,
+      "1024": 512,
+      "4032": 2016
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "stock": 16128
+  },
+  {
+    "name": "minecraft:sandstone",
+    "maxDamage": 0,
+    "label": "Sandstone",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 2,
+      "16": 32,
+      "64": 128,
+      "256": 512,
+      "1024": 2048,
+      "4032": 8064
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "stock": 16128
+  },
+  {
+    "name": "minecraft:dirt",
+    "maxDamage": 0,
+    "label": "Dirt",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 8,
+      "64": 32,
+      "256": 128,
+      "1024": 512,
+      "4032": 2016
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "stock": 16128
+  },
+  {
+    "name": "minecraft:gravel",
+    "maxDamage": 0,
+    "label": "Gravel",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 8,
+      "64": 32,
+      "256": 128,
+      "1024": 512,
+      "4032": 2016
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "stock": 16128
+  },
+  {
+    "name": "minecraft:sand",
+    "maxDamage": 0,
+    "label": "Sand",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 8,
+      "64": 32,
+      "256": 128,
+      "1024": 512,
+      "4032": 2016
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "stock": 16128
+  },
+  {
+    "name": "minecraft:stone",
+    "maxDamage": 0,
+    "label": "Stone",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 16,
+      "64": 64,
+      "256": 256,
+      "1024": 1024,
+      "4032": 4032
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "stock": 16128
+  },
+  {
+    "name": "minecraft:clay",
+    "maxDamage": 0,
+    "label": "Clay",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 25,
+      "64": 102,
+      "256": 408,
+      "1024": 1632,
+      "4032": 6426
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "label_friendly": "Clay (Block)",
+    "stock": 16128
+  },
+  {
+    "name": "minecraft:packed_ice",
+    "maxDamage": 0,
+    "label": "Packed Ice",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 8,
+      "64": 32,
+      "256": 128,
+      "1024": 512,
+      "4032": 2016
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "stock": 16128
+  },
+  {
+    "name": "minecraft:end_stone",
+    "maxDamage": 0,
+    "label": "End Stone",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 30,
+      "64": 120,
+      "256": 480,
+      "1024": 1920
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "stock": 8192
+  },
+  {
+    "name": "minecraft:glowstone",
+    "maxDamage": 0,
+    "label": "Glowstone",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 16,
+      "16": 256,
+      "64": 1024,
+      "256": 4096
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "stock": 2048
+  },
+  {
+    "name": "environmentaltech:mica",
+    "maxDamage": 0,
+    "label": "Mica",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 150,
+      "4": 600,
+      "8": 1200,
+      "16": 2400
+    },
+    "stock": 320
   }
 ]

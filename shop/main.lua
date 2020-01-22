@@ -615,7 +615,9 @@ local function stock()
                 end
             end
             for ident, item in pairs(items) do
-                if item.stock and item.stock > stored[ident].size then
+                if item.stock and stored[ident] == nil then
+                    log.warn("stored variable line 619 main.lua is nil for item " .. ident)
+                elseif item.stock and item.stock > stored[ident].size then
                     log.debug("Requesting item " .. ident .. " " .. tostring(item.stock - stored[ident].size))
                     requestItemToStock(ident, getNBT(item), item.stock - stored[ident].size, item.craftable)
                     os.sleep(0.25)
