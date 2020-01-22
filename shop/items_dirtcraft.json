@@ -686,5 +686,834 @@
     },
     "label_friendly": "Charged Portable Cell",
     "stock": 50
+  },
+  {
+    "name": "enderio:item_material",
+    "maxDamage": 0,
+    "label": "Grains of Infinity",
+    "maxSize": 64,
+    "damage": 20,
+    "hasTag": false,
+    "amounts": {
+      "1": 20,
+      "4": 80,
+      "8": 160,
+      "16": 320,
+      "32": 640,
+      "64": 1280
+    },
+    "stock": 3200
+  },
+  {
+    "name": "minecraft:diamond",
+    "maxDamage": 0,
+    "label": "Diamond",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 20,
+      "4": 80,
+      "8": 160,
+      "16": 320,
+      "32": 640,
+      "64": 1280
+    },
+    "stock": 3200
+  },
+  {
+    "name": "minecraft:emerald",
+    "maxDamage": 0,
+    "label": "Emerald",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 35,
+      "4": 140,
+      "8": 280,
+      "16": 560,
+      "32": 1120,
+      "64": 2240
+    },
+    "stock": 3200
+  },
+  {
+    "name": "minecraft:ender_pearl",
+    "maxDamage": 0,
+    "label": "Ender Pearl",
+    "maxSize": 16,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 4,
+      "4": 16,
+      "8": 32,
+      "16": 64,
+      "32": 128,
+      "64": 256
+    },
+    "stock": 3200
+  },
+  {
+    "name": "darkutils:material",
+    "maxDamage": 0,
+    "label": "Wither Dust",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 20,
+      "4": 80,
+      "8": 160,
+      "16": 320,
+      "32": 640,
+      "64": 1280
+    },
+    "stock": 3200
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Blizz Rod",
+    "maxSize": 64,
+    "damage": 2048,
+    "hasTag": false,
+    "amounts": {
+      "1": 6,
+      "4": 25,
+      "8": 50,
+      "16": 100,
+      "32": 200,
+      "64": 400
+    },
+    "stock": 3200
+  },
+  {
+    "name": "minecraft:quartz",
+    "maxDamage": 0,
+    "label": "Nether Quartz",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 3,
+      "16": 48,
+      "32": 96,
+      "64": 192,
+      "256": 768,
+      "1024": 3072,
+      "4032": 12096
+    },
+    "stock": 8064
+  },
+  {
+    "name": "minecraft:cobblestone",
+    "maxDamage": 0,
+    "label": "Cobblestone",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 8,
+      "32": 16,
+      "64": 32,
+      "256": 128,
+      "1024": 512,
+      "4032": 2016
+    },
+    "stock": 8064
+  },
+  {
+    "name": "minecraft:bone",
+    "maxDamage": 0,
+    "label": "Bone",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 15,
+      "32": 30,
+      "64": 60,
+      "256": 240,
+      "1024": 960,
+      "4032": 3780
+    },
+    "stock": 8064
+  },
+  {
+    "name": "minecraft:gunpowder",
+    "maxDamage": 0,
+    "label": "Gunpowder",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 4,
+      "16": 64,
+      "32": 128,
+      "64": 256,
+      "256": 1024,
+      "1024": 4096,
+      "4032": 16128
+    },
+    "stock": 8064
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Certus Quartz Crystal",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 3,
+      "16": 48,
+      "32": 96,
+      "64": 192,
+      "256": 768,
+      "1024": 3072,
+      "4032": 12096
+    },
+    "stock": 8064
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Charged Certus Quartz Crystal",
+    "maxSize": 64,
+    "damage": 1,
+    "hasTag": false,
+    "amounts": {
+      "1": 6,
+      "16": 96,
+      "32": 192,
+      "64": 384,
+      "256": 1536,
+      "1024": 6144,
+      "4032": 24192
+    },
+    "stock": 8064
+  },
+  {
+    "name": "minecraft:netherrack",
+    "maxDamage": 0,
+    "label": "Netherrack",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 16,
+      "32": 32,
+      "64": 64,
+      "256": 256,
+      "1024": 1024,
+      "4032": 4032
+    },
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Sulfur",
+    "maxSize": 64,
+    "damage": 771,
+    "hasTag": false,
+    "amounts": {
+      "1": 5,
+      "16": 80,
+      "32": 160,
+      "64": 320,
+      "256": 1280,
+      "1024": 5120
+    },
+    "stock": 8064
+  },
+  {
+    "name": "minecraft:redstone",
+    "maxDamage": 0,
+    "label": "Redstone",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 2,
+      "16": 32,
+      "32": 64,
+      "64": 128,
+      "256": 512,
+      "1024": 2048,
+      "4032": 8064
+    },
+    "stock": 8064
+  },
+  {
+    "name": "minecraft:snowball",
+    "maxDamage": 0,
+    "label": "Snowball",
+    "maxSize": 16,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 10,
+      "32": 20,
+      "64": 40,
+      "256": 160,
+      "1024": 640,
+      "4032": 2520
+    },
+    "stock": 8064
+  },
+  {
+    "name": "extrautils2:ingredients",
+    "maxDamage": 0,
+    "label": "Drop of Evil",
+    "maxSize": 64,
+    "damage": 10,
+    "hasTag": false,
+    "amounts": {
+      "1": 150,
+      "4": 600,
+      "8": 1200,
+      "16": 2400,
+      "32": 4800,
+      "64": 9600
+    },
+    "stock": 2000
+  },
+  {
+    "name": "minecraft:rotten_flesh",
+    "maxDamage": 0,
+    "label": "Rotten Flesh",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 15,
+      "32": 30,
+      "64": 60,
+      "256": 240,
+      "1024": 960,
+      "4032": 3780
+    },
+    "stock": 8064
+  },
+  {
+    "name": "environmentaltech:ionite_crystal",
+    "maxDamage": 0,
+    "label": "Ionite Crystal",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 512,
+      "8": 4096,
+      "16": 8192,
+      "32": 16384,
+      "64": 32768
+    },
+    "stock": 2000
+  },
+  {
+    "name": "minecraft:reeds",
+    "maxDamage": 0,
+    "label": "Sugar Canes",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 10,
+      "32": 20,
+      "64": 41,
+      "256": 164,
+      "1024": 656,
+      "4032": 2583
+    },
+    "stock": 8064
+  },
+  {
+    "name": "minecraft:ghast_tear",
+    "maxDamage": 0,
+    "label": "Ghast Tear",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 40,
+      "8": 320,
+      "16": 640,
+      "32": 1280,
+      "64": 2560
+    },
+    "stock": 4000
+  },
+  {
+    "name": "environmentaltech:litherite_crystal",
+    "maxDamage": 0,
+    "label": "Litherite Crystal",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 32,
+      "8": 256,
+      "16": 512,
+      "32": 1024,
+      "64": 2048
+    },
+    "stock": 2000
+  },
+  {
+    "name": "environmentaltech:erodium_crystal",
+    "maxDamage": 0,
+    "label": "Erodium Crystal",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 64,
+      "8": 256,
+      "16": 1024,
+      "32": 2048,
+      "64": 4096
+    },
+    "stock": 2000
+  },
+  {
+    "name": "environmentaltech:kyronite_crystal",
+    "maxDamage": 0,
+    "label": "Kyronite Crystal",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 128,
+      "8": 1024,
+      "16": 2048,
+      "32": 4096,
+      "64": 8192
+    },
+    "stock": 2000
+  },
+  {
+    "name": "environmentaltech:pladium_crystal",
+    "maxDamage": 0,
+    "label": "Pladium Crystal",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 256,
+      "8": 2048,
+      "16": 4096,
+      "32": 8192,
+      "64": 16384
+    },
+    "stock": 2000
+  },
+  {
+    "name": "environmentaltech:aethium_crystal",
+    "maxDamage": 0,
+    "label": "Aethium Crystal",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1024,
+      "8": 8192,
+      "16": 16384,
+      "32": 32768,
+      "64": 65536
+    },
+    "stock": 2000
+  },
+  {
+    "name": "minecraft:dye",
+    "maxDamage": 0,
+    "label": "Lapis Lazuli",
+    "maxSize": 64,
+    "damage": 4,
+    "hasTag": false,
+    "amounts": {
+      "1": 2,
+      "16": 32,
+      "32": 64,
+      "64": 128,
+      "256": 512,
+      "1024": 2048,
+      "4032": 8064
+    },
+    "stock": 8064
+  },
+  {
+    "name": "minecraft:coal",
+    "maxDamage": 0,
+    "label": "Coal",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 16,
+      "32": 32,
+      "64": 64,
+      "256": 256,
+      "1024": 1024,
+      "4032": 4032
+    },
+    "stock": 8064
+  },
+  {
+    "name": "tconstruct:edible",
+    "maxDamage": 0,
+    "label": "Slime Ball",
+    "maxSize": 64,
+    "damage": 2,
+    "hasTag": false,
+    "amounts": {
+      "1": 2.5,
+      "16": 39.25,
+      "32": 78.5,
+      "64": 157,
+      "256": 628,
+      "1024": 2512
+    },
+    "stock": 5000,
+    "label_friendly": "Slime Ball (orange)"
+  },
+  {
+    "name": "minecraft:string",
+    "maxDamage": 0,
+    "label": "String",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 4,
+      "16": 64,
+      "32": 128,
+      "64": 256,
+      "256": 1024
+    },
+    "stock": 8064
+  },
+  {
+    "name": "enderio:block_enderman_skull",
+    "maxDamage": 0,
+    "label": "Enderman Head",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 100,
+      "8": 200,
+      "16": 1600,
+      "32": 3200,
+      "64": 6400
+    },
+    "stock": 2000
+  },
+  {
+    "name": "environmentaltech:lonsdaleite_crystal",
+    "maxDamage": 0,
+    "label": "Lonsdaleite Crystal",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 256,
+      "8": 512,
+      "16": 4096,
+      "32": 8192,
+      "64": 16384
+    },
+    "stock": 2000
+  },
+  {
+    "name": "actuallyadditions:item_solidified_experience",
+    "maxDamage": 0,
+    "label": "Solidified Experience",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 3,
+      "8": 25,
+      "16": 50,
+      "32": 100,
+      "64": 200,
+      "256": 800
+    },
+    "stock": 2048
+  },
+  {
+    "name": "minecraft:arrow",
+    "maxDamage": 0,
+    "label": "Arrow",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "8": 8,
+      "16": 16,
+      "32": 32,
+      "64": 64,
+      "256": 256
+    },
+    "stock": 2048
+  },
+  {
+    "name": "minecraft:blaze_rod",
+    "maxDamage": 0,
+    "label": "Blaze Rod",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 5,
+      "8": 40,
+      "16": 80,
+      "32": 160,
+      "64": 320,
+      "256": 1280
+    },
+    "stock": 2048
+  },
+  {
+    "name": "minecraft:flint",
+    "maxDamage": 0,
+    "label": "Flint",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 0,
+      "8": 6,
+      "16": 12,
+      "32": 24,
+      "64": 48,
+      "256": 192
+    },
+    "stock": 2048
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Pure Certus Quartz Crystal",
+    "maxSize": 64,
+    "damage": 10,
+    "hasTag": false,
+    "amounts": {
+      "1": 20,
+      "8": 160,
+      "16": 320,
+      "32": 640,
+      "64": 1280,
+      "256": 5120
+    },
+    "stock": 2048
+  },
+  {
+    "name": "minecraft:nether_star",
+    "maxDamage": 0,
+    "label": "Nether Star",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 160,
+      "8": 1280,
+      "16": 2560,
+      "32": 5120,
+      "64": 10240
+    },
+    "stock": 1024
+  },
+  {
+    "name": "minecraft:clay_ball",
+    "maxDamage": 0,
+    "label": "Clay",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 0,
+      "8": 3,
+      "16": 6,
+      "32": 13,
+      "64": 26,
+      "256": 104
+    },
+    "stock": 2048
+  },
+  {
+    "name": "minecraft:feather",
+    "maxDamage": 0,
+    "label": "Feather",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "8": 12,
+      "16": 24,
+      "32": 48,
+      "64": 96,
+      "256": 384
+    },
+    "stock": 2048
+  },
+  {
+    "name": "industrialforegoing:plastic",
+    "maxDamage": 0,
+    "label": "Plastic",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 12,
+      "8": 100,
+      "16": 200,
+      "32": 400,
+      "64": 800,
+      "256": 3200
+    },
+    "stock": 2048
+  },
+  {
+    "name": "minecraft:wool",
+    "maxDamage": 0,
+    "label": "White Wool",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 3,
+      "8": 24,
+      "16": 48,
+      "32": 96,
+      "64": 192,
+      "256": 768
+    },
+    "stock": 2048
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Fluix Crystal",
+    "maxSize": 64,
+    "damage": 7,
+    "hasTag": false,
+    "amounts": {
+      "1": 10,
+      "8": 80,
+      "16": 160,
+      "32": 320,
+      "64": 640,
+      "256": 2560
+    },
+    "stock": 2048
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Pure Fluix Crystal",
+    "maxSize": 64,
+    "damage": 12,
+    "hasTag": false,
+    "amounts": {
+      "1": 20,
+      "8": 160,
+      "16": 320,
+      "32": 640,
+      "64": 1280
+    },
+    "stock": 1024
+  },
+  {
+    "name": "minecraft:egg",
+    "maxDamage": 0,
+    "label": "Egg",
+    "maxSize": 16,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 0,
+      "8": 7,
+      "16": 15,
+      "32": 30,
+      "64": 60,
+      "256": 240
+    },
+    "stock": 2048
+  },
+  {
+    "name": "minecraft:cactus",
+    "maxDamage": 0,
+    "label": "Cactus",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 0,
+      "8": 7,
+      "16": 15,
+      "32": 30,
+      "64": 60,
+      "256": 240
+    },
+    "stock": 2048
+  },
+  {
+    "name": "minecraft:skull",
+    "maxDamage": 0,
+    "label": "Creeper Head",
+    "maxSize": 64,
+    "damage": 4,
+    "hasTag": false,
+    "amounts": {
+      "1": 80,
+      "8": 640,
+      "16": 1280,
+      "32": 2560
+    },
+    "stock": 256
+  },
+  {
+    "name": "minecraft:skull",
+    "maxDamage": 0,
+    "label": "Zombie Head",
+    "maxSize": 64,
+    "damage": 2,
+    "hasTag": false,
+    "amounts": {
+      "1": 80,
+      "8": 640,
+      "16": 1280,
+      "32": 2560
+    },
+    "stock": 256
+  },
+  {
+    "name": "minecraft:skull",
+    "maxDamage": 0,
+    "label": "Skeleton Skull",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 80,
+      "8": 640,
+      "16": 1280,
+      "32": 2560
+    },
+    "stock": 256
   }
 ]
