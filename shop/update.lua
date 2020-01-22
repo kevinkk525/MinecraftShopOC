@@ -4,7 +4,7 @@
 --- DateTime: 24.11.2019 21:59
 ---
 
-local link  = "https://files.freiebaptisten.de/index.php/s/aYHstfS5cYCiNPy/download"
+local link  = "https://files.freiebaptisten.de/index.php/s/cLjCz36kLDJpAGr/download"
 local dir   = "shop"
 
 local shell = require("shell")

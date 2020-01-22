@@ -42,7 +42,10 @@ if server != "dirtcraft":  # linear prices for dirtcraft
         return myround(x * price / 64.0 * 0.9864 ** (x / 64.0))
 else:
     def price_func(price, x):
-        return x / 64 * price
+        res = x / 64 * price
+        if res < 1:
+            res = 1
+        return res
 
 while True:
     print("")
