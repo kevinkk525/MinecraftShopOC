@@ -1174,7 +1174,7 @@
     "maxDamage": 0,
     "label": "Slime Ball",
     "maxSize": 64,
-    "damage": 2,
+    "damage": 4,
     "hasTag": false,
     "amounts": {
       "1": 2.5,
