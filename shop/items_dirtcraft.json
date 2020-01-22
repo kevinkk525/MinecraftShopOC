@@ -1817,7 +1817,7 @@
     "categories": [
       "_blocks"
     ],
-    "stock": 16128
+    "stock": 4096
   },
   {
     "name": "minecraft:end_stone",
@@ -1870,5 +1870,529 @@
       "16": 2400
     },
     "stock": 320
+  },
+  {
+    "name": "thermaldynamics:duct_32",
+    "maxDamage": 0,
+    "label": "Itemduct (Opaque)",
+    "maxSize": 64,
+    "damage": 1.0,
+    "hasTag": false,
+    "amounts": {
+      "1": 3,
+      "4": 10,
+      "8": 19,
+      "16": 37.5,
+      "32": 75,
+      "64": 150
+    },
+    "stock": 512
+  },
+  {
+    "name": "thermaldynamics:duct_0",
+    "maxDamage": 0,
+    "label": "Cryo-Stabilized Fluxduct",
+    "maxSize": 64,
+    "damage": 5.0,
+    "hasTag": false,
+    "amounts": {
+      "1": 100,
+      "4": 400,
+      "8": 800,
+      "16": 1600,
+      "32": 3200
+    },
+    "stock": 256
+  },
+  {
+    "name": "thermalfoundation:upgrade",
+    "maxDamage": 0,
+    "label": "Resonant Conversion Kit",
+    "maxSize": 64,
+    "damage": 35.0,
+    "hasTag": false,
+    "amounts": {
+      "1": 500,
+      "4": 2000,
+      "8": 4000
+    },
+    "stock": 128
+  },
+  {
+    "name": "thermalexpansion:dynamo",
+    "maxDamage": 0,
+    "label": "Magmatic Dynamo (Basic)",
+    "maxSize": 64,
+    "damage": 1.0,
+    "Energy": 0.0,
+    "hasTag": true,
+    "amounts": {
+      "1": 90,
+      "4": 360,
+      "8": 720,
+      "16": 1440
+    },
+    "stock": 256
+  },
+  {
+    "name": "thermaldynamics:duct_0",
+    "maxDamage": 0,
+    "label": "Leadstone Fluxduct",
+    "maxSize": 64,
+    "damage": 0.0,
+    "hasTag": false,
+    "amounts": {
+      "1": 25,
+      "4": 100,
+      "8": 200,
+      "16": 400,
+      "32": 800,
+      "64": 1600
+    },
+    "stock": 512
+  },
+  {
+    "name": "thermaldynamics:servo",
+    "maxDamage": 0,
+    "label": "Servo",
+    "maxSize": 64,
+    "damage": 0.0,
+    "hasTag": false,
+    "amounts": {
+      "1": 15,
+      "4": 60,
+      "8": 120,
+      "16": 240,
+      "32": 480,
+      "64": 960
+    },
+    "stock": 512
+  },
+  {
+    "name": "thermaldynamics:servo",
+    "maxDamage": 0,
+    "label": "Resonant Servo",
+    "maxSize": 64,
+    "damage": 4.0,
+    "hasTag": false,
+    "amounts": {
+      "1": 40,
+      "4": 160,
+      "8": 320,
+      "16": 640,
+      "32": 1280
+    },
+    "stock": 256
+  },
+  {
+    "name": "thermaldynamics:filter",
+    "maxDamage": 0,
+    "label": "Filter",
+    "maxSize": 64,
+    "damage": 0.0,
+    "hasTag": false,
+    "amounts": {
+      "1": 15,
+      "4": 60,
+      "8": 120,
+      "16": 240,
+      "32": 480,
+      "64": 960
+    },
+    "stock": 512
+  },
+  {
+    "name": "minecraft:glass",
+    "maxDamage": 0,
+    "label": "Glass",
+    "maxSize": 64,
+    "damage": 0.0,
+    "hasTag": false,
+    "amounts": {
+      "1": 2,
+      "16": 32,
+      "64": 128,
+      "256": 512,
+      "1024": 2048,
+      "4032": 8064
+    },
+    "stock": 8192
+  },
+  {
+    "name": "appliedenergistics2:drive",
+    "maxDamage": 0,
+    "label": "ME Drive",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 75,
+      "4": 300,
+      "8": 600,
+      "16": 1200,
+      "32": 2400,
+      "64": 4800
+    },
+    "stock": 256
+  },
+  {
+    "name": "appliedenergistics2:part",
+    "maxDamage": 0,
+    "label": "ME Export Bus",
+    "maxSize": 64,
+    "damage": 260,
+    "hasTag": false,
+    "amounts": {
+      "1": 30,
+      "4": 120,
+      "8": 240,
+      "16": 480,
+      "32": 960,
+      "64": 1920
+    },
+    "stock": 256
+  },
+  {
+    "name": "appliedenergistics2:part",
+    "maxDamage": 0,
+    "label": "ME Glass Cable - Fluix",
+    "maxSize": 64,
+    "damage": 16,
+    "hasTag": false,
+    "amounts": {
+      "1": 41,
+      "4": 164,
+      "8": 328,
+      "16": 656,
+      "32": 1312,
+      "64": 2624
+    },
+    "stock": 256
+  },
+  {
+    "name": "appliedenergistics2:molecular_assembler",
+    "maxDamage": 0,
+    "label": "Molecular Assembler",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 55,
+      "4": 220,
+      "8": 440,
+      "16": 880,
+      "32": 1760,
+      "64": 3520
+    },
+    "stock": 256
+  },
+  {
+    "name": "appliedenergistics2:controller",
+    "maxDamage": 0,
+    "label": "ME Controller",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 60,
+      "4": 240,
+      "8": 480,
+      "16": 960,
+      "32": 1920,
+      "64": 3840
+    },
+    "stock": 256
+  },
+  {
+    "name": "appliedenergistics2:part",
+    "maxDamage": 0,
+    "label": "ME Crafting Terminal",
+    "maxSize": 64,
+    "damage": 360,
+    "hasTag": false,
+    "amounts": {
+      "1": 200,
+      "4": 800,
+      "8": 1600,
+      "16": 3200,
+      "32": 6400,
+      "64": 12800
+    },
+    "stock": 256
+  },
+  {
+    "name": "appliedenergistics2:interface",
+    "maxDamage": 0,
+    "label": "ME Interface",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 52,
+      "4": 208,
+      "8": 416,
+      "16": 832,
+      "32": 1664,
+      "64": 3328
+    },
+    "stock": 256
+  },
+  {
+    "name": "appliedenergistics2:part",
+    "maxDamage": 0,
+    "label": "ME Import Bus",
+    "maxSize": 64,
+    "damage": 240,
+    "hasTag": false,
+    "amounts": {
+      "1": 40,
+      "4": 160,
+      "8": 320,
+      "16": 640,
+      "32": 1280,
+      "64": 2560
+    },
+    "stock": 256
+  },
+  {
+    "name": "appliedenergistics2:storage_cell_1k",
+    "maxDamage": 0,
+    "label": "1k ME Storage Cell",
+    "maxSize": 1,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 50,
+      "4": 200,
+      "8": 400,
+      "16": 800,
+      "32": 1600,
+      "64": 3200
+    },
+    "stock": 128
+  },
+  {
+    "name": "appliedenergistics2:storage_cell_64k",
+    "maxDamage": 0,
+    "label": "64k ME Storage Cell",
+    "maxSize": 1,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1230,
+      "4": 4920,
+      "8": 9840
+    },
+    "stock": 64
+  },
+  {
+    "name": "minecraft:cooked_mutton",
+    "maxDamage": 0,
+    "label": "Cooked Mutton",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 16,
+      "64": 64,
+      "256": 256,
+      "1024": 1024
+    },
+    "stock": 4096
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "64k ME Storage Component",
+    "maxSize": 64,
+    "damage": 38,
+    "hasTag": false,
+    "amounts": {
+      "1": 800,
+      "4": 3200
+    },
+    "stock": 8
+  },
+  {
+    "name": "appliedenergistics2:storage_cell_4k",
+    "maxDamage": 0,
+    "label": "4k ME Storage Cell",
+    "maxSize": 1,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 160,
+      "4": 640
+    },
+    "stock": 8
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Logic Processor",
+    "maxSize": 64,
+    "damage": 22,
+    "hasTag": false,
+    "amounts": {
+      "1": 48,
+      "4": 192,
+      "8": 384,
+      "16": 768,
+      "32": 1536,
+      "64": 3072
+    },
+    "stock": 256
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Engineering Processor",
+    "maxSize": 64,
+    "damage": 24,
+    "hasTag": false,
+    "amounts": {
+      "1": 72,
+      "4": 288,
+      "8": 576,
+      "16": 1152,
+      "32": 2304,
+      "64": 4608
+    },
+    "stock": 256
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Calculation Processor",
+    "maxSize": 64,
+    "damage": 23,
+    "hasTag": false,
+    "amounts": {
+      "1": 40,
+      "4": 160,
+      "8": 320,
+      "16": 640,
+      "32": 1280,
+      "64": 2560
+    },
+    "stock": 256
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Inscriber Logic Press",
+    "maxSize": 64,
+    "damage": 15,
+    "hasTag": false,
+    "amounts": {
+      "1": 50,
+      "4": 200
+    },
+    "stock": 128
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Inscriber Silicon Press",
+    "maxSize": 64,
+    "damage": 19,
+    "hasTag": false,
+    "amounts": {
+      "1": 50,
+      "4": 200
+    },
+    "stock": 128
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Inscriber Engineering Press",
+    "maxSize": 64,
+    "damage": 14,
+    "hasTag": false,
+    "amounts": {
+      "1": 50,
+      "4": 200
+    },
+    "stock": 128
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Inscriber Calculation Press",
+    "maxSize": 64,
+    "damage": 13,
+    "hasTag": false,
+    "amounts": {
+      "1": 50,
+      "4": 200
+    },
+    "stock": 128
+  },
+  {
+    "name": "appliedenergistics2:inscriber",
+    "maxDamage": 0,
+    "label": "Inscriber",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 100,
+      "4": 400,
+      "8": 800
+    },
+    "stock": 128
+  },
+  {
+    "name": "appliedenergistics2:part",
+    "maxDamage": 0,
+    "label": "ME Smart Cable - Fluix",
+    "maxSize": 64,
+    "damage": 56,
+    "hasTag": false,
+    "amounts": {
+      "1": 30,
+      "4": 120,
+      "8": 240,
+      "16": 480,
+      "32": 960,
+      "64": 1920
+    },
+    "stock": 256
+  },
+  {
+    "name": "appliedenergistics2:part",
+    "maxDamage": 0,
+    "label": "ME Dense Smart Cable - Fluix",
+    "maxSize": 64,
+    "damage": 76,
+    "hasTag": false,
+    "amounts": {
+      "1": 60,
+      "4": 240,
+      "8": 480,
+      "16": 960,
+      "32": 1920,
+      "64": 3840
+    },
+    "stock": 256
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Acceleration Card",
+    "maxSize": 64,
+    "damage": 30,
+    "hasTag": false,
+    "amounts": {
+      "1": 20,
+      "4": 80,
+      "8": 160,
+      "16": 320,
+      "32": 640,
+      "64": 1280
+    },
+    "stock": 256
   }
 ]
