@@ -103,6 +103,7 @@ local function requestItemToStock(ident, nbt, amount, is_craftable)
     item.nbt       = nbt
     item.amount    = amount
     item.craftable = is_craftable
+    item.time      = os.time()
     component.tunnel.send(json.encode(item))
 end
 
@@ -113,9 +114,10 @@ local function organizeItems(it)
         tunnel = component.tunnel
     end
     local cells        = backend.getAmountAvailable(config.nbt_portable_cell)
+    local its          = backend.getAmountItemsInNetwork()
     local me_available = true
-    if cells == 0 then
-        log.debug("No cells in network on startup, assuming network currently offline")
+    if its == 0 or its == 1 and cells > 0 then
+        log.debug("No items in network on startup, assuming network currently offline")
         me_available = false
     end
     for i, item in pairs(it) do
@@ -294,17 +296,20 @@ local function exportItems(trans)
         to_dropper = false
         if not backend.exportPortableCell() then
             rollbackTransaction(trans)
+            redstone.setOutput(config.side_redstone_dropper, 0)
             return false
         end
     end
-    if to_dropper then
-        redstone.setOutput(config.side_redstone_dropper, 255)
-    end
+    redstone.setOutput(config.side_redstone_dropper, 255)
+    --if to_dropper then
+    --    redstone.setOutput(config.side_redstone_dropper, 255)
+    --end
     for i, item in pairs(trans.item_pairs) do
         if not to_dropper then
             if cell_items_stored + item.size > config.maxSize_portableCell or cell_slots_used >= config.maxSlots_portableCell then
                 if not backend.ejectPortableCell() then
                     rollbackTransaction(trans)
+                    redstone.setOutput(config.side_redstone_dropper, 0)
                     return false
                 end
                 -- successfully exported and ejected
@@ -319,6 +324,7 @@ local function exportItems(trans)
                 cell_items_stored  = 0
                 if not backend.exportPortableCell() then
                     rollbackTransaction(trans)
+                    redstone.setOutput(config.side_redstone_dropper, 0)
                     return false
                 end
             end
@@ -335,6 +341,7 @@ local function exportItems(trans)
                 item.price = item.price * (item.size - amount) / item.size
                 item.size  = item.size - amount
                 rollbackTransaction(trans)
+                redstone.setOutput(config.side_redstone_dropper, 0)
                 return false
             else
                 cell_slots_used                             = cell_slots_used + 1
@@ -372,8 +379,10 @@ local function exportItems(trans)
     else
         if not backend.ejectPortableCell() then
             rollbackTransaction(trans)
+            redstone.setOutput(config.side_redstone_dropper, 0)
             return false
         end
+        redstone.setOutput(config.side_redstone_dropper, 0)
         return true
     end
 end
@@ -592,20 +601,24 @@ local function stock()
                 return
             end
         end
-        local cells = backend.getAmountAvailable(config.nbt_portable_cell)
-        if cells == 0 then
-            log.debug("No cells in network, assuming network currently offline")
+        os.sleep(5)
+        local its = component.proxy(config.address_me_storage).getItemsInNetwork()
+        if its.n == 0 or (its.n == 1 and config.getItemIdentityName(its[1]) == config.identity_portable_cell) then
+            log.warn("ME system empty, n " .. tostring(its.n))
+            -- n=1 are portable cells in normal chest
         else
+            log.debug("Found " .. tostring(its.n) .. " items in ME")
+            local stored = {}
+            for i, item in pairs(its) do
+                if i ~= "n" then
+                    stored[config.getItemIdentityName(item)] = item
+                end
+            end
             for ident, item in pairs(items) do
-                if tunnel and item.stock then
-                    local nbt       = getNBT(item)
-                    local available = backend.getAmountAvailable(nbt)
-                    if available < item.stock then
-                        requestItemToStock(ident, nbt, item.stock - available, item.craftable)
-                        os.sleep(1)
-                    else
-                        os.sleep(0.5) -- will make function slow but not affect GUI and shop too much
-                    end
+                if item.stock and item.stock > stored[ident].size then
+                    log.debug("Requesting item " .. ident .. " " .. tostring(item.stock - stored[ident].size))
+                    requestItemToStock(ident, getNBT(item), item.stock - stored[ident].size, item.craftable)
+                    os.sleep(0.25)
                 end
             end
         end
@@ -653,7 +666,7 @@ main_loop()
 -- TODO: show loading progress on startup
 -- TODO: add category for all items
 -- TODO: add search
--- TODO: use flushing only on startup and after mass export
+-- TODO: use flushing only on startup and after mass export -> not using mass export anymore
 -- TODO: use ntptime module
 
 -- TODO: check if enough storage cells are available for a transaction

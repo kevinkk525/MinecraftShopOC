@@ -295,6 +295,11 @@ function backend.getAmountAvailable(nbt)
     return 0
 end
 
+function backend.getAmountItemsInNetwork()
+    local items = me_storage.getItemsInNetwork()
+    return items.n
+end
+
 function backend.exportIntoChest(item, size, progress_func)
     -- return: success, #items already exported
     backend.storeItemInDB(item)

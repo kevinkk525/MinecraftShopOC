@@ -1,0 +1,690 @@
+[
+  {
+    "name": "minecraft:iron_ingot",
+    "maxDamage": 0,
+    "label": "Iron Ingot",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 4,
+      "16": 64,
+      "32": 128,
+      "64": 256,
+      "256": 1024,
+      "1024": 4096,
+      "2016": 8064,
+      "4032": 16128
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Copper Ingot",
+    "maxSize": 64,
+    "damage": 128,
+    "hasTag": false,
+    "amounts": {
+      "1": 4,
+      "16": 64,
+      "32": 128,
+      "64": 256,
+      "256": 1024,
+      "1024": 4096,
+      "2016": 8064,
+      "4032": 16128
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Tin Ingot",
+    "maxSize": 64,
+    "damage": 129,
+    "hasTag": false,
+    "amounts": {
+      "1": 4,
+      "16": 64,
+      "32": 128,
+      "64": 256,
+      "256": 1024,
+      "1024": 4096,
+      "2016": 8064,
+      "4032": 16128
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "enderio:item_alloy_ingot",
+    "maxDamage": 0,
+    "label": "Electrical Steel Ingot",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 5,
+      "16": 80,
+      "32": 160,
+      "64": 320,
+      "256": 1280,
+      "1024": 5120,
+      "2016": 10080,
+      "4032": 20160
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "draconicevolution:draconium_ingot",
+    "maxDamage": 0,
+    "label": "Draconium Ingot",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 25,
+      "16": 400,
+      "32": 800,
+      "64": 1600,
+      "256": 6400,
+      "1024": 25600,
+      "2016": 50400,
+      "4032": 100800
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Aluminum Ingot",
+    "maxSize": 64,
+    "damage": 132,
+    "hasTag": false,
+    "amounts": {
+      "1": 5,
+      "16": 80,
+      "32": 160,
+      "64": 320,
+      "256": 1280,
+      "1024": 5120,
+      "2016": 10080,
+      "4032": 20160
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "tconstruct:ingots",
+    "maxDamage": 0,
+    "label": "Ardite Ingot",
+    "maxSize": 64,
+    "damage": 1,
+    "hasTag": false,
+    "amounts": {
+      "1": 30,
+      "16": 480,
+      "32": 960,
+      "64": 1920,
+      "256": 7680,
+      "1024": 30720,
+      "2016": 60480,
+      "4032": 120960
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "tconstruct:ingots",
+    "maxDamage": 0,
+    "label": "Cobalt Ingot",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 30,
+      "16": 480,
+      "32": 960,
+      "64": 1920,
+      "256": 7680,
+      "1024": 30720,
+      "2016": 60480,
+      "4032": 120960
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Electrum Ingot",
+    "maxSize": 64,
+    "damage": 161,
+    "hasTag": false,
+    "amounts": {
+      "1": 12,
+      "16": 192,
+      "32": 384,
+      "64": 768,
+      "256": 3072,
+      "1024": 12288,
+      "2016": 24192,
+      "4032": 48384
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "enderio:item_alloy_ingot",
+    "maxDamage": 0,
+    "label": "End Steel Ingot",
+    "maxSize": 64,
+    "damage": 8,
+    "hasTag": false,
+    "amounts": {
+      "1": 50,
+      "16": 800,
+      "32": 1600,
+      "64": 3200,
+      "256": 12800,
+      "1024": 51200,
+      "2016": 100800,
+      "4032": 201600
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "minecraft:gold_ingot",
+    "maxDamage": 0,
+    "label": "Gold Ingot",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 9,
+      "16": 144,
+      "32": 288,
+      "64": 576,
+      "256": 2304,
+      "1024": 9216,
+      "2016": 18144,
+      "4032": 36288
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Bronze Ingot",
+    "maxSize": 64,
+    "damage": 163,
+    "hasTag": false,
+    "amounts": {
+      "1": 10,
+      "16": 160,
+      "32": 320,
+      "64": 640,
+      "256": 2560,
+      "1024": 10240,
+      "2016": 20160,
+      "4032": 40320
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "enderio:item_alloy_ingot",
+    "maxDamage": 0,
+    "label": "Dark Steel Ingot",
+    "maxSize": 64,
+    "damage": 6,
+    "hasTag": false,
+    "amounts": {
+      "1": 25,
+      "16": 400,
+      "32": 800,
+      "64": 1600,
+      "256": 6400,
+      "1024": 25600,
+      "2016": 50400,
+      "4032": 100800
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Invar Ingot",
+    "maxSize": 64,
+    "damage": 162,
+    "hasTag": false,
+    "amounts": {
+      "1": 10,
+      "16": 160,
+      "32": 320,
+      "64": 640,
+      "256": 2560,
+      "1024": 10240,
+      "2016": 20160,
+      "4032": 40320
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "bigreactors:ingotcyanite",
+    "maxDamage": 0,
+    "label": "Cyanite Ingot",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 5,
+      "16": 88,
+      "32": 176,
+      "64": 352,
+      "256": 1408,
+      "1024": 5632,
+      "2016": 11088,
+      "4032": 22176
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "bigreactors:dustyellorium",
+    "maxDamage": 0,
+    "label": "Yellorium Dust",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 4,
+      "16": 75,
+      "32": 150,
+      "64": 300,
+      "256": 1200,
+      "1024": 4800,
+      "2016": 9450,
+      "4032": 18900
+    },
+    "stock": 8064
+  },
+  {
+    "name": "enderio:item_alloy_ingot",
+    "maxDamage": 0,
+    "label": "Energetic Alloy Ingot",
+    "maxSize": 64,
+    "damage": 1,
+    "hasTag": false,
+    "amounts": {
+      "1": 15,
+      "16": 240,
+      "32": 480,
+      "64": 960,
+      "256": 3840,
+      "1024": 15360,
+      "2016": 30240,
+      "4032": 60480
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Enderium Ingot",
+    "maxSize": 64,
+    "damage": 167,
+    "hasTag": false,
+    "amounts": {
+      "1": 28,
+      "16": 448,
+      "32": 896,
+      "64": 1792,
+      "256": 7168,
+      "1024": 28672,
+      "2016": 56448,
+      "4032": 112896
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Iridium Ingot",
+    "maxSize": 64,
+    "damage": 135,
+    "hasTag": false,
+    "amounts": {
+      "1": 7,
+      "16": 125,
+      "32": 250,
+      "64": 500,
+      "256": 2000,
+      "1024": 8000,
+      "2016": 15750,
+      "4032": 31500
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Lead Ingot",
+    "maxSize": 64,
+    "damage": 131,
+    "hasTag": false,
+    "amounts": {
+      "1": 5,
+      "16": 80,
+      "32": 160,
+      "64": 320,
+      "256": 1280,
+      "1024": 5120,
+      "2016": 10080,
+      "4032": 20160
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Lumium Ingot",
+    "maxSize": 64,
+    "damage": 166,
+    "hasTag": false,
+    "amounts": {
+      "1": 12,
+      "16": 192,
+      "32": 384,
+      "64": 768,
+      "256": 3072,
+      "1024": 12288,
+      "2016": 24192,
+      "4032": 48384
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Mana Infused Ingot",
+    "maxSize": 64,
+    "damage": 136,
+    "hasTag": false,
+    "amounts": {
+      "1": 4,
+      "16": 64,
+      "32": 128,
+      "64": 256,
+      "256": 1024,
+      "1024": 4096,
+      "2016": 8064,
+      "4032": 16128
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Nickel Ingot",
+    "maxSize": 64,
+    "damage": 133,
+    "hasTag": false,
+    "amounts": {
+      "1": 8,
+      "16": 128,
+      "32": 256,
+      "64": 512,
+      "256": 2048,
+      "1024": 8192,
+      "2016": 16128,
+      "4032": 32256
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Platinum Ingot",
+    "maxSize": 64,
+    "damage": 134,
+    "hasTag": false,
+    "amounts": {
+      "1": 12,
+      "16": 192,
+      "32": 384,
+      "64": 768,
+      "256": 3072,
+      "1024": 12288,
+      "2016": 24192,
+      "4032": 48384
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Silver Ingot",
+    "maxSize": 64,
+    "damage": 130,
+    "hasTag": false,
+    "amounts": {
+      "1": 8,
+      "16": 128,
+      "32": 256,
+      "64": 512,
+      "256": 2048,
+      "1024": 8192,
+      "2016": 16128,
+      "4032": 32256
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "enderio:item_alloy_ingot",
+    "maxDamage": 0,
+    "label": "Vibrant Alloy Ingot",
+    "maxSize": 64,
+    "damage": 2,
+    "hasTag": false,
+    "amounts": {
+      "1": 30,
+      "16": 480,
+      "32": 960,
+      "64": 1920,
+      "256": 7680,
+      "1024": 30720,
+      "2016": 60480,
+      "4032": 120960
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "enderio:item_alloy_ingot",
+    "maxDamage": 0,
+    "label": "Redstone Alloy Ingot",
+    "maxSize": 64,
+    "damage": 3,
+    "hasTag": false,
+    "amounts": {
+      "1": 3,
+      "16": 48,
+      "32": 96,
+      "64": 192,
+      "256": 768,
+      "1024": 3072,
+      "2016": 6048,
+      "4032": 12096
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "enderio:item_alloy_ingot",
+    "maxDamage": 0,
+    "label": "Soularium Ingot",
+    "maxSize": 64,
+    "damage": 7,
+    "hasTag": false,
+    "amounts": {
+      "1": 2,
+      "16": 47,
+      "32": 95,
+      "64": 190,
+      "256": 760,
+      "1024": 3040,
+      "2016": 5985,
+      "4032": 11970
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Signalum Ingot",
+    "maxSize": 64,
+    "damage": 165,
+    "hasTag": false,
+    "amounts": {
+      "1": 12,
+      "16": 192,
+      "32": 384,
+      "64": 768,
+      "256": 3072,
+      "1024": 12288,
+      "2016": 24192,
+      "4032": 48384
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "enderio:item_alloy_ingot",
+    "maxDamage": 0,
+    "label": "Pulsating Iron Ingot",
+    "maxSize": 64,
+    "damage": 5,
+    "hasTag": false,
+    "amounts": {
+      "1": 15,
+      "16": 240,
+      "32": 480,
+      "64": 960,
+      "256": 3840,
+      "1024": 15360,
+      "2016": 30240,
+      "4032": 60480
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "minecraft:log",
+    "maxDamage": 0,
+    "label": "Spruce Wood",
+    "maxSize": 64,
+    "damage": 1,
+    "hasTag": false,
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "categories": [
+      "wood"
+    ],
+    "stock": 16128
+  },
+  {
+    "name": "appliedenergistics2:portable_cell",
+    "maxDamage": 32,
+    "label": "Portable Cell",
+    "maxSize": 1,
+    "damage": 0,
+    "hasTag": true,
+    "amounts": {
+      "1": 50
+    },
+    "label_friendly": "Charged Portable Cell",
+    "stock": 50
+  }
+]

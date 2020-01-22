@@ -203,6 +203,11 @@ local function modem_message(event_name, localAddress, remoteAddress, port, dist
         log.error("Message incorrectly formatted: " .. message)
         return
     end
+    if os.time() - request.time > 30000 then
+        -- request older than 20-100s
+        log.debug("Request for ident " .. request.ident .. " " .. tostring(request.amount) .. " too old: " .. tostring(os.time() - request.time))
+        return
+    end
     for i, req in pairs(items) do
         if req.ident == request.ident then
             req.amount = request.amount
@@ -401,6 +406,8 @@ local function scan_errors()
             if available.n == 1 and available[1].size > 0 then
                 -- will keep exporting
                 item.error = nil
+                refresh_textbox_errors()
+                refresh_textbox_requested()
             elseif item.task then
                 -- still crafting
             elseif me.getCraftables(item.nbt).n == 1 and item.craftable then
