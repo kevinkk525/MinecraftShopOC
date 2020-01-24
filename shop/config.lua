@@ -243,10 +243,10 @@ config.price_lease_storage_cell        = 50
 
 --
 config.path_file_items                 = "/home/shop/items_dirtcraft.json"
-config.path_accounts                   = "/mnt/ae7/accounts/"
-config.path_money_disks                = "/mnt/ae7/money_disks.json"
-config.path_logfile                    = "/mnt/ae7/shop.log"
-config.path_logfile_transactions       = "/mnt/ae7/transactions.log"
+config.path_accounts                   = "/mnt/b96/accounts/"
+config.path_money_disks                = "/mnt/b96/money_disks.json"
+config.path_logfile                    = "/mnt/b96/shop.log"
+config.path_logfile_transactions       = "/mnt/b96/transactions.log"
 config.log_lines_textbox               = 500
 config.max_filesize_log                = 4 * 1024 * 1024 --4 MB
 config.buyer_start_money               = config.price_lease_storage_cell + 50
