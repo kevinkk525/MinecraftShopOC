@@ -1034,7 +1034,7 @@
       "256": 164,
       "1024": 656
     },
-    "stock": 4000
+    "stock": 3200
   },
   {
     "name": "minecraft:ghast_tear",
@@ -2393,5 +2393,188 @@
       "64": 1280
     },
     "stock": 256
+  },
+  {
+    "label": "Draconic Core",
+    "maxDamage": 0,
+    "maxSize": 64,
+    "damage": 0,
+    "name": "draconicevolution:draconic_core",
+    "hasTag": false,
+    "amounts": {
+      "1": 170,
+      "4": 680,
+      "8": 1360,
+      "16": 2720
+    },
+    "stock": 100
+  },
+  {
+    "label": "Wyvern Core",
+    "maxDamage": 0,
+    "maxSize": 64,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_core",
+    "hasTag": false,
+    "amounts": {
+      "1": 490,
+      "4": 1960,
+      "8": 3920
+    },
+    "stock": 50
+  },
+  {
+    "label": "Wyvern Energy Core",
+    "maxDamage": 0,
+    "maxSize": 64,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_energy_core",
+    "hasTag": false,
+    "amounts": {
+      "1": 342,
+      "4": 1368,
+      "8": 2736
+    },
+    "stock": 64
+  },
+  {
+    "label": "Wyvern Flux Capacitor",
+    "Energy": 64000000,
+    "hasTag": true,
+    "maxDamage": 0,
+    "damage": 0,
+    "name": "draconicevolution:draconium_capacitor",
+    "maxSize": 1,
+    "amounts": {
+      "1": 1958
+    },
+    "stock": 16,
+    "label_friendly": "Wyvern Flux Capacitor (charged)"
+  },
+  {
+    "label": "Axe of the Wyvern",
+    "Energy": 4000000,
+    "hasTag": true,
+    "maxDamage": 0,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_axe",
+    "maxSize": 1,
+    "amounts": {
+      "1": 1000
+    },
+    "stock": 16,
+    "label_friendly": "Axe of the Wyvern (charged)"
+  },
+  {
+    "label": "Bow of the Wyvern",
+    "Energy": 4000000,
+    "hasTag": true,
+    "maxDamage": 0,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_bow",
+    "maxSize": 1,
+    "amounts": {
+      "1": 3000
+    },
+    "stock": 16,
+    "label_friendly": "Bow of the Wyvern (charged)"
+  },
+  {
+    "label": "Pickaxe of the Wyvern",
+    "Energy": 4000000,
+    "hasTag": true,
+    "maxDamage": 0,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_pick",
+    "maxSize": 1,
+    "amounts": {
+      "1": 1400
+    },
+    "stock": 16,
+    "label_friendly": "Pickaxe of the Wyvern (charged)"
+  },
+  {
+    "label": "Shovel of the Wyvern",
+    "Energy": 4000000,
+    "hasTag": true,
+    "maxDamage": 0,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_shovel",
+    "maxSize": 1,
+    "amounts": {
+      "1": 1000
+    },
+    "stock": 16,
+    "label_friendly": "Shovel of the Wyvern (charged)"
+  },
+  {
+    "label": "Sword of the Wyvern",
+    "Energy": 4000000,
+    "hasTag": true,
+    "maxDamage": 0,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_sword",
+    "maxSize": 1,
+    "amounts": {
+      "1": 1000
+    },
+    "stock": 16,
+    "label_friendly": "Sword of the Wyvern (charged)"
+  },
+  {
+    "label": "Wyvern Helm",
+    "Energy": 4000000,
+    "hasTag": true,
+    "maxDamage": -1,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_helm",
+    "maxSize": 1,
+    "amounts": {
+      "1": 1000
+    },
+    "stock": 16,
+    "label_friendly": "Wyvern Helm (charged)"
+  },
+  {
+    "label": "Wyvern Chestplate",
+    "Energy": 4000000,
+    "hasTag": true,
+    "maxDamage": -1,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_chest",
+    "maxSize": 1,
+    "amounts": {
+      "1": 1000
+    },
+    "stock": 16,
+    "label_friendly": "Wyvern Chestplate (charged)"
+  },
+  {
+    "label": "Wyvern Leggings",
+    "Energy": 4000000,
+    "hasTag": true,
+    "maxDamage": -1,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_legs",
+    "maxSize": 1,
+    "amounts": {
+      "1": 1000
+    },
+    "stock": 16,
+    "label_friendly": "Wyvern Leggings (charged)"
+  },
+  {
+    "label": "Wyvern Boots",
+    "Energy": 4000000,
+    "hasTag": true,
+    "maxDamage": -1,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_boots",
+    "maxSize": 1,
+    "amounts": {
+      "1": 1000
+    },
+    "stock": 16,
+    "label_friendly": "Wyvern Boots (charged)"
   }
 ]
