@@ -140,6 +140,10 @@ end
 function accs.saveBuyer(buyer)
     local st = json.encode(buyer)
     local f  = io.open(config.path_accounts .. buyer.name, "w")
+    if not f then
+        log.critical("Could not write to account of " .. buyer.name .. " values " .. st)
+        -- TODO: what to do if FS unable to write to account?
+    end
     f:write(st)
     f:close()
 end
@@ -151,12 +155,20 @@ function accs.getBuyer(name)
         return current_buyer
     end
     if fs.exists(config.path_accounts .. name) then
-        f     = io.open(config.path_accounts .. name, "r")
+        f = io.open(config.path_accounts .. name, "r")
+        if not f then
+            log.critical("Could not open file account for " .. name)
+            -- TODO: what to do if FS unable to read account?
+        end
         buyer = f:read("*a")
         f:close()
         buyer = json.decode(buyer)
     else
-        f     = io.open(config.path_accounts .. name, "w")
+        f = io.open(config.path_accounts .. name, "w")
+        if not f then
+            log.critical("Could not create account for " .. name)
+            -- TODO: what to do if FS unable to create account?
+        end
         buyer = newBuyer(name)
         f:write(json.encode(buyer))
         f:close()

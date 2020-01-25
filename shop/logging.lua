@@ -30,11 +30,14 @@ function log.init(path, path_transactions, lines_textbox, filesize_log)
         logfile_transactions = io.open(path_logfile_transactions, "a")
         if logfile_transactions == nil then
             print("Error opening the logfile transactions!")
+            return false
         end
     end
     if logfile == nil then
         print("Error opening the logfile!")
+        return false
     end
+    return true
 end
 
 local function date()

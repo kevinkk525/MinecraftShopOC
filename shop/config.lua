@@ -243,16 +243,17 @@ config.price_lease_storage_cell        = 50
 
 --
 config.path_file_items                 = "/home/shop/items_dirtcraft.json"
-config.path_accounts                   = "/mnt/b96/accounts/"
-config.path_money_disks                = "/mnt/b96/money_disks.json"
-config.path_logfile                    = "/mnt/b96/shop.log"
-config.path_logfile_transactions       = "/mnt/b96/transactions.log"
+config.path_mounts                     = { "/mnt/98a", "/mnt/510", "/mnt/fbd" }
+config.path_accounts                   = "/mnt/98a/accounts/"
+config.path_money_disks                = "/mnt/98a/money_disks.json"
+config.path_logfile                    = "/mnt/510/shop.log"
+config.path_logfile_transactions       = "/mnt/fbd/transactions.log"
 config.log_lines_textbox               = 500
-config.max_filesize_log                = 4 * 1024 * 1024 --4 MB
+config.max_filesize_log                = 2 * 1024 * 1024 --2 MB
 config.buyer_start_money               = config.price_lease_storage_cell + 50
 config.owner                           = "kevinkk525"
 config.shop_name                       = "KK's Shop"
-config.version                         = "0.2Beta"
+config.version                         = "0.6Beta"
 config.stock_scanning_interval         = 300 -- 5 minutes
 config.dropper_export_max_slots        = 9
 config.dropper_export_max_items        = 16

@@ -4,9 +4,33 @@
 --- DateTime: 06.12.2019 21:45
 ---
 
-local config = require("shop.config")
-local log    = require("shop.logging")
-log.init(config.path_logfile, config.path_logfile_transactions, config.log_lines_textbox, config.max_filesize_log)
+local config           = require("shop.config")
+local filesystem       = require("filesystem")
+local should_terminate = false
+local function main_loop()
+    while should_terminate == false do
+        pcall(os.sleep, 5)
+        -- do nothing but prevent hard interrupt CTRL+ALT+C from terminating program
+        -- too many interrupts can however make the PC freeze.. would need an external WDT?
+    end
+    print("main exited")
+end
+
+if type(config.path_mounts) ~= "table" then
+    config.path_mounts = { config.path_mounts }
+end
+for i, path in pairs(config.path_mounts) do
+    if not filesystem.exists(path) then
+        print("Sorry, the mountpoint " .. path .. " could not be found. Can't start")
+        main_loop()
+    end
+end
+
+local log = require("shop.logging")
+if not log.init(config.path_logfile, config.path_logfile_transactions, config.log_lines_textbox, config.max_filesize_log) then
+    print("Initializing logs failed")
+    main_loop()
+end
 local thread    = require("thread")
 local component = require("component")
 component.gpu.setResolution(160, 50)
@@ -22,17 +46,15 @@ local math     = require("math")
 log.setTextBox(gui.textBox_logs)
 log.setTextBoxTransactions(gui.textBox_transactions)
 
-local should_terminate = false
-
 ----
-local items            = {}
-local items_tree       = {}
-local payer            = { ["name"] = nil, ["time"] = 0 }
+local items           = {}
+local items_tree      = {}
+local payer           = { ["name"] = nil, ["time"] = 0 }
 
 -------------------------------
 -- GUI
 
-gui.menu_exit.onTouch  = function(application, object, e2, e3, e4, e5, e6, user)
+gui.menu_exit.onTouch = function(application, object, e2, e3, e4, e5, e6, user)
     if user == config.owner then
         should_terminate = true
         gui.application:stop()
@@ -569,7 +591,7 @@ end
 
 local function wrap(name, func, ...)
     local no_interrupt = false
-    if name == "info" then
+    if name == "info" or name == "stock" then
         no_interrupt = true
     end
     while true and not should_terminate do
@@ -598,43 +620,43 @@ local function stock()
             os.sleep(5)
             if should_terminate then
                 print("Stock exited")
+                log.info("Stock exited e1")
                 return
             end
         end
         os.sleep(5)
-        local its = component.proxy(config.address_me_storage).getItemsInNetwork()
-        if its.n == 0 or (its.n == 1 and config.getItemIdentityName(its[1]) == config.identity_portable_cell) then
-            log.warn("ME system empty, n " .. tostring(its.n))
-            -- n=1 are portable cells in normal chest
+        local me, err = component.proxy(config.address_me_storage)
+        if me == nil and err then
+            log.warn("ME system not available")
         else
-            log.debug("Found " .. tostring(its.n) .. " items in ME")
-            local stored = {}
-            for i, item in pairs(its) do
-                if i ~= "n" then
-                    stored[config.getItemIdentityName(item)] = item
+            local its = me.getItemsInNetwork()
+            if its.n == 0 or (its.n == 1 and config.getItemIdentityName(its[1]) == config.identity_portable_cell) then
+                log.warn("ME system empty, n " .. tostring(its.n))
+                -- n=1 are portable cells in normal chest
+            else
+                local stored = {}
+                for i, item in pairs(its) do
+                    if i ~= "n" then
+                        stored[config.getItemIdentityName(item)] = item
+                    end
                 end
-            end
-            for ident, item in pairs(items) do
-                if item.stock and stored[ident] == nil then
-                    log.warn("stored variable line 619 main.lua is nil for item " .. ident)
-                elseif item.stock and item.stock > stored[ident].size then
-                    log.debug("Requesting item " .. ident .. " " .. tostring(item.stock - stored[ident].size))
-                    requestItemToStock(ident, getNBT(item), item.stock - stored[ident].size, item.craftable)
-                    os.sleep(0.25)
+                local reqc = 0
+                for ident, item in pairs(items) do
+                    if item.stock and stored[ident] == nil then
+                        -- item not available in ME system yet
+                    elseif item.stock and item.stock > stored[ident].size then
+                        --log.debug("Requesting item " .. ident .. " " .. tostring(item.stock - stored[ident].size))
+                        reqc = reqc + 1
+                        requestItemToStock(ident, getNBT(item), item.stock - stored[ident].size, item.craftable)
+                        os.sleep(0.25)
+                    end
                 end
+                log.debug("Found " .. tostring(its.n) .. " items in ME, requested " .. tostring(reqc) .. " items")
             end
         end
     end
+    log.info("Stock exited e2")
     print("Stock exited")
-end
-
-local function main_loop()
-    while should_terminate == false do
-        pcall(os.sleep, 5)
-        -- do nothing but prevent hard interrupt CTRL+ALT+C from terminating program
-        -- too many interrupts can however make the PC freeze.. would need an external WDT?
-    end
-    print("main exited")
 end
 
 local function init()
