@@ -12198,5 +12198,112 @@
     "damage": 0,
     "name": "draconicevolution:wyvern_boots",
     "maxSize": 1
+  },
+  {
+    "name": "draconicevolution:draconic_ingot",
+    "maxDamage": 0,
+    "maxSize": 64,
+    "hasTag": false,
+    "damage": 0,
+    "label": "Awakened Draconium Ingot"
+  },
+  {
+    "name": "draconicevolution:draconium_capacitor",
+    "Energy": 256000000,
+    "maxDamage": 0,
+    "maxSize": 1,
+    "damage": 1,
+    "label": "Draconic Flux Capacitor",
+    "hasTag": true
+  },
+  {
+    "name": "draconicevolution:draconic_axe",
+    "Energy": 16000000,
+    "maxDamage": 0,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Axe",
+    "hasTag": true
+  },
+  {
+    "name": "draconicevolution:draconic_bow",
+    "Energy": 16000000,
+    "maxDamage": 0,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Bow",
+    "hasTag": true
+  },
+  {
+    "name": "draconicevolution:draconic_pick",
+    "Energy": 16000000,
+    "maxDamage": 0,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Pickaxe",
+    "hasTag": true
+  },
+  {
+    "name": "draconicevolution:draconic_shovel",
+    "Energy": 16000000,
+    "maxDamage": 0,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Shovel",
+    "hasTag": true
+  },
+  {
+    "name": "draconicevolution:draconic_sword",
+    "Energy": 16000000,
+    "maxDamage": 0,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Sword",
+    "hasTag": true
+  },
+  {
+    "name": "draconicevolution:draconic_helm",
+    "Energy": 16000000,
+    "maxDamage": -1,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Helm",
+    "hasTag": true
+  },
+  {
+    "name": "draconicevolution:draconic_chest",
+    "Energy": 16000000,
+    "maxDamage": -1,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Chestplate",
+    "hasTag": true
+  },
+  {
+    "name": "draconicevolution:draconic_legs",
+    "Energy": 16000000,
+    "maxDamage": -1,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Leggings",
+    "hasTag": true
+  },
+  {
+    "name": "draconicevolution:draconic_boots",
+    "Energy": 16000000,
+    "maxDamage": -1,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Boots",
+    "hasTag": true
+  },
+  {
+    "name": "draconicevolution:draconic_staff_of_power",
+    "Energy": 48000000,
+    "maxDamage": 0,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Staff of Power",
+    "hasTag": true
   }
 ]
