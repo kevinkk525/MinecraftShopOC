@@ -183,6 +183,8 @@ config.side_redstone_vacuum_chest      = sides.north
 -- Redstone block dropper
 config.address_redstone_dropper        = "194d8cf9-26ea-48f5-b9b0-dc7601d95f57"
 config.side_redstone_dropper           = sides.down
+-- Redstone block autostart
+config.address_redstone_autostart      = "f87c4380-4feb-401a-ab0a-bccc2b213cdf"
 
 -- Transposer ME Chest export/import
 config.address_transposer_me_chest     = "a26ffa56-e265-4105-b217-9306129a37e9"

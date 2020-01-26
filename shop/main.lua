@@ -4,7 +4,11 @@
 --- DateTime: 06.12.2019 21:45
 ---
 
-local config           = require("shop.config")
+local config    = require("shop.config")
+local component = require("component")
+if config.address_redstone_autostart then
+    component.proxy(config.address_redstone_autostart).setWakeThreshold(10)
+end
 local filesystem       = require("filesystem")
 local should_terminate = false
 local function main_loop()
@@ -31,8 +35,7 @@ if not log.init(config.path_logfile, config.path_logfile_transactions, config.lo
     print("Initializing logs failed")
     main_loop()
 end
-local thread    = require("thread")
-local component = require("component")
+local thread = require("thread")
 component.gpu.setResolution(160, 50)
 local gui      = require("shop.shopGUI")
 local GUI      = require("GUI")
