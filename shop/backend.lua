@@ -288,7 +288,16 @@ function backend.getAmountAvailable(nbt)
     local item = me_storage.getItemsInNetwork(nbt)
     if item.n >= 1 then
         if item.n > 1 then
-            log.warn("Found multiple entries in me for " .. config.getItemIdentityName(nbt))
+            local ident = config.getItemIdentityName(nbt)
+            item.n      = nil
+            for i, it in pairs(item) do
+                if config.getItemIdentityName(it) == ident then
+                    --log.debug("Found multiple entries in me for " .. ident .. ", chose according to ident equality")
+                    return it.size
+                end
+            end
+            log.error("Found multiple entries in me for " .. config.getItemIdentityName(nbt) .. ", but found no ident match. Preventing crafting.")
+            return math.huge
         end
         return item[1].size
     end

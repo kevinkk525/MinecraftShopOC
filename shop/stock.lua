@@ -62,7 +62,16 @@ local function getAmountAvailable(nbt)
     local item      = me.getItemsInNetwork(nbt)
     if item.n >= 1 then
         if item.n > 1 then
-            log.warn("Found multiple entries in me for " .. config.getItemIdentityName(nbt))
+            local ident = config.getItemIdentityName(nbt)
+            item.n      = nil
+            for i, it in pairs(item) do
+                if config.getItemIdentityName(it) == ident then
+                    --log.debug("Found multiple entries in me for " .. ident .. ", chose according to ident equality")
+                    return it.size
+                end
+            end
+            log.error("Found multiple entries in me for " .. config.getItemIdentityName(nbt) .. ", but found no ident match. Preventing crafting.")
+            return math.huge
         end
         return item[1].size
     end
@@ -225,7 +234,22 @@ local export_should_stop = false
 local function exportItem(ident, item, size)
     export_should_stop = false
     gui.label_current_export.setValue(ident .. "    " .. tostring(size))
+    -- for some items multiple entries will be found by me.getItemsInNetwork(nbt), one craftable and one not.
+    -- e.g. draconic pickaxe
+    -- This results in the not craftable one (the used one) being stored in the database and exported to shop
+    -- only workaround is to compare idents and pull the correct item with isCraftable into DB.
+    -- workaround only works on Stock side since on shop side nothing is craftable and therefore isCraftable will always be false.
+    -- Therefore no such items can get into the shop.
     db.clear(1)
+    local available = me.getItemsInNetwork(item)
+    if available.n > 1 then
+        available.n = nil
+        for i, it in pairs(available) do
+            if config.getItemIdentityName(it) == ident then
+                item = it
+            end
+        end
+    end
     me.store(item, db.address, 1, 1)
     local fs, hs, s          = config.calculateExportActivations(item, size)
     local amount, error
@@ -402,8 +426,8 @@ local function scan_errors()
         local i = 1
         while i <= #items and items[i] do
             local item      = items[i]
-            local available = me.getItemsInNetwork(item.nbt)
-            if available.n == 1 and available[1].size > 0 then
+            local available = getAmountAvailable(item.nbt)
+            if available > 0 then
                 -- will keep exporting
                 item.error = nil
                 refresh_textbox_errors()
