@@ -5,37 +5,37 @@
 ---
 
 
-local GUI                          = require("GUI")
-local unicode                      = require("unicode")
-local config                       = require("shop.config_stock")
-local notice                       = require("shop.gui_notice")
+local GUI     = require("GUI")
+local unicode = require("unicode")
+local config  = require("shop.config_stock")
+require("gui_extensions")
 
 ---------------------------------------------------------------------------------
 local gui                          = {}
 gui.on_alert                       = false
 
-local application                  = GUI.application()
+local workspace                    = GUI.workspace()
 
-local panel                        = application:addChild(GUI.panel(1, 1, application.width, application.height, 0x2D2D2D))
-local menu                         = application:addChild(GUI.menu(1, 1, application.width, 0xEEEEEE, 0x666666, 0x3366CC, 0xFFFFFF))
-local label_uptime                 = application:addChild(GUI.label(140, 2, 20, 1, 0x33DB40, "Uptime: 0"))
-local label_ram                    = application:addChild(GUI.label(120, 2, 20, 1, 0x33DB40, "RAM free: 0"))
-local label_current_export         = application:addChild(GUI.label(1, 2, 20, 1, 0x33DB40, "Current export:"))
-local textBox_scheduled            = application:addChild(GUI.textBox(1, 5, application.width / 2, application.height / 2, 0xF0F0F0, 0x2D2D2D, {}, 1, 1, 0))
+local panel                        = workspace:addChild(GUI.panel(1, 1, workspace.width, workspace.height, 0x2D2D2D))
+local menu                         = workspace:addChild(GUI.menu(1, 1, workspace.width, 0xEEEEEE, 0x666666, 0x3366CC, 0xFFFFFF))
+local label_uptime                 = workspace:addChild(GUI.label(140, 2, 20, 1, 0x33DB40, "Uptime: 0"))
+local label_ram                    = workspace:addChild(GUI.label(120, 2, 20, 1, 0x33DB40, "RAM free: 0"))
+local label_current_export         = workspace:addChild(GUI.label(1, 2, 20, 1, 0x33DB40, "Current export:"))
+local textBox_scheduled            = workspace:addChild(GUI.textBox(1, 5, workspace.width / 2, workspace.height / 2, 0xF0F0F0, 0x2D2D2D, {}, 1, 1, 0))
 textBox_scheduled.scrollBarEnabled = true
-local textBox_errors               = application:addChild(GUI.textBox(2, application.height / 2 + 7, application.width - 2, application.height / 2 - 7, 0xF0F0F0, 0x2D2D2D, {}, 1, 1, 0))
+local textBox_errors               = workspace:addChild(GUI.textBox(2, workspace.height / 2 + 7, workspace.width - 2, workspace.height / 2 - 7, 0xF0F0F0, 0x2D2D2D, {}, 1, 1, 0))
 textBox_errors.scrollBarEnabled    = true
-local textBox_crafting             = application:addChild(GUI.textBox(application.width / 2 + 2, 5, application.width / 2 - 1, application.height / 2, 0xF0F0F0, 0x2D2D2D, {}, 1, 1, 0))
+local textBox_crafting             = workspace:addChild(GUI.textBox(workspace.width / 2 + 2, 5, workspace.width / 2 - 1, workspace.height / 2, 0xF0F0F0, 0x2D2D2D, {}, 1, 1, 0))
 textBox_crafting.scrollBarEnabled  = true
-local label_scheduled              = application:addChild(GUI.label(textBox_scheduled.x, textBox_scheduled.y - 1, 20, 1, 0x33DB40, "Scheduled items:"))
-local label_errors                 = application:addChild(GUI.label(textBox_errors.x, textBox_errors.y - 1, 20, 1, 0x33DB40, "Errors:"))
-local label_crafting               = application:addChild(GUI.label(textBox_crafting.x, textBox_crafting.y - 1, 20, 1, 0x33DB40, "Crafting:"))
-local textBox_logs                 = application:addChild(GUI.textBox(1, 2, application.width, application.height, 0xF0F0F0, 0x2D2D2D, {}, 1, 1, 0))
+local label_scheduled              = workspace:addChild(GUI.label(textBox_scheduled.x, textBox_scheduled.y - 1, 20, 1, 0x33DB40, "Scheduled items:"))
+local label_errors                 = workspace:addChild(GUI.label(textBox_errors.x, textBox_errors.y - 1, 20, 1, 0x33DB40, "Errors:"))
+local label_crafting               = workspace:addChild(GUI.label(textBox_crafting.x, textBox_crafting.y - 1, 20, 1, 0x33DB40, "Crafting:"))
+local textBox_logs                 = workspace:addChild(GUI.textBox(1, 2, workspace.width, workspace.height, 0xF0F0F0, 0x2D2D2D, {}, 1, 1, 0))
 textBox_logs.hidden                = true
 textBox_logs.scrollBarEnabled      = true
 
 -- gui module
-gui.application                    = application
+gui.workspace                      = workspace
 gui.panel                          = panel
 gui.menu                           = menu
 gui.label_uptime                   = label_uptime
@@ -51,7 +51,7 @@ gui.textBox_crafting               = textBox_crafting
 label_current_export.setValue      = function(val, draw)
     label_current_export.text = "Current export: " .. tostring(val)
     if draw ~= false then
-        application:draw()
+        workspace:draw()
     end
 end
 
@@ -134,14 +134,14 @@ menu:addItem(config.shop_name .. " version " .. config.version, 0x0).onTouch = f
     --GUI.alert("Hello world!")
 end
 
-menu:addItem("Logs").onTouch                                                 = function(application, object, e2, e3, e4, e5, e6, user)
+menu:addItem("Logs").onTouch                                                 = function(workspace, object, e2, e3, e4, e5, e6, user)
     if user == config.owner then
         textBox_logs.hidden = not textBox_logs.hidden
-        application:draw()
+        workspace:draw()
         return
     end
     --gui.on_alert = true
-    GUI.notice(application, 5, "You are not authorized to see the logs!")
+    GUI.notice(workspace, 5, "You are not authorized to see the logs!")
     -- gui.on_alert = false
 end
 gui.menu_exit                                                                = menu:addItem("Exit")

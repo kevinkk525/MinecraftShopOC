@@ -74,7 +74,7 @@ local function calculateCellsNeeded(trans)
     if cells == 1 and cell_slots_used <= config.dropper_export_max_slots and cell_items_stored <= config.dropper_export_max_items then
         -- no cell needed
         trans.leased_cells      = 0
-        trans.leased_value      = 0
+        trans.lease_value       = 0
         trans.transaction_value = trans.item_value
     else
         trans.leased_cells      = cells
@@ -271,7 +271,7 @@ config.dropper_export_max_items        = 16
 -- other screens are not accessible
 -- except for with shift click, so be careful with GUIs on other screens
 
--- install GUI library from: pastebin run ryhyXUKZ
+-- install forked GUI library from: pastebin run EVWjkBxg
 -- OpenOS updater: pastebin run -f icKy25PF
 
 return config

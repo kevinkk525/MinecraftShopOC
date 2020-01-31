@@ -57,14 +57,14 @@ local payer           = { ["name"] = nil, ["time"] = 0 }
 -------------------------------
 -- GUI
 
-gui.menu_exit.onTouch = function(application, object, e2, e3, e4, e5, e6, user)
+gui.menu_exit.onTouch = function(workspace, object, e2, e3, e4, e5, e6, user)
     if user == config.owner then
         should_terminate = true
-        gui.application:stop()
+        gui.workspace:stop()
         return
     end
     --gui.on_alert = true
-    GUI.notice(application, 5, "You are not authorized to terminate this program!")
+    GUI.notice(workspace, 5, "You are not authorized to terminate this program!")
     --gui.on_alert = false
 end
 
@@ -160,7 +160,7 @@ local function organizeItems(it)
 end
 
 gui.tree_items.onItemSelected   = function(selected, e1, e2, e3, e4, e5, user)
-    accounts.displayBuyerInformation(user, gui.textBox_buyerInfo, gui.application)
+    accounts.displayBuyerInformation(user, gui.textBox_buyerInfo, gui.workspace)
     local nbt                     = {}
     gui.tree_amounts.items        = {}
     gui.tree_amounts.selectedItem = nil
@@ -198,16 +198,16 @@ gui.tree_items.onItemSelected   = function(selected, e1, e2, e3, e4, e5, user)
     while gui.on_alert do
         os.sleep(0.1)
     end
-    gui.application:draw()
+    gui.workspace:draw()
 end
 
 gui.tree_amounts.onItemSelected = function(selected, e1, e2, e3, e4, e5, user)
-    accounts.displayBuyerInformation(user, gui.textBox_buyerInfo, gui.application)
+    accounts.displayBuyerInformation(user, gui.textBox_buyerInfo, gui.workspace)
     gui.button_addToCart.disabled = false
     while gui.on_alert do
         os.sleep(0.1)
     end
-    gui.application:draw()
+    gui.workspace:draw()
 end
 
 local function rebuildShoppingCart()
@@ -233,8 +233,8 @@ local function updateTransactionLabels()
     gui.label_cell_lease_value.setValue(gui.tree_shoppingCart.transaction.lease_value, false)
 end
 
-gui.button_addToCart.onTouch = function(application, button, e1, e2, e3, e4, e5, user)
-    accounts.displayBuyerInformation(user, gui.textBox_buyerInfo, gui.application)
+gui.button_addToCart.onTouch = function(workspace, button, e1, e2, e3, e4, e5, user)
+    accounts.displayBuyerInformation(user, gui.textBox_buyerInfo, gui.workspace)
     local item  = items[gui.tree_items.selectedItem]
     local label = item.label
     if item.label_friendly then
@@ -249,7 +249,7 @@ gui.button_addToCart.onTouch = function(application, button, e1, e2, e3, e4, e5,
     local available = backend.getAmountAvailable(nbt)
     if available < requested then
         --gui.on_alert = true
-        GUI.notice(application, 8, "Can't add this amount because not enough items available in the shop. Sorry")
+        GUI.notice(workspace, 8, "Can't add this amount because not enough items available in the shop. Sorry")
         --gui.on_alert = false
         return
     end
@@ -257,7 +257,7 @@ gui.button_addToCart.onTouch = function(application, button, e1, e2, e3, e4, e5,
     gui.button_confirm.disabled = false
     rebuildShoppingCart()
     updateTransactionLabels()
-    gui.application:draw()
+    gui.workspace:draw()
 end
 
 local function resetTransaction()
@@ -270,13 +270,13 @@ local function resetTransaction()
     gui.textBox_itemInfo.lines        = {}
     gui.button_confirm.disabled       = true
     updateTransactionLabels()
-    gui.application:draw()
+    gui.workspace:draw()
 end
 
-gui.button_abort.onTouch = function(application, button, e1, e2, e3, e4, e5, user)
+gui.button_abort.onTouch = function(workspace, button, e1, e2, e3, e4, e5, user)
     resetTransaction()
     --gui.on_alert = true
-    GUI.notice(application, 5, "Transaction aborted")
+    GUI.notice(workspace, 5, "Transaction aborted")
     --gui.on_alert = false
 end
 
@@ -291,7 +291,7 @@ local function rollbackTransaction(trans)
     accounts.addMoneyToBuyer(buyer, value)
     log.transaction(buyer.name .. " refunded " .. tostring(value) .. "$: " .. trans.toJson())
     --gui.on_alert = true
-    GUI.notice(gui.application, 15, "Sorry, exporting didn't work. We refunded you " .. value .. "$ for the missing items. Please contact the owner " .. config.owner)
+    GUI.notice(gui.workspace, 15, "Sorry, exporting didn't work. We refunded you " .. value .. "$ for the missing items. Please contact the owner " .. config.owner)
     --gui.on_alert = false
     backend.ejectPortableCell() -- just trying
 end
@@ -300,7 +300,7 @@ local function showExportProgress(done, requested)
     if done > 0 and requested > 0 then
         gui.progressBarItem.value        = math.floor(done / requested * 100)
         gui.progressBarItem.valuePostfix = "%, " .. tostring(done) .. "/" .. tostring(requested) .. " items"
-        gui.application:draw()
+        gui.workspace:draw()
     end
 end
 
@@ -313,7 +313,7 @@ local function exportItems(trans)
     gui.progressBarItem.hidden       = false
     gui.progressBarItem.valuePostfix = "%, " .. tostring(0) .. "/" .. tostring(0) .. " items"
     gui.progressBarItem.value        = 0
-    gui.application:draw()
+    gui.workspace:draw()
     local temp_until_ejected = {}
     local to_dropper         = true
     local redstone           = component.proxy(config.address_redstone_dropper)
@@ -396,7 +396,7 @@ local function exportItems(trans)
         end
         gui.progressBar.value        = math.floor(i / #trans.item_pairs * 100)
         gui.progressBar.valuePostfix = "%, " .. tostring(i) .. "/" .. tostring(#trans.item_pairs) .. " items"
-        gui.application:draw()
+        gui.workspace:draw()
     end
     if to_dropper then
         redstone.setOutput(config.side_redstone_dropper, 0)
@@ -416,24 +416,24 @@ local function freezeGUI()
     gui.tree_items.disabled   = true
     gui.tree_amounts.disabled = true
     gui.button_abort.disabled = true
-    gui.application:draw()
+    gui.workspace:draw()
 end
 
 local function unfreezeGUI()
     gui.tree_items.disabled   = false
     gui.tree_amounts.disabled = false
     gui.button_abort.disabled = false
-    gui.application:draw()
+    gui.workspace:draw()
 end
 
-gui.button_confirm.onTouch = function(application, button, e1, e2, e3, e4, e5, user)
+gui.button_confirm.onTouch = function(workspace, button, e1, e2, e3, e4, e5, user)
     local buyer = accounts.getBuyer(user)
-    accounts.displayBuyerInformation(buyer.name, gui.textBox_buyerInfo, gui.application)
+    accounts.displayBuyerInformation(buyer.name, gui.textBox_buyerInfo, gui.workspace)
     local transaction = gui.tree_shoppingCart.transaction
     transaction.buyer = buyer.name
     if buyer.money < transaction.transaction_value then
         --gui.on_alert = true
-        GUI.notice(application, 7, "Transaction not possible because of insufficient funds")
+        GUI.notice(workspace, 7, "Transaction not possible because of insufficient funds")
         --gui.on_alert = false
         return
     end
@@ -441,7 +441,7 @@ gui.button_confirm.onTouch = function(application, button, e1, e2, e3, e4, e5, u
     freezeGUI()
     accounts.leaseCells(buyer, transaction.leased_cells)
     accounts.removeMoneyFromBuyer(buyer, transaction.transaction_value)
-    accounts.displayBuyerInformation(buyer.name, gui.textBox_buyerInfo, gui.application)
+    accounts.displayBuyerInformation(buyer.name, gui.textBox_buyerInfo, gui.workspace)
     -- export now so transaction can not be manipulated after confirmation
     log.transaction(user .. " bought " .. transaction.toJson())
     local success = exportItems(transaction)
@@ -451,7 +451,7 @@ gui.button_confirm.onTouch = function(application, button, e1, e2, e3, e4, e5, u
     if success then
         resetTransaction()
         --gui.on_alert = true
-        GUI.notice(application, 10, "Transaction complete! Thanks for buying! \n\nYou will find your purchases to the right, in front of the dropper.")
+        GUI.notice(workspace, 10, "Transaction complete! Thanks for buying! \n\nYou will find your purchases to the right, in front of the dropper.")
         --gui.on_alert = false
     end
     unfreezeGUI()
@@ -468,7 +468,7 @@ local function listenMotion(name, id, x, y, z, player)
         if gui.on_alert then
             return
         end
-        accounts.displayBuyerInformation(payer.name, gui.textBox_buyerInfo, gui.application)
+        accounts.displayBuyerInformation(payer.name, gui.textBox_buyerInfo, gui.workspace)
     end
 end
 
@@ -508,18 +508,18 @@ local function createMoneyDisks(amount, value)
     return true
 end
 
-gui.button_createMoneyDisks.onTouch = function(application, button, e1, e2, e3, e4, e5, user)
+gui.button_createMoneyDisks.onTouch = function(workspace, button, e1, e2, e3, e4, e5, user)
     local res = createMoneyDisks(tonumber(gui.input_amount_money_disks.text), tonumber(gui.input_value_money_disks.text))
     --gui.on_alert = true
     if res then
-        GUI.notice(application, 10, "Finished creating money")
+        GUI.notice(workspace, 10, "Finished creating money")
     else
-        GUI.notice(application, 10, "Failed creating money")
+        GUI.notice(workspace, 10, "Failed creating money")
     end
     --gui.on_alert = false
 end
 
-gui.menu_money_disks.onTouch        = function(application, object, e2, e3, e4, e5, e6, user)
+gui.menu_money_disks.onTouch        = function(workspace, object, e2, e3, e4, e5, e6, user)
     gui.textBox_money_disks.hidden = not gui.textBox_money_disks.hidden
     local money                    = accounts.getMoneyDisksDict()
     local lines                    = {}
@@ -527,7 +527,7 @@ gui.menu_money_disks.onTouch        = function(application, object, e2, e3, e4, 
         lines[#lines + 1] = addr .. "    " .. tostring(value) .. "$"
     end
     gui.textBox_money_disks.lines = lines
-    application:draw()
+    workspace:draw()
 end
 
 -------------------------------
@@ -538,7 +538,7 @@ local function info()
         gui.label_uptime.text = "Uptime: " .. tostring(computer.uptime())
         gui.label_ram.text    = "RAM free: " .. string.format("%02.2f", tostring(computer.freeMemory() / 1024)) .. "kB"
         if not gui.on_alert then
-            gui.application:draw()
+            gui.workspace:draw()
         end
         os.sleep(2)
     end
@@ -548,7 +548,7 @@ end
 local function gui_func()
     resetTransaction()
     event.listen("motion", listenMotion)
-    gui.application:start()
+    gui.workspace:start()
     event.ignore("motion", listenMotion)
     print("GUI exited")
 end
@@ -567,9 +567,9 @@ local function watch_vacuum(buyer)
         while gui.on_alert do
             os.sleep(0.5)
         end
-        accounts.displayBuyerInformation(buyer.name, gui.textBox_buyerInfo, gui.application)
+        accounts.displayBuyerInformation(buyer.name, gui.textBox_buyerInfo, gui.workspace)
         --gui.on_alert = true
-        GUI.notice(gui.application, 20, actions)
+        GUI.notice(gui.workspace, 20, actions)
         --gui.on_alert = false
     end
     redstone.setOutput(config.side_redstone_vacuum_chest, 0)
@@ -581,14 +581,14 @@ local function kill_vacuum()
     vacuum_should_terminate = true
 end
 
-gui.button_start_vacuum.onTouch = function(application, object, e2, e3, e4, e5, e6, user)
+gui.button_start_vacuum.onTouch = function(workspace, object, e2, e3, e4, e5, e6, user)
     if vacuum_running then
         return
     end
     local buyer             = accounts.getBuyer(user)
     vacuum_should_terminate = false
     vacuum_running          = true
-    GUI.notice(application, 30, "Drop your empty Portable Storage Cells or Money Floppy Disks in front of the vacuum chest.\n\nPress ok once done or wait 30 seconds.", kill_vacuum, false, 5)
+    GUI.notice(workspace, 30, "Drop your empty Portable Storage Cells or Money Floppy Disks in front of the vacuum chest.\n\nPress ok once done or wait 30 seconds.", kill_vacuum, false, 5)
     local th = thread.create(watch_vacuum, buyer)
 end
 
@@ -663,14 +663,14 @@ local function stock()
 end
 
 local function init()
-    local notice = GUI.notice(gui.application, nil, "Starting, please wait...", nil, false)
+    local notice = GUI.notice(gui.workspace, nil, "Starting, please wait...", nil, false)
     backend.ejectPortableCell() -- just in case of error
     local it = loadItems()
     if it then
         organizeItems(it)
         loadItemsForTree()
     end
-    --gui.application:draw(true)
+    --gui.workspace:draw(true)
     notice()
 end
 
@@ -699,3 +699,7 @@ main_loop()
 -- TODO: check if enough storage cells are available for a transaction
 -- TODO: add confirmation/abort dialog GUI component
 -- TODO: use confirmation dialog before dropping items to ensure only the user gets the items/clearlagg confirmation
+-- TODO: show error message if unrecoverable error happens (e.g. mountpoints unavailable, loop exited...)
+-- TODO: add button to collapse/reset all categories
+-- TODO: add proper message when disk with no value got returned (either error or more likely forgery)
+-- TODO: implement logrotate for 2 logs to fit into a HDD

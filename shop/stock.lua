@@ -99,7 +99,7 @@ local function refresh_textbox_requested()
         end
     end
     table.sort(gui.textBox_scheduled.lines)
-    gui.application:draw()
+    gui.workspace:draw()
 end
 
 local function refresh_textbox_errors()
@@ -110,7 +110,7 @@ local function refresh_textbox_errors()
         end
     end
     table.sort(gui.textBox_errors.lines)
-    gui.application:draw()
+    gui.workspace:draw()
 end
 
 local function refresh_textbox_crafting()
@@ -125,7 +125,7 @@ local function refresh_textbox_crafting()
         end
     end
     table.sort(gui.textBox_crafting.lines)
-    gui.application:draw()
+    gui.workspace:draw()
 end
 
 local function removeFinishedTasks()
@@ -163,14 +163,14 @@ end
 -------------------------------
 -- GUI
 
-gui.menu_exit.onTouch = function(application, object, e2, e3, e4, e5, e6, user)
+gui.menu_exit.onTouch = function(workspace, object, e2, e3, e4, e5, e6, user)
     if user == config.owner then
         should_terminate = true
-        gui.application:stop()
+        gui.workspace:stop()
         return
     end
     --gui.on_alert = true
-    GUI.notice(application, 5, "You are not authorized to terminate this program!")
+    GUI.notice(workspace, 5, "You are not authorized to terminate this program!")
     --gui.on_alert = false
 end
 
@@ -375,7 +375,7 @@ local function info()
         gui.label_uptime.text = "Uptime: " .. tostring(computer.uptime())
         gui.label_ram.text    = "RAM free: " .. string.format("%02.2f", tostring(computer.freeMemory() / 1024)) .. "kB"
         if not gui.on_alert then
-            gui.application:draw()
+            gui.workspace:draw()
         end
         os.sleep(2)
     end
@@ -400,7 +400,7 @@ local function wrap(name, func, ...)
 end
 
 local function gui_func()
-    gui.application:start()
+    gui.workspace:start()
     event.ignore("modem_message", modem_message)
     print("GUI exited")
 end
@@ -461,7 +461,7 @@ local function init()
     refresh_textbox_errors()
     refresh_textbox_requested()
     event.listen("modem_message", modem_message)
-    gui.application:draw(true)
+    gui.workspace:draw(true)
     local thread_gui             = thread.create(wrap, "gui_func", gui_func)
     local thread_info            = thread.create(wrap, "info", info)
     local thread_loop            = thread.create(wrap, "item_loop", item_loop)

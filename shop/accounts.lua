@@ -178,7 +178,7 @@ function accs.getBuyer(name)
     return buyer
 end
 
-function accs.displayBuyerInformation(name, textBox, application)
+function accs.displayBuyerInformation(name, textBox, workspace)
     buyer            = accs.getBuyer(name)
     textBox.lines    = {}
     textBox.lines[1] = { text = buyer.name, color = 0x0049BF }
@@ -187,7 +187,7 @@ function accs.displayBuyerInformation(name, textBox, application)
             textBox.lines[#textBox.lines + 1] = key .. ": " .. value
         end
     end
-    application:draw()
+    workspace:draw()
 end
 
 if not fs.exists(config.path_accounts) then
