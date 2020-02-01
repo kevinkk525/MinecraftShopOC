@@ -259,6 +259,8 @@ config.version                         = "0.6Beta"
 config.stock_scanning_interval         = 300 -- 5 minutes
 config.dropper_export_max_slots        = 9
 config.dropper_export_max_items        = 16
+config.time_sync_url                   = nil
+config.time_sync_interval              = nil
 
 
 -- Notes ingame:

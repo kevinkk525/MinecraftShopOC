@@ -6,6 +6,7 @@
 
 local os                = require("os")
 local fs                = require("filesystem")
+local time              = require("time")
 
 local logfile
 local logfile_transactions
@@ -41,7 +42,7 @@ function log.init(path, path_transactions, lines_textbox, filesize_log)
 end
 
 local function date()
-    return os.date()
+    return os.date("%y/%m/%d %H:%M:%S", time.time())
 end
 
 function log.setTextBox(text)

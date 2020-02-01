@@ -30,6 +30,8 @@ for i, path in pairs(config.path_mounts) do
     end
 end
 
+local time = require("time")
+time.init(config.time_sync_url, true, config.time_sync_interval)
 local log = require("shop.logging")
 if not log.init(config.path_logfile, config.path_logfile_transactions, config.log_lines_textbox, config.max_filesize_log) then
     print("Initializing logs failed")

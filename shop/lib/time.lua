@@ -4,7 +4,7 @@
 --- DateTime: 30.01.2020 21:32
 ---
 
-local update_interval  = 600 -- every 10 minutes
+local _update_interval = 600 -- every 10 minutes
 
 local internet         = require "internet"
 local os               = require "os"
@@ -70,7 +70,10 @@ function time._getTime()
     return false
 end
 
-function time.init(url, force)
+function time.init(url, force, update_interval)
+    if update_interval then
+        _update_interval = update_interval
+    end
     if not url then
         url = _t_url
     end
@@ -96,7 +99,7 @@ function time._sync()
         local last_time = _t
         if time._getTime() then
             time._debug("delta", (_last_update - last) / _tick_conversion, "delta synced", math.abs(_t - last_time))
-            if (_last_update - last) / _tick_conversion < update_interval * 3 and math.abs(_t - last_time) > 1 then
+            if (_last_update - last) / _tick_conversion < _update_interval * 3 and math.abs(_t - last_time) > 1 then
                 -- don't calculate drift if last sync was 3*update_interval because the computer
                 -- was probably unloaded or the server restarted or something.
                 --print("_t", _t, "last_time", last_time, "_last_update", _last_update, "last", last, "_tick_conversion", _tick_conversion)
@@ -111,7 +114,7 @@ function time._sync()
         if adjusted < 3 then
             os.sleep(60 * adjusted)
         else
-            while os.time() - _last_update < update_interval * _tick_conversion do
+            while os.time() - _last_update < _update_interval * _tick_conversion do
                 os.sleep(5)
             end
         end
@@ -125,7 +128,7 @@ function time.time()
     if _last_uptime == 0 then
         time.init(_t_url)
     end
-    if os.time() - _last_update > (update_interval + 20) * _tick_conversion then
+    if os.time() - _last_update > (_update_interval + 20) * _tick_conversion then
         time._info("Not synced in time")
         if time._getTime() then
             return _t + _t_offs
