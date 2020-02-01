@@ -60,6 +60,7 @@ local button_confirm                  = workspace:addChild(GUI.roundedButton(tre
 button_confirm.disabled               = true
 local button_addToCart                = workspace:addChild(GUI.roundedButton(tree_amounts.x + tree_amounts.width + 5, tree_amounts.y + 5, 20, 3, 0x006D00, 0xF0F0F0, 0x004900, 0xFFFFFF, "Add to cart"))
 button_addToCart.disabled             = true
+local button_collapse                 = workspace:addChild(GUI.roundedButton(tree_items.x + 1, tree_items.y + tree_items.height, 25, 1, 0x002480, 0xF0F0F0, 0x000040, 0xFFFFFF, "Collapse all categories"))
 local label_uptime                    = workspace:addChild(GUI.label(140, 2, 20, 1, 0x33DB40, "Uptime: 0"))
 local label_ram                       = workspace:addChild(GUI.label(120, 2, 20, 1, 0x33DB40, "RAM free: 0"))
 local textBox_logs                    = workspace:addChild(GUI.textBox(1, 2, workspace.width, workspace.height - 1, 0xF0F0F0, 0x2D2D2D, {}, 1, 1, 0))
@@ -110,6 +111,7 @@ gui.button_createMoneyDisks      = button_createMoneyDisks
 gui.textBox_money_disks          = textBox_money_disks
 gui.label_available_items        = label_available_items
 gui.button_start_vacuum          = button_start_vacuum
+gui.button_collapse              = button_collapse
 
 ---------------------------------------------------------------------------------
 
@@ -200,6 +202,18 @@ function gui.updateTree(tree, values, items, compare)
     
     tree.items = {}
     updateRecursively(values, "", 1)
+end
+
+button_collapse.onTouch                                                      = function(workspace, button, e1, e2, e3, e4, e5, user)
+    tree_items.expandedItems = {}
+    tree_items.fromItem      = 1
+    tree_items.selectedItem  = nil
+    tree_amounts.items       = {}
+    if tree_items.onItemExpanded then
+        tree_items.onItemExpanded(tree_items.selectedItem)
+    end
+    button_addToCart.disabled = true
+    workspace:draw()
 end
 
 

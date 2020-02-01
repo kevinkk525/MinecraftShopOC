@@ -274,6 +274,7 @@ local function resetTransaction()
 end
 
 gui.button_abort.onTouch = function(workspace, button, e1, e2, e3, e4, e5, user)
+    gui.button_collapse.onTouch(workspace)
     resetTransaction()
     --gui.on_alert = true
     GUI.notice(workspace, 5, "Transaction aborted")
@@ -454,6 +455,7 @@ gui.button_confirm.onTouch = function(workspace, button, e1, e2, e3, e4, e5, use
         GUI.notice(workspace, 10, "Transaction complete! Thanks for buying! \n\nYou will find your purchases to the right, in front of the dropper.")
         --gui.on_alert = false
     end
+    gui.button_collapse.onTouch(workspace)
     unfreezeGUI()
 end
 
