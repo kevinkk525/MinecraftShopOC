@@ -53,7 +53,7 @@ function time._requestTime(url)
     off          = off * 3600
     _last_update = os.time()
     _last_uptime = computer.uptime()
-    time._debug("synced, took", _last_uptime - a, "s")
+    time._debug("synced, took " .. tostring(_last_uptime - a) .. "s")
     return true, r.unixtime, off
 end
 
@@ -98,14 +98,14 @@ function time._sync()
         local last      = _last_update
         local last_time = _t
         if time._getTime() then
-            time._debug("delta", (_last_update - last) / _tick_conversion, "delta synced", math.abs(_t - last_time))
+            time._debug("delta "..tostring((_last_update - last) / _tick_conversion).. " delta synced "..tostring(math.abs(_t - last_time)))
             if (_last_update - last) / _tick_conversion < _update_interval * 3 and math.abs(_t - last_time) > 1 then
                 -- don't calculate drift if last sync was 3*update_interval because the computer
                 -- was probably unloaded or the server restarted or something.
                 --print("_t", _t, "last_time", last_time, "_last_update", _last_update, "last", last, "_tick_conversion", _tick_conversion)
                 local drift      = ((_last_update - last) / _tick_conversion) / (_t - last_time)
                 _tick_conversion = _tick_conversion - (1 - drift) * _tick_conversion / 2 -- /2 to make the steps smaller
-                time._debug("drifted by", drift, " new tick_conversion:", _tick_conversion)
+                time._debug("drifted by ".. tostring(drift).. " new tick_conversion: "..tostring(_tick_conversion))
                 adjusted = adjusted + 1
             end
         else

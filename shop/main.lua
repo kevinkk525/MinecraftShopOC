@@ -32,7 +32,10 @@ end
 
 local time = require("time")
 time.init(config.time_sync_url, true, config.time_sync_interval)
-local log = require("shop.logging")
+local log   = require("shop.logging")
+time._debug = function(message) end
+time._info  = log.info
+time._error = log.error
 if not log.init(config.path_logfile, config.path_logfile_transactions, config.log_lines_textbox, config.max_filesize_log) then
     print("Initializing logs failed")
     main_loop()
