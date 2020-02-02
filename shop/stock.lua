@@ -4,8 +4,13 @@
 --- DateTime: 22.12.2019 18:01
 ---
 
-local log    = require("shop.logging")
 local config = require("shop.config_stock")
+local time   = require("time")
+time.init(config.time_sync_url, true, config.time_sync_interval)
+local log   = require("shop.logging")
+time._debug = function(message) end
+time._info  = log.info
+time._error = log.error
 log.init(config.path_logfile, nil, config.log_lines_textbox, config.max_filesize_log)
 local thread    = require("thread")
 local component = require("component")
