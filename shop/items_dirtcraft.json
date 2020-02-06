@@ -2814,7 +2814,7 @@
     "label": "Ender Tank",
     "maxSize": 64,
     "damage": 1,
-    "hasTag": false,
+    "hasTag": true,
     "amounts": {
       "1": 200,
       "4": 800,
@@ -2832,12 +2832,12 @@
     "label": "Ender Chest",
     "maxSize": 64,
     "damage": 0,
-    "hasTag": false,
+    "hasTag": true,
     "amounts": {
-      "1": 30,
-      "4": 120,
-      "8": 240,
-      "16": 480
+      "1": 35,
+      "4": 140,
+      "8": 280,
+      "16": 560
     },
     "categories": [
       "_starterKit"
@@ -3080,5 +3080,20 @@
       "64": 464
     },
     "stock": 1024
+  },
+  {
+    "name": "enderio:block_travel_anchor",
+    "maxDamage": 0,
+    "label": "Travel Anchor",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 55,
+      "4": 220,
+      "16": 880,
+      "64": 3520
+    },
+    "stock": 200
   }
 ]

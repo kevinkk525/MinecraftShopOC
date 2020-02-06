@@ -62,20 +62,29 @@ local function newItem(it)
 end
 
 local function getAmountAvailable(nbt)
+    nbt             = getStandardItemNBT(nbt)
     nbt.size        = nil
     nbt.isCraftable = nil
     local item      = me.getItemsInNetwork(nbt)
     if item.n >= 1 then
         if item.n > 1 then
-            local ident = config.getItemIdentityName(nbt)
-            item.n      = nil
-            for i, it in pairs(item) do
-                if config.getItemIdentityName(it) == ident then
-                    --log.debug("Found multiple entries in me for " .. ident .. ", chose according to ident equality")
-                    return it.size
+            -- try exporting a craftable
+            nbt.isCraftable = true
+            item            = me.getItemsInNetwork(nbt)
+            if item.n ~= 1 then
+                nbt.isCraftable = nil
+                local ident     = config.getItemIdentityName(nbt)
+                item.n          = nil
+                for i, it in pairs(item) do
+                    if config.getItemIdentityName(it) == ident then
+                        --log.debug("Found multiple entries in me for " .. ident .. ", chose according to ident equality")
+                        return it.size
+                    end
                 end
+                log.error("Found multiple entries in me for " .. config.getItemIdentityName(nbt) .. ", but found no ident match. Preventing crafting.")
+            else
+                return item[1].size
             end
-            log.error("Found multiple entries in me for " .. config.getItemIdentityName(nbt) .. ", but found no ident match. Preventing crafting.")
             return math.huge
         end
         return item[1].size
@@ -248,10 +257,17 @@ local function exportItem(ident, item, size)
     db.clear(1)
     local available = me.getItemsInNetwork(item)
     if available.n > 1 then
-        available.n = nil
-        for i, it in pairs(available) do
-            if config.getItemIdentityName(it) == ident then
-                item = it
+        local it     = getStandardItemNBT(item)
+        it.craftable = true
+        available    = me.getItemsInNetwork(it)
+        if available.n == 1 then
+            item = it
+        else
+            available.n = nil
+            for i, it in pairs(available) do
+                if config.getItemIdentityName(it) == ident then
+                    item = it
+                end
             end
         end
     end

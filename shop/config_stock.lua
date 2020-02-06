@@ -42,14 +42,14 @@ config.log_lines_textbox           = 500
 config.max_filesize_log            = 1 * 1024 * 1024 --1 MB
 config.owner                       = "kevinkk525"
 config.shop_name                   = "KK's Stock Software"
-config.version                     = "0.3Beta"
+config.version                     = "0.4Beta"
 config.scanning_interval           = 120 -- 2 minutes
 config.crafting_cpus_left          = 3
 config.crafting_batch_size         = 32
 config.time_sync_url               = shopconfig.time_sync_url
 config.time_sync_interval          = shopconfig.time_sync_interval
 
--- install GUI library from: pastebin run ryhyXUKZ
+-- install GUI library from: pastebin run EVWjkBxg
 -- OpenOS updater: pastebin run -f icKy25PF
 
 return config
