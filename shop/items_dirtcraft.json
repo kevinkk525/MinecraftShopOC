@@ -6260,5 +6260,23 @@
     "categories": [
       "_wood"
     ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.vanilla.fireproof.0",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Spruce Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
   }
 ]
