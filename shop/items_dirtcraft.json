@@ -685,7 +685,7 @@
       "4032": 1575
     },
     "categories": [
-      "wood"
+      "_wood"
     ],
     "stock": 16128
   },
@@ -3095,5 +3095,3170 @@
       "64": 3520
     },
     "stock": 200
+  },
+  {
+    "name": "minecraft:book",
+    "maxDamage": 0,
+    "label": "Book",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 7,
+      "4": 28,
+      "16": 111,
+      "64": 441
+    },
+    "stock": 400
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "minecraft:log",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Oak Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "minecraft:log",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Birch Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "minecraft:log",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Jungle Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "minecraft:log2",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Acacia Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "minecraft:log2",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Dark Oak Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.0",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Larch Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.0",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Teak Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.0",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Desert Acacia Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.0",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Lime Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.1",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Chestnut Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.1",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Wenge Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.1",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Baobab Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.1",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Sequoia Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.2",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Kapok Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.2",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Ebony Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.2",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Mahogany Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.2",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Balsa Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.3",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Willow Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.3",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Walnut Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.3",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Greenheart Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.3",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Cherry Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.4",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Mahoe Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.4",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Poplar Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.4",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Palm Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.4",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Papaya Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.5",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Pine Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.5",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Plum Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.5",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Maple Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.5",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Citrus Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.6",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Giant Sequoia Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.6",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Ipe Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.6",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Padauk Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.6",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Cocobolo Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.7",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Zebrawood Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.0",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Larch Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.0",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Teak Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.0",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Desert Acacia Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.0",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Lime Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.1",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Chestnut Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.1",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Wenge Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.1",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Baobab Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.1",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Sequoia Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.2",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Kapok Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.2",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Ebony Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.2",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Mahogany Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.2",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Balsa Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.3",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Willow Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.3",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Walnut Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.3",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Greenheart Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.3",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Cherry Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.4",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Mahoe Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.4",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Poplar Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.4",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Palm Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.4",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Papaya Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.5",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Pine Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.5",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Plum Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.5",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Maple Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.5",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Citrus Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.6",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Giant Sequoia Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.6",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Ipe Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.6",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Padauk Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.6",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Cocobolo Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.7",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Zebrawood Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.vanilla.fireproof.0",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Oak Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.vanilla.fireproof.0",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Birch Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.vanilla.fireproof.0",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Jungle Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.vanilla.fireproof.1",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Acacia Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.vanilla.fireproof.1",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Dark Oak Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.0",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Apple Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.0",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Fig Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.0",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Butternut Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.0",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Whitebeam Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.1",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Rowan Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.1",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Hemlock Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.1",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Ash Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.1",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Alder Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.2",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Beech Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.2",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Hawthorn Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.2",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Banana Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.2",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Yew Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.3",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Cypress Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.3",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Fir Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.3",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Hazel Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.3",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Hickory Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.4",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Elm Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.4",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Elder Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.4",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Holly Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.4",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Hornbeam Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.5",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Cedar Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.5",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Olive Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.5",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Sweetgum Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.5",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Locust Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.6",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Pear Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.6",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Maclura Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.6",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Brazilwood Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.6",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Logwood Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.7",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Rosewood Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.7",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Purpleheart Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.7",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Iroko Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.7",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Gingko Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.8",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Eucalyptus Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.8",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Box Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.8",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Syzgium Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.8",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Pink Ivory Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.9",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Eucalyptus Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.9",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Eucalyptus Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.9",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Cherry Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.9",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Cinnamon Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.0",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Apple Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.0",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Fig Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.0",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Butternut Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.0",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Whitebeam Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.1",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Rowan Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.1",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Hemlock Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.1",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Ash Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.1",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Alder Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.2",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Beech Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.2",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Hawthorn Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.2",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Banana Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.2",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Yew Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.3",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Cypress Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.3",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Fir Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.3",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Hazel Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.3",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Hickory Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.4",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Elm Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.4",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Elder Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.4",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Holly Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.4",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Hornbeam Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.5",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Cedar Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.5",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Olive Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.5",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Sweetgum Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.5",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Locust Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.6",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Pear Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.6",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Maclura Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.6",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Brazilwood Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.6",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Logwood Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.7",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Rosewood Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.7",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Purpleheart Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.7",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Iroko Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.7",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Gingko Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.8",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Eucalyptus Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.8",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Box Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.8",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Syzgium Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.8",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Pink Ivory Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.9",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Eucalyptus Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.9",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Eucalyptus Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.9",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Cherry Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.9",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Cinnamon Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_0",
+    "hasTag": false,
+    "damage": 4,
+    "label": "Sacred Oak Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_0",
+    "hasTag": false,
+    "damage": 5,
+    "label": "Cherry Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_0",
+    "hasTag": false,
+    "damage": 6,
+    "label": "Umbran Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_0",
+    "hasTag": false,
+    "damage": 7,
+    "label": "Fir Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_1",
+    "hasTag": false,
+    "damage": 4,
+    "label": "Ethereal Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_1",
+    "hasTag": false,
+    "damage": 5,
+    "label": "Magic Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_1",
+    "hasTag": false,
+    "damage": 6,
+    "label": "Mangrove Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_1",
+    "hasTag": false,
+    "damage": 7,
+    "label": "Palm Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_2",
+    "hasTag": false,
+    "damage": 4,
+    "label": "Redwood Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_2",
+    "hasTag": false,
+    "damage": 5,
+    "label": "Willow Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_2",
+    "hasTag": false,
+    "damage": 6,
+    "label": "Pine Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_2",
+    "hasTag": false,
+    "damage": 7,
+    "label": "Hellbark Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_3",
+    "hasTag": false,
+    "damage": 4,
+    "label": "Jacaranda Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_3",
+    "hasTag": false,
+    "damage": 5,
+    "label": "Mahogany Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_3",
+    "hasTag": false,
+    "damage": 6,
+    "label": "Ebony Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_3",
+    "hasTag": false,
+    "damage": 7,
+    "label": "Eucalyptus Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_4",
+    "hasTag": false,
+    "damage": 5,
+    "label": "Dead Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "twilightforest:twilight_log",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Twilight Oak Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "twilightforest:twilight_log",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Canopy Tree Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "twilightforest:twilight_log",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Mangrove Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "twilightforest:twilight_log",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Darkwood Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "twilightforest:magic_log",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Timewood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "twilightforest:magic_log",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Transwood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "twilightforest:magic_log",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Minewood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "twilightforest:magic_log",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Sortingwood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "integrateddynamics:menril_log",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Menril Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "integrateddynamics:menril_log_filled",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Enriched Menril Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
   }
 ]
