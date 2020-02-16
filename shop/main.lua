@@ -439,7 +439,7 @@ gui.button_confirm.onTouch = function(workspace, button, e1, e2, e3, e4, e5, use
     transaction.buyer = buyer.name
     if buyer.money < transaction.transaction_value then
         --gui.on_alert = true
-        GUI.notice(workspace, 7, "Transaction not possible because of insufficient funds")
+        GUI.notice(workspace, 7, "Transaction not possible because of insufficient funds.\nPlease exchange server money for shop funds by buying them\nfrom the signs on the left side")
         --gui.on_alert = false
         return
     end
@@ -527,14 +527,20 @@ gui.button_createMoneyDisks.onTouch = function(workspace, button, e1, e2, e3, e4
 end
 
 gui.menu_money_disks.onTouch        = function(workspace, object, e2, e3, e4, e5, e6, user)
-    gui.textBox_money_disks.hidden = not gui.textBox_money_disks.hidden
-    local money                    = accounts.getMoneyDisksDict()
-    local lines                    = {}
-    for addr, value in pairs(money) do
-        lines[#lines + 1] = addr .. "    " .. tostring(value) .. "$"
+    if user == config.owner then
+        gui.textBox_money_disks.hidden = not gui.textBox_money_disks.hidden
+        local money                    = accounts.getMoneyDisksDict()
+        local lines                    = {}
+        for addr, value in pairs(money) do
+            lines[#lines + 1] = addr .. "    " .. tostring(value) .. "$"
+        end
+        gui.textBox_money_disks.lines = lines
+        workspace:draw()
+        return
     end
-    gui.textBox_money_disks.lines = lines
-    workspace:draw()
+    --gui.on_alert = true
+    GUI.notice(workspace, 5, "You are not authorized to see the money disks!")
+    --gui.on_alert = false
 end
 
 -------------------------------
@@ -710,3 +716,21 @@ main_loop()
 -- TODO: add button to collapse/reset all categories
 -- TODO: add proper message when disk with no value got returned (either error or more likely forgery)
 -- TODO: implement logrotate for 2 logs to fit into a HDD
+-- TODO: if cell buffer gets full, shop doesn't log or output anything and green button does not open
+-- TODO: sorting of items is by label but items with label_friendly will wind up sorted wrong.
+-- TODO: Some portable cells don't have the same metadata and therefore create a separate stack of cells and cause confusion in the system
+-- TODO: occasionally used/single items end up being exported or reported back --> check all fitting items and use the one with the highest size
+-- TODO: gather statistics about each item and about each buyer
+
+
+-- TODO GUI:
+--os.sleep -> event.sleep
+--table.toString line 939 -> text.serialize
+--string.wrap line 953 -> text.wrap
+--string.limit line 1186,2070 -> text.limit
+--math.shorten line 1239 -> number.shorten
+--math.roundToDecimalPlaces line 1387,1393 -> number.roundToDecimalPlace
+--math.round line 1397,1474,1476,... -> number.round
+
+
+-- TODO prices: litherite block a lot more expensive than 9 litherite crystals

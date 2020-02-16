@@ -699,7 +699,7 @@
     "amounts": {
       "1": 50
     },
-    "label_friendly": "Charged Portable Cell",
+    "label_friendly": "Portable Cell (Charged)",
     "stock": 50
   },
   {
@@ -993,10 +993,7 @@
     "amounts": {
       "1": 150,
       "4": 600,
-      "8": 1200,
-      "16": 2400,
-      "32": 4800,
-      "64": 9600
+      "8": 1200
     },
     "stock": 2000
   },
@@ -1092,7 +1089,7 @@
     "hasTag": false,
     "amounts": {
       "1": 64,
-      "8": 256,
+      "8": 512,
       "16": 1024,
       "32": 2048,
       "64": 4096
