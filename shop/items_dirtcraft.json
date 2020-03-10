@@ -6275,5 +6275,20 @@
     "categories": [
       "_wood_fireproof"
     ]
+  },
+  {
+    "name": "minecraft:leather",
+    "maxDamage": 0,
+    "label": "Leather",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 10,
+      "4": 40,
+      "16": 160,
+      "64": 640
+    },
+    "stock": 1024
   }
 ]
