@@ -575,6 +575,7 @@ local function watch_vacuum(buyer)
     while not vacuum_should_terminate do
         os.sleep(1)
     end
+    redstone.setOutput(config.side_redstone_vacuum_chest, 0)
     local success, actions = backend.sortInputChest(buyer)
     if success then
         while gui.on_alert do
@@ -585,7 +586,6 @@ local function watch_vacuum(buyer)
         GUI.notice(gui.workspace, 20, actions)
         --gui.on_alert = false
     end
-    redstone.setOutput(config.side_redstone_vacuum_chest, 0)
     backend.emptyRemainingInput()
     vacuum_running = false
 end
@@ -615,6 +615,15 @@ local function wrap(name, func, ...)
         if not res and not no_interrupt then
             print(name, ret)
             log.critical(name .. ": " .. tostring(ret))
+            print("Please ping the owner " .. config.owner .. " on discord and tell him the error written above.")
+            print("The PC will reboot in 30 seconds. This should fix the problem.")
+            print("If you tried to insert Money Floppy disks, click the green button again after the reboot")
+            for i = 30, 0, -2 do
+                print("Reboot in", i)
+                os.sleep(2)
+            end
+            local shell = require("shell")
+            shell.execute("reboot")
         end
         if not no_interrupt then
             return
@@ -722,6 +731,10 @@ main_loop()
 -- TODO: occasionally used/single items end up being exported or reported back --> check all fitting items and use the one with the highest size
 -- TODO: gather statistics about each item and about each buyer
 
+-- TODO: disable vacuum chest on reboot because it might be active if shop got stuck
+
+-- TODO: info: AE2 has a bug where returned Portable Storage Cells might retain some NBT data of previously stored items although the cell is empty. Makes adding them back to the system impossible.
+-- TODO: sometimes it suddenly throws a memory error in gui thread..
 
 -- TODO GUI:
 --os.sleep -> event.sleep
