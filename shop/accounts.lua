@@ -76,9 +76,11 @@ function accs.saveMoneyDiskTable()
     f:close()
 end
 
-function accs.loadMoneyFromDisk(buyer)
+function accs.loadMoneyFromDisk(buyer, ignore_empty)
     if drive.isEmpty() then
-        log.error("Drive is empty, can't load")
+        if not ignore_empty then
+            log.error("Drive is empty, can't load")
+        end
         return false
     end
     local addr  = drive.media()

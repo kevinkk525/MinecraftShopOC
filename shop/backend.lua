@@ -42,22 +42,30 @@ function backend.checkCellSpace(size)
 end
 
 function backend.sortInputChest(buyer)
-    local transposer = component.proxy(config.address_transposer_input)
-    local found      = false
-    local actions    = "User " .. buyer.name .. " returned items:"
-    local items      = transposer.getAllStacks(config.side_vacuum_input).getAll()
+    local transposer           = component.proxy(config.address_transposer_input)
+    local found                = false
+    local actions              = "User " .. buyer.name .. " returned/inserted items:"
+    local items                = transposer.getAllStacks(config.side_vacuum_input).getAll()
+    local success, addr, value = accounts.loadMoneyFromDisk(buyer, true)
+    if not success then
+        -- drive is just empty as it should be
+    else
+        -- if shop previously ran into an error, a disk could be stuck in the drive
+        found   = true
+        actions = actions .. "\nAdded money disk " .. addr .. " worth " .. tostring(value) .. "$"
+    end
     for i, item in pairs(items) do
         if config.getItemIdentityName(item, { "label" }) == config.identity_floppy_disk then
             if transposer.transferItem(config.side_vacuum_input, config.side_floppy, 1, i) ~= 1.0 then
                 log.error("Error moving Floppy disk")
             else
-                local success, addr, value = accounts.loadMoneyFromDisk(buyer)
+                success, addr, value = accounts.loadMoneyFromDisk(buyer)
                 if not success then
                     log.error("Error loading Money from disk, returning Floppy")
                     backend.returnFloppyDisk()
                 else
                     found   = true
-                    actions = actions .. "\nAdded money disk " .. addr .. " worth " .. tostring(value) .. "$"
+                    actions = actions .. "\nAdded money disk " .. addr .. " worth $" .. tostring(value)
                 end
             end
         elseif config.getItemIdentityName(item) == config.identity_portable_cell then
