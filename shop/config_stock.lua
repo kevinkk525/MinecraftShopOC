@@ -15,17 +15,17 @@ config.calculateExportActivations  = shopconfig.calculateExportActivations
 
 
 -- ME controller Item storage
-config.address_me_storage          = "8bbf3451-d03e-4e85-ad4c-b3155ff0fae5"
+config.address_me_storage          = "066ec498-6a08-4c78-8bc3-e62c90d127a3"
 -- ME exportbus chest
-config.address_export_stack        = "0b526c21-3110-43ab-8098-a65e4ca576e0"
+config.address_export_stack        = "d67057cc-3167-454c-b2cb-c5a57c11a782"
 config.side_export_stack           = sides.west
-config.address_export_half         = "e53565f5-5401-4b4a-982c-1dd8c22f5fe2"
+config.address_export_half         = "cc5652de-0b66-4369-a93a-a17ea4ec4206"
 config.side_export_half            = sides.east
-config.address_export_single       = "83e7fdeb-40a9-4175-ac86-43851ebacd49"
+config.address_export_single       = "ececf6b5-bcec-45c1-ad75-a0039172bc28"
 config.side_export_single          = sides.up
 
 -- Transposer Transceiver
-config.address_transposer          = "930947ae-a1f9-4cc2-9111-15f7bbbdc92b"
+config.address_transposer          = "e7babddf-5b1b-4486-aba3-a2864b9957e7"
 config.side_transposer_transceiver = sides.north
 
 -- Identity configurations

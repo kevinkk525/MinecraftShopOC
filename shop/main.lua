@@ -734,7 +734,7 @@ main_loop()
 -- TODO: disable vacuum chest on reboot because it might be active if shop got stuck
 
 -- TODO: info: AE2 has a bug where returned Portable Storage Cells might retain some NBT data of previously stored items although the cell is empty. Makes adding them back to the system impossible.
--- TODO: sometimes it suddenly throws a memory error in gui thread..
+-- TODO: sometimes it suddenly throws a memory error in gui thread.. and the automatic reboot doesn't work in that case..
 
 -- TODO GUI:
 --os.sleep -> event.sleep

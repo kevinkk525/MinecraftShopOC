@@ -158,41 +158,41 @@ function config.newTransaction()
 end
 
 -- ME controller Item storage
-config.address_me_storage              = "3f3f80c3-653b-4518-a38a-26bf01b45048"
+config.address_me_storage              = "5e402454-aa2d-4163-8e16-7e0db4407b2b"
 -- ME controller for ME Chest
-config.address_me_chest                = "55844f40-6462-4725-b8f4-6ea19d74ec49"
+config.address_me_chest                = "49136b22-73f8-4611-b1d3-89fe41cd6e58"
 -- ME controller Money
-config.address_me_money                = "dc969cf5-b749-4da4-91a0-ef79a86397e3"
+config.address_me_money                = "d695dfd3-2b30-4e6a-b373-08d193b2d731"
 -- ME exportbus chest
-config.address_export_stack            = "27b4b8fb-0e91-4cce-a705-774abffbcc4d"
+config.address_export_stack            = "59b377db-d97b-4ca2-93da-b5039a26d3c2"
 config.side_export_stack               = sides.east
-config.address_export_half             = "40d1445b-1c87-447c-8f75-3011aa1dafd1"
+config.address_export_half             = "ee017cb2-f20e-40af-adaa-0203414c313b"
 config.side_export_half                = sides.up
-config.address_export_single           = "2cf1efcc-cb96-40a2-85b8-03c8366f5d16"
+config.address_export_single           = "227df10c-37b0-40f2-adf2-011ff29854c9"
 config.side_export_single              = sides.west
 -- ME exportbus single item
-config.address_export_single_dropper   = "773805e1-43b9-4d90-a8c6-c60e0caea6b6"
+config.address_export_single_dropper   = "35eb7a2d-1dd8-42a5-90b3-a32da005c988"
 config.side_export_dropper             = sides.east
 -- ME exportbus portable cell
-config.address_export_portable_cell    = "a57be265-1e4f-48e0-9f15-137a2fa2db72"
+config.address_export_portable_cell    = "7878447a-eb0c-4ab8-afd2-f4c6d58cbb51"
 config.side_export_portable_cell       = sides.down
 
 -- Redstone block vacuum chest
-config.address_redstone_vacuum_chest   = "b689de10-2fe1-42ce-b931-c51a648c687c"
+config.address_redstone_vacuum_chest   = "0fa3cbb1-1363-40ad-93db-96fe4d00779f"
 config.side_redstone_vacuum_chest      = sides.north
 -- Redstone block dropper
-config.address_redstone_dropper        = "194d8cf9-26ea-48f5-b9b0-dc7601d95f57"
+config.address_redstone_dropper        = "c0032a37-1707-48d5-ac27-785b43274c22"
 config.side_redstone_dropper           = sides.down
 -- Redstone block autostart
-config.address_redstone_autostart      = "f87c4380-4feb-401a-ab0a-bccc2b213cdf"
+config.address_redstone_autostart      = "d00d3bfe-6751-41e4-bed8-6fc74ed57fe6"
 
 -- Transposer ME Chest export/import
-config.address_transposer_me_chest     = "a26ffa56-e265-4105-b217-9306129a37e9"
+config.address_transposer_me_chest     = "eaf5a4ef-bd75-4b14-8a1e-4beb01008d9a"
 config.side_transposer_me_chest_output = sides.up
 config.side_transposer_me_chest_input  = sides.north
 config.side_transposer_me_chest        = sides.south
 -- Transposer input
-config.address_transposer_input        = "04c8f534-167e-4dcf-a7d0-ca085cbfc45d"
+config.address_transposer_input        = "311e4638-66fe-47a6-9915-7ee04176b403"
 config.side_floppy                     = sides.east
 config.side_dropper_input              = sides.north
 config.side_vacuum_input               = sides.south
@@ -205,21 +205,21 @@ config.side_ioport_input               = sides.up
 --config.side_mechest_flushing           = sides.down
 
 -- Transposer Disk Drive for input of money
-config.address_transposer_drive        = "04c8f534-167e-4dcf-a7d0-ca085cbfc45d"
+config.address_transposer_drive        = "311e4638-66fe-47a6-9915-7ee04176b403"
 config.side_drive_transposer_eject     = sides.east
 config.side_drive_chest_eject          = sides.west
 
 -- Transposer Money Disk Drive
-config.address_transposer_money_drive  = "b07eb566-ab41-4f96-8fb3-0e45543b4f85"
+config.address_transposer_money_drive  = "6c74220d-4651-4f6b-94e9-4a733e235368"
 config.side_money_drive                = sides.down
 config.side_money_disk_input           = sides.up
 
 
 -- Disk Drive input for money
-config.address_disk_drive              = "37545ccb-a8ad-4c4b-aa11-26d9f3ba0278"
+config.address_disk_drive              = "b4411191-b099-49aa-b76b-e9b8c0c67028"
 
 -- Disk Drive creating money
-config.address_disk_drive_money        = "c2e94c1e-f8fb-48ee-b340-a3497a6fa0af"
+config.address_disk_drive_money        = "5f1517f6-094f-434a-a567-facfb4edbce0"
 
 -- Identity configurations
 config.identity_blacklist              = { ["isCraftable"] = true, ["size"] = true,
@@ -245,14 +245,14 @@ config.price_lease_storage_cell        = 50
 
 --
 config.path_file_items                 = "/home/shop/items_dirtcraft.json"
-config.path_mounts                     = { "/mnt/98a", "/mnt/510", "/mnt/fbd" }
-config.path_accounts                   = "/mnt/98a/accounts/"
-config.path_money_disks                = "/mnt/98a/money_disks.json"
-config.path_logfile                    = "/mnt/510/shop.log"
-config.path_logfile_transactions       = "/mnt/fbd/transactions.log"
+config.path_mounts                     = { "/mnt/981", "/mnt/d39", "/mnt/f0d" }
+config.path_accounts                   = "/mnt/981/accounts/"
+config.path_money_disks                = "/mnt/981/money_disks.json"
+config.path_logfile                    = "/mnt/d39/shop.log"
+config.path_logfile_transactions       = "/mnt/f0d/transactions.log"
 config.log_lines_textbox               = 500
 config.max_filesize_log                = 2 * 1024 * 1024 --2 MB
-config.buyer_start_money               = config.price_lease_storage_cell + 50
+config.buyer_start_money               = config.price_lease_storage_cell + 150
 config.owner                           = "kevinkk525"
 config.shop_name                       = "KK's Shop"
 config.version                         = "0.7Beta"
