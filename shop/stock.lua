@@ -5,13 +5,18 @@
 ---
 
 local config = require("shop.config_stock")
-local time   = require("time")
-time.init(config.time_sync_url, true, config.time_sync_interval)
-local log   = require("shop.logging")
-time._debug = function(message) end
-time._info  = log.info
-time._error = log.error
-log.init(config.path_logfile, nil, config.log_lines_textbox, config.max_filesize_log)
+local time
+if config.time_sync then
+    time = require("time")
+    time.init(config.time_sync_url, true, config.time_sync_interval)
+end
+local log = require("shop.logging")
+if time then
+    time._debug = function(message) end
+    time._info  = log.info
+    time._error = log.error
+end
+log.init(config.path_logfile, nil, config.log_lines_textbox, config.max_filesize_log, config.time_sync)
 local thread    = require("thread")
 local component = require("component")
 component.gpu.setResolution(160, 50)

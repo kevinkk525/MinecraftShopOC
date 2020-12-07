@@ -10,6 +10,32 @@ local math   = require("math")
 local config = {}
 
 ------- helper functions
+function config.isOwner(user)
+    if type(config.owner) ~= "table" then
+        return config.owner == user
+    end
+    for i, name in pairs(config.owner) do
+        if name == user then
+            return true
+        end
+    end
+    return false
+end
+
+function config.ownerToString()
+    local st = ""
+    if type(config.owner) ~= "table" then
+        return config.owner
+    end
+    for i, name in pairs(config.owner) do
+        if i > 1 then
+            st = st .. ", "
+        end
+        st = st .. name
+    end
+    return st
+end
+
 function config.getItemIdentityName(item, blacklist)
     -- still has problems with some IC2 items that suddenly have hasTag=false after crafting
     -- but are supposed to have hasTag=True before crafting..
@@ -158,45 +184,45 @@ function config.newTransaction()
 end
 
 -- ME controller Item storage
-config.address_me_storage              = "5e402454-aa2d-4163-8e16-7e0db4407b2b"
+config.address_me_storage              = "ececd6ef-48ba-44c1-bff9-6190eb029ee0"
 -- ME controller for ME Chest
-config.address_me_chest                = "49136b22-73f8-4611-b1d3-89fe41cd6e58"
--- ME controller Money
-config.address_me_money                = "d695dfd3-2b30-4e6a-b373-08d193b2d731"
+config.address_me_chest                = "a1a24fc5-3409-4b8a-ab1c-d06ed2005723"
+-- ME controller Money for money creation --> remove in next version.
+config.address_me_money                = "15b52916-6f33-4fcb-89f1-ccdfd57c080b"
 -- ME exportbus chest
-config.address_export_stack            = "59b377db-d97b-4ca2-93da-b5039a26d3c2"
-config.side_export_stack               = sides.east
-config.address_export_half             = "ee017cb2-f20e-40af-adaa-0203414c313b"
-config.side_export_half                = sides.up
-config.address_export_single           = "227df10c-37b0-40f2-adf2-011ff29854c9"
-config.side_export_single              = sides.west
+config.address_export_stack            = "bd490ff5-16fd-4d98-b42b-1366df6e9563"
+config.side_export_stack               = sides.south
+config.address_export_half             = "5e25eeb1-7971-46bf-b751-8c282a4ed5db"
+config.side_export_half                = sides.east
+config.address_export_single           = "6f3c1ace-8043-4e80-93b9-168de1f6ea95"
+config.side_export_single              = sides.north
 -- ME exportbus single item
-config.address_export_single_dropper   = "35eb7a2d-1dd8-42a5-90b3-a32da005c988"
-config.side_export_dropper             = sides.east
+config.address_export_single_dropper   = "73995cd2-732b-4513-a0fa-4799549361f7"
+config.side_export_dropper             = sides.south
 -- ME exportbus portable cell
-config.address_export_portable_cell    = "7878447a-eb0c-4ab8-afd2-f4c6d58cbb51"
-config.side_export_portable_cell       = sides.down
+config.address_export_portable_cell    = "3de2cb69-e851-4d77-92f4-f2de794cdd92"
+config.side_export_portable_cell       = sides.north
 
 -- Redstone block vacuum chest
-config.address_redstone_vacuum_chest   = "0fa3cbb1-1363-40ad-93db-96fe4d00779f"
-config.side_redstone_vacuum_chest      = sides.north
+config.address_redstone_vacuum_chest   = "e27998b2-062e-44f2-bbdb-4f8398efd20d"
+config.side_redstone_vacuum_chest      = sides.east
 -- Redstone block dropper
-config.address_redstone_dropper        = "c0032a37-1707-48d5-ac27-785b43274c22"
-config.side_redstone_dropper           = sides.down
+config.address_redstone_dropper        = "3ee85d44-e174-4bcc-8b25-c1344779cf43"
+config.side_redstone_dropper           = sides.west
 -- Redstone block autostart
-config.address_redstone_autostart      = "d00d3bfe-6751-41e4-bed8-6fc74ed57fe6"
+config.address_redstone_autostart      = "92dbf0a4-d6c8-4e88-a538-27ebde6f809c"
 
 -- Transposer ME Chest export/import
-config.address_transposer_me_chest     = "eaf5a4ef-bd75-4b14-8a1e-4beb01008d9a"
-config.side_transposer_me_chest_output = sides.up
-config.side_transposer_me_chest_input  = sides.north
-config.side_transposer_me_chest        = sides.south
+config.address_transposer_me_chest     = "bb08d9a2-9871-4c7e-8aad-361d2bee09a1"
+config.side_transposer_me_chest_output = sides.east
+config.side_transposer_me_chest_input  = sides.up
+config.side_transposer_me_chest        = sides.west
 -- Transposer input
-config.address_transposer_input        = "311e4638-66fe-47a6-9915-7ee04176b403"
-config.side_floppy                     = sides.east
-config.side_dropper_input              = sides.north
+config.address_transposer_input        = "b0281ee8-91bc-4a44-be49-4e20b639bef8"
+config.side_floppy                     = sides.west
+config.side_dropper_input              = sides.up
 config.side_vacuum_input               = sides.south
-config.side_ioport_input               = sides.up
+config.side_ioport_input               = sides.down
 
 -- Transposer for system flushing (remainder of export to 4k) --> not used at the moment
 --config.address_transposer_flushing     = "58ff08c5-eb2a-4f66-911e-e4d1bc35cf7d"
@@ -205,21 +231,21 @@ config.side_ioport_input               = sides.up
 --config.side_mechest_flushing           = sides.down
 
 -- Transposer Disk Drive for input of money
-config.address_transposer_drive        = "311e4638-66fe-47a6-9915-7ee04176b403"
-config.side_drive_transposer_eject     = sides.east
-config.side_drive_chest_eject          = sides.west
+config.address_transposer_drive        = "b0281ee8-91bc-4a44-be49-4e20b639bef8"
+config.side_drive_transposer_eject     = sides.west -- TODO: name unclear
+config.side_drive_chest_eject          = sides.up -- TODO: name unclear, trash?
 
 -- Transposer Money Disk Drive
-config.address_transposer_money_drive  = "6c74220d-4651-4f6b-94e9-4a733e235368"
+config.address_transposer_money_drive  = "b2950f7d-94d6-46f1-bc3f-f5fe74cabbdc"
 config.side_money_drive                = sides.down
 config.side_money_disk_input           = sides.up
 
 
 -- Disk Drive input for money
-config.address_disk_drive              = "b4411191-b099-49aa-b76b-e9b8c0c67028"
+config.address_disk_drive              = "a6aa5f69-8bcc-43dc-9c71-0813f100cdbd"
 
 -- Disk Drive creating money
-config.address_disk_drive_money        = "5f1517f6-094f-434a-a567-facfb4edbce0"
+config.address_disk_drive_money        = "8566181b-a1bc-4268-be90-d19d2a19ef3e"
 
 -- Identity configurations
 config.identity_blacklist              = { ["isCraftable"] = true, ["size"] = true,
@@ -245,20 +271,21 @@ config.price_lease_storage_cell        = 50
 
 --
 config.path_file_items                 = "/home/shop/items_dirtcraft.json"
-config.path_mounts                     = { "/mnt/981", "/mnt/d39", "/mnt/f0d" }
-config.path_accounts                   = "/mnt/981/accounts/"
-config.path_money_disks                = "/mnt/981/money_disks.json"
-config.path_logfile                    = "/mnt/d39/shop.log"
-config.path_logfile_transactions       = "/mnt/f0d/transactions.log"
+config.path_mounts                     = { "/mnt/066", "/mnt/71c", "/mnt/b0d" }
+config.path_accounts                   = "/mnt/066/accounts/"
+config.path_money_disks                = "/mnt/71c/money_disks.json"
+config.path_logfile                    = "/mnt/b0d/shop.log"
+config.path_logfile_transactions       = "/mnt/71c/transactions.log"
 config.log_lines_textbox               = 500
 config.max_filesize_log                = 2 * 1024 * 1024 --2 MB
 config.buyer_start_money               = config.price_lease_storage_cell + 150
-config.owner                           = "kevinkk525"
+config.owner                           = { "kevinkk525", "MPMob", "HipjeHopje" }
 config.shop_name                       = "KK's Shop"
-config.version                         = "0.7Beta"
+config.version                         = "0.8Beta"
 config.stock_scanning_interval         = 300 -- 5 minutes
 config.dropper_export_max_slots        = 9
 config.dropper_export_max_items        = 16
+config.time_sync                       = false
 config.time_sync_url                   = nil
 config.time_sync_interval              = nil
 

@@ -19,7 +19,7 @@ local panel                  = workspace:addChild(GUI.panel(1, 2, workspace.widt
 panel.hidden                 = true
 
 gui.menu_exit.onTouch        = function(workspace, object, e2, e3, e4, e5, e6, user)
-    if user == config.owner then
+    if config.isOwner(user) then
         should_terminate = true
         gui.workspace:stop()
         return

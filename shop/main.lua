@@ -30,13 +30,18 @@ for i, path in pairs(config.path_mounts) do
     end
 end
 
-local time = require("time")
-time.init(config.time_sync_url, true, config.time_sync_interval)
-local log   = require("shop.logging")
-time._debug = function(message) end
-time._info  = log.info
-time._error = log.error
-if not log.init(config.path_logfile, config.path_logfile_transactions, config.log_lines_textbox, config.max_filesize_log) then
+local time
+if config.time_sync then
+    time = require("time")
+    time.init(config.time_sync_url, true, config.time_sync_interval)
+end
+local log = require("shop.logging")
+if time then
+    time._debug = function(message) end
+    time._info  = log.info
+    time._error = log.error
+end
+if not log.init(config.path_logfile, config.path_logfile_transactions, config.log_lines_textbox, config.max_filesize_log, config.time_sync) then
     print("Initializing logs failed")
     main_loop()
 end
@@ -63,7 +68,7 @@ local payer           = { ["name"] = nil, ["time"] = 0 }
 -- GUI
 
 gui.menu_exit.onTouch = function(workspace, object, e2, e3, e4, e5, e6, user)
-    if user == config.owner then
+    if config.isOwner(user) then
         should_terminate = true
         gui.workspace:stop()
         return
@@ -153,6 +158,7 @@ local function organizeItems(it)
     for i, item in pairs(it) do
         local ident  = config.getItemIdentityName(item)
         items[ident] = item
+        --[[
         if tunnel and item.stock and me_available then
             local nbt       = getNBT(item)
             local available = backend.getAmountAvailable(nbt)
@@ -161,6 +167,7 @@ local function organizeItems(it)
                 os.sleep(0.1)
             end
         end
+        --]]
     end
 end
 
@@ -297,7 +304,7 @@ local function rollbackTransaction(trans)
     accounts.addMoneyToBuyer(buyer, value)
     log.transaction(buyer.name .. " refunded " .. tostring(value) .. "$: " .. trans.toJson())
     --gui.on_alert = true
-    GUI.notice(gui.workspace, 15, "Sorry, exporting didn't work. We refunded you " .. value .. "$ for the missing items. Please contact the owner " .. config.owner)
+    GUI.notice(gui.workspace, 15, "Sorry, exporting didn't work. We refunded you " .. value .. "$ for the missing items. Please contact the owner(s) " .. config.ownerToString())
     --gui.on_alert = false
     backend.ejectPortableCell() -- just trying
 end
@@ -527,7 +534,7 @@ gui.button_createMoneyDisks.onTouch = function(workspace, button, e1, e2, e3, e4
 end
 
 gui.menu_money_disks.onTouch        = function(workspace, object, e2, e3, e4, e5, e6, user)
-    if user == config.owner then
+    if config.isOwner(user) then
         gui.textBox_money_disks.hidden = not gui.textBox_money_disks.hidden
         local money                    = accounts.getMoneyDisksDict()
         local lines                    = {}
@@ -615,7 +622,7 @@ local function wrap(name, func, ...)
         if not res and not no_interrupt then
             print(name, ret)
             log.critical(name .. ": " .. tostring(ret))
-            print("Please ping the owner " .. config.owner .. " on discord and tell him the error written above.")
+            print("Please ping the owner(s) " .. config.ownerToString() .. " on discord and tell him the error written above.")
             print("The PC will reboot in 30 seconds. This should fix the problem.")
             print("If you tried to insert Money Floppy disks, click the green button again after the reboot")
             for i = 30, 0, -2 do
@@ -639,15 +646,19 @@ local function stock()
         log.warn("No tunnel available, can't watch stock")
         return false
     end
+    local waiting_time = 120
     while not should_terminate do
         local st = computer.uptime()
-        while computer.uptime() - st < config.stock_scanning_interval do
+        while computer.uptime() - st < waiting_time do
             os.sleep(5)
             if should_terminate then
                 print("Stock exited")
                 log.info("Stock exited e1")
                 return
             end
+        end
+        if waiting_time < config.stock_scanning_interval then
+            waiting_time = config.stock_scanning_interval -- only wait short on startup
         end
         os.sleep(5)
         local me, err = component.proxy(config.address_me_storage)
@@ -722,7 +733,6 @@ main_loop()
 -- TODO: add confirmation/abort dialog GUI component
 -- TODO: use confirmation dialog before dropping items to ensure only the user gets the items/clearlagg confirmation
 -- TODO: show error message if unrecoverable error happens (e.g. mountpoints unavailable, loop exited...)
--- TODO: add button to collapse/reset all categories
 -- TODO: add proper message when disk with no value got returned (either error or more likely forgery)
 -- TODO: implement logrotate for 2 logs to fit into a HDD
 -- TODO: if cell buffer gets full, shop doesn't log or output anything and green button does not open
@@ -734,7 +744,7 @@ main_loop()
 -- TODO: disable vacuum chest on reboot because it might be active if shop got stuck
 
 -- TODO: info: AE2 has a bug where returned Portable Storage Cells might retain some NBT data of previously stored items although the cell is empty. Makes adding them back to the system impossible.
--- TODO: sometimes it suddenly throws a memory error in gui thread.. and the automatic reboot doesn't work in that case..
+-- TODO: sometimes it suddenly throws a memory error in gui thread.. and the automatic reboot doesn't work in that case.. even though the RAM updates might still work
 
 -- TODO GUI:
 --os.sleep -> event.sleep
@@ -746,4 +756,6 @@ main_loop()
 --math.round line 1397,1474,1476,... -> number.round
 
 
--- TODO prices: litherite block a lot more expensive than 9 litherite crystals
+-- TODO: fix bug with excessive logging if no tunnel is available
+-- TODO: identities generated with integer representation with lua 5.2, works with 5.3
+-- TODO: fix money generation, after abort update money box

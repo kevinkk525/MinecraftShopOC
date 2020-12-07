@@ -234,7 +234,7 @@ end
 --contextMenu:addSeparator()
 -- Add whatever you want
 menu:addItem("Logs").onTouch                                                 = function(workspace, object, e2, e3, e4, e5, e6, user)
-    if user == config.owner then
+    if config.isOwner(user) then
         textBox_logs.hidden = not textBox_logs.hidden
         workspace:draw()
         return
@@ -244,7 +244,7 @@ menu:addItem("Logs").onTouch                                                 = f
     -- gui.on_alert = false
 end
 menu:addItem("Transactions").onTouch                                         = function(workspace, object, e2, e3, e4, e5, e6, user)
-    if user == config.owner then
+    if config.isOwner(user) then
         textBox_transactions.hidden = not textBox_transactions.hidden
         workspace:draw()
         return
@@ -254,7 +254,7 @@ menu:addItem("Transactions").onTouch                                         = f
     --gui.on_alert = false
 end
 menu:addItem("Create").onTouch                                               = function(workspace, object, e2, e3, e4, e5, e6, user)
-    if user == config.owner then
+    if config.isOwner(user) then
         input_amount_money_disks.hidden = not input_amount_money_disks.hidden
         input_value_money_disks.hidden  = not input_value_money_disks.hidden
         button_createMoneyDisks.hidden  = not button_createMoneyDisks.hidden

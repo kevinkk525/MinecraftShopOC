@@ -6,7 +6,7 @@
 
 local os                = require("os")
 local fs                = require("filesystem")
-local time              = require("time")
+local time
 
 local logfile
 local logfile_transactions
@@ -21,7 +21,7 @@ local log               = {}
 local textbox
 local textbox_transactions
 
-function log.init(path, path_transactions, lines_textbox, filesize_log)
+function log.init(path, path_transactions, lines_textbox, filesize_log, sync_time)
     path_logfile              = path
     path_logfile_transactions = path_transactions
     max_filesize_log          = filesize_log
@@ -38,11 +38,21 @@ function log.init(path, path_transactions, lines_textbox, filesize_log)
         print("Error opening the logfile!")
         return false
     end
+    if sync_time then
+        print("syncing time")
+        time = require("time")
+    else
+        print("using local time")
+    end
     return true
 end
 
 local function date()
-    return os.date("%y/%m/%d %H:%M:%S", time.time())
+    if time then
+        return os.date("%y/%m/%d %H:%M:%S", time.time())
+    else
+        return os.date("%y/%m/%d %H:%M:%S")
+    end
 end
 
 function log.setTextBox(text)

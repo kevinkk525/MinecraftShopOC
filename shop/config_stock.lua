@@ -15,18 +15,18 @@ config.calculateExportActivations  = shopconfig.calculateExportActivations
 
 
 -- ME controller Item storage
-config.address_me_storage          = "066ec498-6a08-4c78-8bc3-e62c90d127a3"
+config.address_me_storage          = "301428d7-8c8e-4c75-b0a1-6b7932b6e961"
 -- ME exportbus chest
-config.address_export_stack        = "d67057cc-3167-454c-b2cb-c5a57c11a782"
-config.side_export_stack           = sides.west
-config.address_export_half         = "cc5652de-0b66-4369-a93a-a17ea4ec4206"
-config.side_export_half            = sides.east
-config.address_export_single       = "ececf6b5-bcec-45c1-ad75-a0039172bc28"
-config.side_export_single          = sides.up
+config.address_export_stack        = "3e5b6f5a-bee6-484b-9914-ead27c50f930"
+config.side_export_stack           = sides.down
+config.address_export_half         = "f682ef0f-2e6e-4b08-a521-35ff67538189"
+config.side_export_half            = sides.south
+config.address_export_single       = "c135df0b-1479-46b2-b04e-984bee845691"
+config.side_export_single          = sides.east
 
 -- Transposer Transceiver
-config.address_transposer          = "e7babddf-5b1b-4486-aba3-a2864b9957e7"
-config.side_transposer_transceiver = sides.north
+config.address_transposer          = "29c568a4-7075-4064-b5cb-37d6ab64bbe5"
+config.side_transposer_transceiver = sides.up
 
 -- Identity configurations
 config.identity_blacklist          = shopconfig.identity_blacklist
@@ -46,6 +46,7 @@ config.version                     = "0.4Beta"
 config.scanning_interval           = 120 -- 2 minutes
 config.crafting_cpus_left          = 3
 config.crafting_batch_size         = 32
+config.time_sync                   = false
 config.time_sync_url               = shopconfig.time_sync_url
 config.time_sync_interval          = shopconfig.time_sync_interval
 
