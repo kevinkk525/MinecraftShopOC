@@ -4,40 +4,40 @@
 --- DateTime: 07.12.2019 07:41
 ---
 
-local GUI                             = require("GUI")
-local unicode                         = require("unicode")
-local config                          = require("shop.config")
-local notice                          = require("shop.gui_notice")
+local GUI     = require("GUI")
+local unicode = require("unicode")
+local config  = require("shop.config")
+require("gui_extensions")
 
 ---------------------------------------------------------------------------------
 local gui                             = {}
 gui.on_alert                          = false
 
-local application                     = GUI.application()
+local workspace                       = GUI.workspace()
 
-local panel                           = application:addChild(GUI.panel(1, 1, application.width, application.height, 0x2D2D2D))
-local tree_items                      = application:addChild(
+local panel                           = workspace:addChild(GUI.panel(1, 1, workspace.width, workspace.height, 0x2D2D2D))
+local tree_items                      = workspace:addChild(
         GUI.tree(5, 5, 45, 40,
                  0xB4B4B4, 0x2D2D2D, 0x1E1E1E,
                  0x0F0F0F, 0x666DBF, 0x2D2D2D,
                  0x2D2D2D, 0x696969, 0x4B4B4B,
                  0x000040, GUI.IO_MODE_BOTH, GUI.IO_MODE_BOTH))
-local label_tree_items                = application:addChild(GUI.label(tree_items.x, tree_items.y - 1, tree_items.width, 1, 0xFFFFFF, "Items for sale:"))
-local tree_amounts                    = application:addChild(
+local label_tree_items                = workspace:addChild(GUI.label(tree_items.x, tree_items.y - 1, tree_items.width, 1, 0xFFFFFF, "Items for sale:"))
+local tree_amounts                    = workspace:addChild(
         GUI.tree(55, 5, 30, 10,
                  0xB4B4B4, 0x2D2D2D, 0x1E1E1E,
                  0x0F0F0F, 0x666DBF, 0x2D2D2D,
                  0x2D2D2D, 0x696969, 0x4B4B4B,
                  0x000040, GUI.IO_MODE_BOTH, GUI.IO_MODE_BOTH))
-local label_tree_amounts              = application:addChild(GUI.label(tree_amounts.x, tree_amounts.y - 1, tree_amounts.width, 1, 0xFFFFFF, "Amount -> price:"))
-local label_available_items           = application:addChild(GUI.label(tree_amounts.x, tree_amounts.y + tree_amounts.height, tree_amounts.width, 1, 0x33DB40, "Amount available: "))
-local textBox_itemInfo                = application:addChild(GUI.textBox(55, 20, 50, 15, 0xF0F0F0, 0x2D2D2D, {}, 1, 1, 0))
+local label_tree_amounts              = workspace:addChild(GUI.label(tree_amounts.x, tree_amounts.y - 1, tree_amounts.width, 1, 0xFFFFFF, "Amount -> price:"))
+local label_available_items           = workspace:addChild(GUI.label(tree_amounts.x, tree_amounts.y + tree_amounts.height, tree_amounts.width, 1, 0x33DB40, "Amount available: "))
+local textBox_itemInfo                = workspace:addChild(GUI.textBox(55, 20, 50, 15, 0xF0F0F0, 0x2D2D2D, {}, 1, 1, 0))
 textBox_itemInfo.scrollBarEnabled     = true
-local button_start_vacuum             = application:addChild(GUI.roundedButton(5, tree_items.y + tree_items.height + 2, 45, 3, 0x006D00, 0xF0F0F0, 0x004900, 0xFFFFFF, "Return Portable Cells or add Money Disks"))
-local label_textBox_itemInfo          = application:addChild(GUI.label(textBox_itemInfo.x, textBox_itemInfo.y - 1, textBox_itemInfo.width, 1, 0xFFFFFF, "Item Information:"))
-local textBox_buyerInfo               = application:addChild(GUI.textBox(120, 5, 35, 10, 0xF0F0F0, 0x2D2D2D, {}, 1, 1, 0))
-local label_textBox_buyerInfo         = application:addChild(GUI.label(textBox_buyerInfo.x, textBox_buyerInfo.y - 1, textBox_buyerInfo.width, 1, 0xFFFFFF, "Buyer Information:"))
-local tree_shoppingCart               = application:addChild(
+local button_start_vacuum             = workspace:addChild(GUI.roundedButton(5, tree_items.y + tree_items.height + 2, 45, 3, 0x006D00, 0xF0F0F0, 0x004900, 0xFFFFFF, "Return Portable Cells or add Money Disks"))
+local label_textBox_itemInfo          = workspace:addChild(GUI.label(textBox_itemInfo.x, textBox_itemInfo.y - 1, textBox_itemInfo.width, 1, 0xFFFFFF, "Item Information:"))
+local textBox_buyerInfo               = workspace:addChild(GUI.textBox(120, 5, 35, 10, 0xF0F0F0, 0x2D2D2D, {}, 1, 1, 0))
+local label_textBox_buyerInfo         = workspace:addChild(GUI.label(textBox_buyerInfo.x, textBox_buyerInfo.y - 1, textBox_buyerInfo.width, 1, 0xFFFFFF, "Buyer Information:"))
+local tree_shoppingCart               = workspace:addChild(
         GUI.tree(110, 18, 45, 20,
                  0xF0F0F0, 0x2D2D2D, 0x2D2D2D,
                  0x0F0F0F, 0x666DBF, 0x2D2D2D,
@@ -45,46 +45,47 @@ local tree_shoppingCart               = application:addChild(
                  0x000040, GUI.IO_MODE_BOTH, GUI.IO_MODE_BOTH))
 tree_shoppingCart.disabled            = true
 tree_shoppingCart.transaction         = config.newTransaction()
-local label_tree_shoppingCart         = application:addChild(GUI.label(tree_shoppingCart.x, tree_shoppingCart.y - 1, tree_shoppingCart.width, 1, 0xFFFFFF, "Shopping Cart:"))
-local label_item_value                = application:addChild(GUI.label(110, tree_shoppingCart.y + tree_shoppingCart.height + 1, tree_shoppingCart.width, 1, 0x33DB40, "Item value: 0$"))
-local label_cell_lease_value          = application:addChild(GUI.label(110, tree_shoppingCart.y + tree_shoppingCart.height + 2, tree_shoppingCart.width, 1, 0x33DB40, "Cell lease: 0$"))
-local label_transaction_value         = application:addChild(GUI.label(110, tree_shoppingCart.y + tree_shoppingCart.height + 3, tree_shoppingCart.width, 1, 0xFFB640, "Transaction value: 0$"))
-local progressBar                     = application:addChild(GUI.progressBar(55, 46, 50, 0x3366CC, 0xEEEEEE, 0xEEEEEE, 80, false, true, "Transaction progress: ", "%, 0/<amount> items"))
+local label_tree_shoppingCart         = workspace:addChild(GUI.label(tree_shoppingCart.x, tree_shoppingCart.y - 1, tree_shoppingCart.width, 1, 0xFFFFFF, "Shopping Cart:"))
+local label_item_value                = workspace:addChild(GUI.label(110, tree_shoppingCart.y + tree_shoppingCart.height + 1, tree_shoppingCart.width, 1, 0x33DB40, "Item value: 0$"))
+local label_cell_lease_value          = workspace:addChild(GUI.label(110, tree_shoppingCart.y + tree_shoppingCart.height + 2, tree_shoppingCart.width, 1, 0x33DB40, "Cell lease: 0$"))
+local label_transaction_value         = workspace:addChild(GUI.label(110, tree_shoppingCart.y + tree_shoppingCart.height + 3, tree_shoppingCart.width, 1, 0xFFB640, "Transaction value: 0$"))
+local progressBar                     = workspace:addChild(GUI.progressBar(55, 46, 50, 0x3366CC, 0xEEEEEE, 0xEEEEEE, 80, false, true, "Transaction progress: ", "%, 0/<amount> items"))
 progressBar.hidden                    = true
-local progressBarItem                 = application:addChild(GUI.progressBar(55, 43, 50, 0x3366CC, 0xEEEEEE, 0xEEEEEE, 80, false, true, "Items exported: ", "%, 0/<amount> items"))
+local progressBarItem                 = workspace:addChild(GUI.progressBar(55, 43, 50, 0x3366CC, 0xEEEEEE, 0xEEEEEE, 80, false, true, "Items exported: ", "%, 0/<amount> items"))
 progressBarItem.hidden                = true
-local menu                            = application:addChild(GUI.menu(1, 1, application.width, 0xEEEEEE, 0x666666, 0x3366CC, 0xFFFFFF))
-local button_abort                    = application:addChild(GUI.roundedButton(tree_shoppingCart.x, 42, 30, 3, 0x990000, 0x1E1E1E, 0x330000, 0xFFFFFF, "Abort transaction"))
+local menu                            = workspace:addChild(GUI.menu(1, 1, workspace.width, 0xEEEEEE, 0x666666, 0x3366CC, 0xFFFFFF))
+local button_abort                    = workspace:addChild(GUI.roundedButton(tree_shoppingCart.x, 42, 30, 3, 0x990000, 0x1E1E1E, 0x330000, 0xFFFFFF, "Abort transaction"))
 
-local button_confirm                  = application:addChild(GUI.roundedButton(tree_shoppingCart.x, 45, 30, 3, 0x006D00, 0xF0F0F0, 0x004900, 0xFFFFFF, "Confirm transaction"))
+local button_confirm                  = workspace:addChild(GUI.roundedButton(tree_shoppingCart.x, 45, 30, 3, 0x006D00, 0xF0F0F0, 0x004900, 0xFFFFFF, "Confirm transaction"))
 button_confirm.disabled               = true
-local button_addToCart                = application:addChild(GUI.roundedButton(tree_amounts.x + tree_amounts.width + 5, tree_amounts.y + 5, 20, 3, 0x006D00, 0xF0F0F0, 0x004900, 0xFFFFFF, "Add to cart"))
+local button_addToCart                = workspace:addChild(GUI.roundedButton(tree_amounts.x + tree_amounts.width + 5, tree_amounts.y + 5, 20, 3, 0x006D00, 0xF0F0F0, 0x004900, 0xFFFFFF, "Add to cart"))
 button_addToCart.disabled             = true
-local label_uptime                    = application:addChild(GUI.label(140, 2, 20, 1, 0x33DB40, "Uptime: 0"))
-local label_ram                       = application:addChild(GUI.label(120, 2, 20, 1, 0x33DB40, "RAM free: 0"))
-local textBox_logs                    = application:addChild(GUI.textBox(1, 2, application.width, application.height, 0xF0F0F0, 0x2D2D2D, {}, 1, 1, 0))
+local button_collapse                 = workspace:addChild(GUI.roundedButton(tree_items.x + 1, tree_items.y + tree_items.height, 25, 1, 0x002480, 0xF0F0F0, 0x000040, 0xFFFFFF, "Collapse all categories"))
+local label_uptime                    = workspace:addChild(GUI.label(140, 2, 20, 1, 0x33DB40, "Uptime: 0"))
+local label_ram                       = workspace:addChild(GUI.label(120, 2, 20, 1, 0x33DB40, "RAM free: 0"))
+local textBox_logs                    = workspace:addChild(GUI.textBox(1, 2, workspace.width, workspace.height - 1, 0xF0F0F0, 0x2D2D2D, {}, 1, 1, 0))
 textBox_logs.hidden                   = true
 textBox_logs.scrollBarEnabled         = true
-local textBox_transactions            = application:addChild(GUI.textBox(1, 2, application.width, application.height, 0xF0F0F0, 0x2D2D2D, {}, 1, 1, 0))
+local textBox_transactions            = workspace:addChild(GUI.textBox(1, 2, workspace.width, workspace.height - 1, 0xF0F0F0, 0x2D2D2D, {}, 1, 1, 0))
 textBox_transactions.hidden           = true
 textBox_transactions.scrollBarEnabled = true
 ---- money creation
-local input_amount_money_disks        = application:addChild(GUI.input(2, 2, 30, 3, 0xEEEEEE, 0x555555, 0x999999, 0xFFFFFF, 0x2D2D2D, "Amount of disks", "0"))
+local input_amount_money_disks        = workspace:addChild(GUI.input(2, 2, 30, 3, 0xEEEEEE, 0x555555, 0x999999, 0xFFFFFF, 0x2D2D2D, "Amount of disks", "0"))
 input_amount_money_disks.hidden       = true
-local input_value_money_disks         = application:addChild(GUI.input(2, 4, 30, 3, 0xEEEEEE, 0x555555, 0x999999, 0xFFFFFF, 0x2D2D2D, "Value of disks", "0"))
+local input_value_money_disks         = workspace:addChild(GUI.input(2, 4, 30, 3, 0xEEEEEE, 0x555555, 0x999999, 0xFFFFFF, 0x2D2D2D, "Value of disks", "0"))
 input_value_money_disks.hidden        = true
-local button_createMoneyDisks         = application:addChild(GUI.roundedButton(2, 10, 20, 3, 0x006D00, 0xF0F0F0, 0x004900, 0xFFFFFF, "Create"))
+local button_createMoneyDisks         = workspace:addChild(GUI.roundedButton(2, 10, 20, 3, 0x006D00, 0xF0F0F0, 0x004900, 0xFFFFFF, "Create"))
 button_createMoneyDisks.hidden        = true
-local textBox_money_disks             = application:addChild(GUI.textBox(1, 2, application.width, application.height, 0xF0F0F0, 0x2D2D2D, {}, 1, 1, 0))
+local textBox_money_disks             = workspace:addChild(GUI.textBox(1, 2, workspace.width, workspace.height - 1, 0xF0F0F0, 0x2D2D2D, {}, 1, 1, 0))
 textBox_money_disks.hidden            = true
 textBox_money_disks.scrollBarEnabled  = true
 
 -- temp
-application:addChild(GUI.colorSelector(100, 2, 10, 1, 0x334980, "color"))
+workspace:addChild(GUI.colorSelector(100, 2, 10, 1, 0x334980, "color"))
 
 
 -- gui module
-gui.application                  = application
+gui.workspace                    = workspace
 gui.panel                        = panel
 gui.tree_items                   = tree_items
 gui.tree_amounts                 = tree_amounts
@@ -110,6 +111,7 @@ gui.button_createMoneyDisks      = button_createMoneyDisks
 gui.textBox_money_disks          = textBox_money_disks
 gui.label_available_items        = label_available_items
 gui.button_start_vacuum          = button_start_vacuum
+gui.button_collapse              = button_collapse
 
 ---------------------------------------------------------------------------------
 
@@ -119,21 +121,21 @@ gui.button_start_vacuum          = button_start_vacuum
 label_transaction_value.setValue = function(val, draw)
     label_transaction_value.text = "Transaction value: " .. tostring(val) .. "$"
     if draw ~= false then
-        application:draw()
+        workspace:draw()
     end
 end
 
 label_item_value.setValue        = function(val, draw)
     label_item_value.text = "Item value: " .. tostring(val) .. "$"
     if draw ~= false then
-        application:draw()
+        workspace:draw()
     end
 end
 
 label_cell_lease_value.setValue  = function(val, draw)
     label_cell_lease_value.text = "Cell lease: " .. tostring(val) .. "$"
     if draw ~= false then
-        application:draw()
+        workspace:draw()
     end
 end
 
@@ -202,6 +204,18 @@ function gui.updateTree(tree, values, items, compare)
     updateRecursively(values, "", 1)
 end
 
+button_collapse.onTouch                                                      = function(workspace, button, e1, e2, e3, e4, e5, user)
+    tree_items.expandedItems = {}
+    tree_items.fromItem      = 1
+    tree_items.selectedItem  = nil
+    tree_amounts.items       = {}
+    if tree_items.onItemExpanded then
+        tree_items.onItemExpanded(tree_items.selectedItem)
+    end
+    button_addToCart.disabled = true
+    workspace:draw()
+end
+
 
 ----------------
 
@@ -210,49 +224,49 @@ end
 -- Menu
 --------------------------------------------------------------------------------
 
--- Add menu object to application
+-- Add menu object to workspace
 -- Add first item with black color. Attack a callback-function to it
-menu:addItem(config.shop_name .. " version 0.1Beta", 0x0).onTouch = function()
+menu:addItem(config.shop_name .. " version " .. config.version, 0x0).onTouch = function()
     --GUI.alert("Hello world!")
 end
 -- Add context menu and few items to it
 --local contextMenu                                      = menu:addContextMenu("File")
 --contextMenu:addSeparator()
 -- Add whatever you want
-menu:addItem("Logs").onTouch                                      = function(application, object, e2, e3, e4, e5, e6, user)
-    if user == config.owner then
+menu:addItem("Logs").onTouch                                                 = function(workspace, object, e2, e3, e4, e5, e6, user)
+    if config.isOwner(user) then
         textBox_logs.hidden = not textBox_logs.hidden
-        application:draw()
+        workspace:draw()
         return
     end
     --gui.on_alert = true
-    GUI.notice(application, 5, "You are not authorized to see the logs!")
+    GUI.notice(workspace, 5, "You are not authorized to see the logs!")
     -- gui.on_alert = false
 end
-menu:addItem("Transactions").onTouch                              = function(application, object, e2, e3, e4, e5, e6, user)
-    if user == config.owner then
+menu:addItem("Transactions").onTouch                                         = function(workspace, object, e2, e3, e4, e5, e6, user)
+    if config.isOwner(user) then
         textBox_transactions.hidden = not textBox_transactions.hidden
-        application:draw()
+        workspace:draw()
         return
     end
     --gui.on_alert = true
-    GUI.notice(application, 5, "You are not authorized to see the transactions!")
+    GUI.notice(workspace, 5, "You are not authorized to see the transactions!")
     --gui.on_alert = false
 end
-menu:addItem("Create").onTouch                                    = function(application, object, e2, e3, e4, e5, e6, user)
-    if user == config.owner then
+menu:addItem("Create").onTouch                                               = function(workspace, object, e2, e3, e4, e5, e6, user)
+    if config.isOwner(user) then
         input_amount_money_disks.hidden = not input_amount_money_disks.hidden
         input_value_money_disks.hidden  = not input_value_money_disks.hidden
         button_createMoneyDisks.hidden  = not button_createMoneyDisks.hidden
-        application:draw()
+        workspace:draw()
         return
     end
     --gui.on_alert = true
-    GUI.notice(application, 5, "You are not authorized to create stuff!")
+    GUI.notice(workspace, 5, "You are not authorized to create stuff!")
     --gui.on_alert = false
 end
-gui.menu_money_disks                                              = menu:addItem("Show/Hide Money Disks")
-gui.menu_exit                                                     = menu:addItem("Exit")
+gui.menu_money_disks                                                         = menu:addItem("Show/Hide Money Disks")
+gui.menu_exit                                                                = menu:addItem("Exit")
 
 --------------------------------------------------------------------------------
 

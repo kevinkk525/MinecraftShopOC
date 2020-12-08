@@ -1,0 +1,6294 @@
+[
+  {
+    "name": "minecraft:iron_ingot",
+    "maxDamage": 0,
+    "label": "Iron Ingot",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 4,
+      "16": 64,
+      "32": 128,
+      "64": 256,
+      "256": 1024,
+      "1024": 4096,
+      "2016": 8064,
+      "4032": 16128
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "tconstruct:ingots",
+    "maxDamage": 0,
+    "label": "Manyullyn Ingot",
+    "maxSize": 64,
+    "damage": 2,
+    "hasTag": false,
+    "amounts": {
+      "1": 80,
+      "4": 320,
+      "8": 640,
+      "16": 1280
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 1024
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Copper Ingot",
+    "maxSize": 64,
+    "damage": 128,
+    "hasTag": false,
+    "amounts": {
+      "1": 4,
+      "16": 64,
+      "32": 128,
+      "64": 256,
+      "256": 1024,
+      "1024": 4096,
+      "2016": 8064,
+      "4032": 16128
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Tin Ingot",
+    "maxSize": 64,
+    "damage": 129,
+    "hasTag": false,
+    "amounts": {
+      "1": 4,
+      "16": 64,
+      "32": 128,
+      "64": 256,
+      "256": 1024,
+      "1024": 4096,
+      "2016": 8064,
+      "4032": 16128
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "enderio:item_alloy_ingot",
+    "maxDamage": 0,
+    "label": "Electrical Steel Ingot",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 5,
+      "16": 80,
+      "32": 160,
+      "64": 320,
+      "256": 1280,
+      "1024": 5120,
+      "2016": 10080,
+      "4032": 20160
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "draconicevolution:draconium_ingot",
+    "maxDamage": 0,
+    "label": "Draconium Ingot",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 25,
+      "16": 400,
+      "32": 800,
+      "64": 1600,
+      "256": 6400,
+      "1024": 25600,
+      "2016": 50400,
+      "4032": 100800
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Aluminum Ingot",
+    "maxSize": 64,
+    "damage": 132,
+    "hasTag": false,
+    "amounts": {
+      "1": 5,
+      "16": 80,
+      "32": 160,
+      "64": 320,
+      "256": 1280,
+      "1024": 5120,
+      "2016": 10080,
+      "4032": 20160
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "tconstruct:ingots",
+    "maxDamage": 0,
+    "label": "Ardite Ingot",
+    "maxSize": 64,
+    "damage": 1,
+    "hasTag": false,
+    "amounts": {
+      "1": 30,
+      "16": 480,
+      "32": 960,
+      "64": 1920,
+      "256": 7680,
+      "1024": 30720,
+      "2016": 60480,
+      "4032": 120960
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "tconstruct:ingots",
+    "maxDamage": 0,
+    "label": "Cobalt Ingot",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 30,
+      "16": 480,
+      "32": 960,
+      "64": 1920,
+      "256": 7680,
+      "1024": 30720,
+      "2016": 60480,
+      "4032": 120960
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Electrum Ingot",
+    "maxSize": 64,
+    "damage": 161,
+    "hasTag": false,
+    "amounts": {
+      "1": 12,
+      "16": 192,
+      "32": 384,
+      "64": 768,
+      "256": 3072,
+      "1024": 12288,
+      "2016": 24192,
+      "4032": 48384
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "enderio:item_alloy_ingot",
+    "maxDamage": 0,
+    "label": "End Steel Ingot",
+    "maxSize": 64,
+    "damage": 8,
+    "hasTag": false,
+    "amounts": {
+      "1": 50,
+      "16": 800,
+      "32": 1600,
+      "64": 3200,
+      "256": 12800,
+      "1024": 51200,
+      "2016": 100800,
+      "4032": 201600
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "minecraft:gold_ingot",
+    "maxDamage": 0,
+    "label": "Gold Ingot",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 9,
+      "16": 144,
+      "32": 288,
+      "64": 576,
+      "256": 2304,
+      "1024": 9216,
+      "2016": 18144,
+      "4032": 36288
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Bronze Ingot",
+    "maxSize": 64,
+    "damage": 163,
+    "hasTag": false,
+    "amounts": {
+      "1": 10,
+      "16": 160,
+      "32": 320,
+      "64": 640,
+      "256": 2560,
+      "1024": 10240,
+      "2016": 20160,
+      "4032": 40320
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "enderio:item_alloy_ingot",
+    "maxDamage": 0,
+    "label": "Dark Steel Ingot",
+    "maxSize": 64,
+    "damage": 6,
+    "hasTag": false,
+    "amounts": {
+      "1": 25,
+      "16": 400,
+      "32": 800,
+      "64": 1600,
+      "256": 6400,
+      "1024": 25600,
+      "2016": 50400,
+      "4032": 100800
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Invar Ingot",
+    "maxSize": 64,
+    "damage": 162,
+    "hasTag": false,
+    "amounts": {
+      "1": 10,
+      "16": 160,
+      "32": 320,
+      "64": 640,
+      "256": 2560,
+      "1024": 10240,
+      "2016": 20160,
+      "4032": 40320
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "bigreactors:ingotcyanite",
+    "maxDamage": 0,
+    "label": "Cyanite Ingot",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 5,
+      "16": 88,
+      "32": 176,
+      "64": 352,
+      "256": 1408
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 1024
+  },
+  {
+    "name": "bigreactors:dustyellorium",
+    "maxDamage": 0,
+    "label": "Yellorium Dust",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 4,
+      "16": 75,
+      "32": 150,
+      "64": 300,
+      "256": 1200,
+      "1024": 4800,
+      "2016": 9450,
+      "4032": 18900
+    },
+    "stock": 8064
+  },
+  {
+    "name": "enderio:item_alloy_ingot",
+    "maxDamage": 0,
+    "label": "Energetic Alloy Ingot",
+    "maxSize": 64,
+    "damage": 1,
+    "hasTag": false,
+    "amounts": {
+      "1": 15,
+      "16": 240,
+      "32": 480,
+      "64": 960,
+      "256": 3840,
+      "1024": 15360,
+      "2016": 30240,
+      "4032": 60480
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Enderium Ingot",
+    "maxSize": 64,
+    "damage": 167,
+    "hasTag": false,
+    "amounts": {
+      "1": 28,
+      "16": 448,
+      "32": 896,
+      "64": 1792,
+      "256": 7168,
+      "1024": 28672,
+      "2016": 56448,
+      "4032": 112896
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Iridium Ingot",
+    "maxSize": 64,
+    "damage": 135,
+    "hasTag": false,
+    "amounts": {
+      "1": 7,
+      "16": 125,
+      "32": 250,
+      "64": 500,
+      "256": 2000,
+      "1024": 8000,
+      "2016": 15750,
+      "4032": 31500
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Lead Ingot",
+    "maxSize": 64,
+    "damage": 131,
+    "hasTag": false,
+    "amounts": {
+      "1": 5,
+      "16": 80,
+      "32": 160,
+      "64": 320,
+      "256": 1280,
+      "1024": 5120,
+      "2016": 10080,
+      "4032": 20160
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Lumium Ingot",
+    "maxSize": 64,
+    "damage": 166,
+    "hasTag": false,
+    "amounts": {
+      "1": 12,
+      "16": 192,
+      "32": 384,
+      "64": 768,
+      "256": 3072,
+      "1024": 12288,
+      "2016": 24192,
+      "4032": 48384
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Mana Infused Ingot",
+    "maxSize": 64,
+    "damage": 136,
+    "hasTag": false,
+    "amounts": {
+      "1": 4,
+      "16": 64,
+      "32": 128,
+      "64": 256,
+      "256": 1024,
+      "1024": 4096,
+      "2016": 8064,
+      "4032": 16128
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Nickel Ingot",
+    "maxSize": 64,
+    "damage": 133,
+    "hasTag": false,
+    "amounts": {
+      "1": 8,
+      "16": 128,
+      "32": 256,
+      "64": 512,
+      "256": 2048,
+      "1024": 8192,
+      "2016": 16128,
+      "4032": 32256
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Platinum Ingot",
+    "maxSize": 64,
+    "damage": 134,
+    "hasTag": false,
+    "amounts": {
+      "1": 12,
+      "16": 192,
+      "32": 384,
+      "64": 768,
+      "256": 3072,
+      "1024": 12288,
+      "2016": 24192,
+      "4032": 48384
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Silver Ingot",
+    "maxSize": 64,
+    "damage": 130,
+    "hasTag": false,
+    "amounts": {
+      "1": 8,
+      "16": 128,
+      "32": 256,
+      "64": 512,
+      "256": 2048,
+      "1024": 8192,
+      "2016": 16128,
+      "4032": 32256
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "enderio:item_alloy_ingot",
+    "maxDamage": 0,
+    "label": "Vibrant Alloy Ingot",
+    "maxSize": 64,
+    "damage": 2,
+    "hasTag": false,
+    "amounts": {
+      "1": 30,
+      "16": 480,
+      "32": 960,
+      "64": 1920,
+      "256": 7680,
+      "1024": 30720,
+      "2016": 60480,
+      "4032": 120960
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "enderio:item_alloy_ingot",
+    "maxDamage": 0,
+    "label": "Redstone Alloy Ingot",
+    "maxSize": 64,
+    "damage": 3,
+    "hasTag": false,
+    "amounts": {
+      "1": 3,
+      "16": 48,
+      "32": 96,
+      "64": 192,
+      "256": 768,
+      "1024": 3072,
+      "2016": 6048,
+      "4032": 12096
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "enderio:item_alloy_ingot",
+    "maxDamage": 0,
+    "label": "Soularium Ingot",
+    "maxSize": 64,
+    "damage": 7,
+    "hasTag": false,
+    "amounts": {
+      "1": 2,
+      "16": 47,
+      "32": 95,
+      "64": 190,
+      "256": 760,
+      "1024": 3040,
+      "2016": 5985,
+      "4032": 11970
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Signalum Ingot",
+    "maxSize": 64,
+    "damage": 165,
+    "hasTag": false,
+    "amounts": {
+      "1": 12,
+      "16": 192,
+      "32": 384,
+      "64": 768,
+      "256": 3072,
+      "1024": 12288,
+      "2016": 24192,
+      "4032": 48384
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "enderio:item_alloy_ingot",
+    "maxDamage": 0,
+    "label": "Pulsating Iron Ingot",
+    "maxSize": 64,
+    "damage": 5,
+    "hasTag": false,
+    "amounts": {
+      "1": 15,
+      "16": 240,
+      "32": 480,
+      "64": 960,
+      "256": 3840,
+      "1024": 15360,
+      "2016": 30240,
+      "4032": 60480
+    },
+    "categories": [
+      "_ingots"
+    ],
+    "stock": 8064
+  },
+  {
+    "name": "minecraft:log",
+    "maxDamage": 0,
+    "label": "Spruce Wood",
+    "maxSize": 64,
+    "damage": 1,
+    "hasTag": false,
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "categories": [
+      "_wood"
+    ],
+    "stock": 16128
+  },
+  {
+    "name": "appliedenergistics2:portable_cell",
+    "maxDamage": 32,
+    "label": "Portable Cell",
+    "maxSize": 1,
+    "damage": 0,
+    "hasTag": true,
+    "amounts": {
+      "1": 50
+    },
+    "label_friendly": "Portable Cell (Charged)",
+    "stock": 50
+  },
+  {
+    "name": "enderio:item_material",
+    "maxDamage": 0,
+    "label": "Grains of Infinity",
+    "maxSize": 64,
+    "damage": 20,
+    "hasTag": false,
+    "amounts": {
+      "1": 20,
+      "4": 80,
+      "8": 160,
+      "16": 320,
+      "32": 640,
+      "64": 1280
+    },
+    "stock": 3200
+  },
+  {
+    "name": "minecraft:diamond",
+    "maxDamage": 0,
+    "label": "Diamond",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 20,
+      "4": 80,
+      "8": 160,
+      "16": 320,
+      "32": 640,
+      "64": 1280
+    },
+    "stock": 3200
+  },
+  {
+    "name": "minecraft:emerald",
+    "maxDamage": 0,
+    "label": "Emerald",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 35,
+      "4": 140,
+      "8": 280,
+      "16": 560,
+      "32": 1120,
+      "64": 2240
+    },
+    "stock": 3200
+  },
+  {
+    "name": "minecraft:ender_pearl",
+    "maxDamage": 0,
+    "label": "Ender Pearl",
+    "maxSize": 16,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 4,
+      "4": 16,
+      "8": 32,
+      "16": 64,
+      "32": 128,
+      "64": 256
+    },
+    "stock": 3200
+  },
+  {
+    "name": "darkutils:material",
+    "maxDamage": 0,
+    "label": "Wither Dust",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 20,
+      "4": 80,
+      "8": 160,
+      "16": 320,
+      "32": 640,
+      "64": 1280
+    },
+    "stock": 3200
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Blizz Rod",
+    "maxSize": 64,
+    "damage": 2048,
+    "hasTag": false,
+    "amounts": {
+      "1": 6,
+      "4": 25,
+      "8": 50,
+      "16": 100,
+      "32": 200,
+      "64": 400
+    },
+    "stock": 3200
+  },
+  {
+    "name": "minecraft:quartz",
+    "maxDamage": 0,
+    "label": "Nether Quartz",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 3,
+      "16": 48,
+      "32": 96,
+      "64": 192,
+      "256": 768,
+      "1024": 3072,
+      "4032": 12096
+    },
+    "stock": 8064
+  },
+  {
+    "name": "minecraft:cobblestone",
+    "maxDamage": 0,
+    "label": "Cobblestone",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 8,
+      "32": 16,
+      "64": 32,
+      "256": 128,
+      "1024": 512,
+      "4032": 2016
+    },
+    "stock": 8064
+  },
+  {
+    "name": "minecraft:bone",
+    "maxDamage": 0,
+    "label": "Bone",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 15,
+      "32": 30,
+      "64": 60,
+      "256": 240,
+      "1024": 960,
+      "4032": 3780
+    },
+    "stock": 8064
+  },
+  {
+    "name": "minecraft:gunpowder",
+    "maxDamage": 0,
+    "label": "Gunpowder",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 4,
+      "16": 64,
+      "32": 128,
+      "64": 256,
+      "256": 1024,
+      "1024": 4096,
+      "4032": 16128
+    },
+    "stock": 8064
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Certus Quartz Crystal",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 3,
+      "16": 48,
+      "32": 96,
+      "64": 192,
+      "256": 768,
+      "1024": 3072,
+      "4032": 12096
+    },
+    "stock": 8064
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Charged Certus Quartz Crystal",
+    "maxSize": 64,
+    "damage": 1,
+    "hasTag": false,
+    "amounts": {
+      "1": 6,
+      "16": 96,
+      "32": 192,
+      "64": 384,
+      "256": 1536,
+      "1024": 6144,
+      "4032": 24192
+    },
+    "stock": 8064
+  },
+  {
+    "name": "minecraft:netherrack",
+    "maxDamage": 0,
+    "label": "Netherrack",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 16,
+      "32": 32,
+      "64": 64,
+      "256": 256,
+      "1024": 1024,
+      "4032": 4032
+    },
+    "stock": 8064
+  },
+  {
+    "name": "thermalfoundation:material",
+    "maxDamage": 0,
+    "label": "Sulfur",
+    "maxSize": 64,
+    "damage": 771,
+    "hasTag": false,
+    "amounts": {
+      "1": 5,
+      "16": 80,
+      "32": 160,
+      "64": 320,
+      "256": 1280,
+      "1024": 5120
+    },
+    "stock": 8064
+  },
+  {
+    "name": "minecraft:redstone",
+    "maxDamage": 0,
+    "label": "Redstone",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 2,
+      "16": 32,
+      "32": 64,
+      "64": 128,
+      "256": 512,
+      "1024": 2048,
+      "4032": 8064
+    },
+    "stock": 8064
+  },
+  {
+    "name": "minecraft:snowball",
+    "maxDamage": 0,
+    "label": "Snowball",
+    "maxSize": 16,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 10,
+      "32": 20,
+      "64": 40,
+      "256": 160,
+      "1024": 640,
+      "4032": 2520
+    },
+    "stock": 8064
+  },
+  {
+    "name": "extrautils2:ingredients",
+    "maxDamage": 0,
+    "label": "Drop of Evil",
+    "maxSize": 64,
+    "damage": 10,
+    "hasTag": false,
+    "amounts": {
+      "1": 150,
+      "4": 600,
+      "8": 1200
+    },
+    "stock": 2000
+  },
+  {
+    "name": "minecraft:rotten_flesh",
+    "maxDamage": 0,
+    "label": "Rotten Flesh",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 15,
+      "32": 30,
+      "64": 60,
+      "256": 240,
+      "1024": 960,
+      "4032": 3780
+    },
+    "stock": 8064
+  },
+  {
+    "name": "environmentaltech:ionite_crystal",
+    "maxDamage": 0,
+    "label": "Ionite Crystal",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 512,
+      "8": 4096,
+      "16": 8192,
+      "32": 16384,
+      "64": 32768
+    },
+    "stock": 2000
+  },
+  {
+    "name": "minecraft:reeds",
+    "maxDamage": 0,
+    "label": "Sugar Canes",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 10,
+      "32": 20,
+      "64": 41,
+      "256": 164,
+      "1024": 656
+    },
+    "stock": 3200
+  },
+  {
+    "name": "minecraft:ghast_tear",
+    "maxDamage": 0,
+    "label": "Ghast Tear",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 40,
+      "8": 320,
+      "16": 640,
+      "32": 1280,
+      "64": 2560
+    },
+    "stock": 4000
+  },
+  {
+    "name": "environmentaltech:litherite_crystal",
+    "maxDamage": 0,
+    "label": "Litherite Crystal",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 32,
+      "8": 256,
+      "16": 512,
+      "32": 1024,
+      "64": 2048
+    },
+    "stock": 2000
+  },
+  {
+    "name": "environmentaltech:erodium_crystal",
+    "maxDamage": 0,
+    "label": "Erodium Crystal",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 64,
+      "8": 512,
+      "16": 1024,
+      "32": 2048,
+      "64": 4096
+    },
+    "stock": 2000
+  },
+  {
+    "name": "environmentaltech:kyronite_crystal",
+    "maxDamage": 0,
+    "label": "Kyronite Crystal",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 128,
+      "8": 1024,
+      "16": 2048,
+      "32": 4096,
+      "64": 8192
+    },
+    "stock": 2000
+  },
+  {
+    "name": "environmentaltech:pladium_crystal",
+    "maxDamage": 0,
+    "label": "Pladium Crystal",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 256,
+      "8": 2048,
+      "16": 4096,
+      "32": 8192,
+      "64": 16384
+    },
+    "stock": 2000
+  },
+  {
+    "name": "environmentaltech:aethium_crystal",
+    "maxDamage": 0,
+    "label": "Aethium Crystal",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1024,
+      "8": 8192,
+      "16": 16384,
+      "32": 32768,
+      "64": 65536
+    },
+    "stock": 2000
+  },
+  {
+    "name": "minecraft:dye",
+    "maxDamage": 0,
+    "label": "Lapis Lazuli",
+    "maxSize": 64,
+    "damage": 4,
+    "hasTag": false,
+    "amounts": {
+      "1": 2,
+      "16": 32,
+      "32": 64,
+      "64": 128,
+      "256": 512,
+      "1024": 2048,
+      "4032": 8064
+    },
+    "stock": 8064
+  },
+  {
+    "name": "minecraft:coal",
+    "maxDamage": 0,
+    "label": "Coal",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 16,
+      "32": 32,
+      "64": 64,
+      "256": 256,
+      "1024": 1024,
+      "4032": 4032
+    },
+    "stock": 8064
+  },
+  {
+    "name": "tconstruct:edible",
+    "maxDamage": 0,
+    "label": "Slime Ball",
+    "maxSize": 64,
+    "damage": 4,
+    "hasTag": false,
+    "amounts": {
+      "1": 2.5,
+      "16": 39.25,
+      "32": 78.5,
+      "64": 157,
+      "256": 628,
+      "1024": 2512
+    },
+    "stock": 5000,
+    "label_friendly": "Slime Ball (orange)"
+  },
+  {
+    "name": "minecraft:string",
+    "maxDamage": 0,
+    "label": "String",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 4,
+      "16": 64,
+      "32": 128,
+      "64": 256,
+      "256": 1024
+    },
+    "stock": 4096
+  },
+  {
+    "name": "enderio:block_enderman_skull",
+    "maxDamage": 0,
+    "label": "Enderman Head",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 100,
+      "8": 200,
+      "16": 1600,
+      "32": 3200,
+      "64": 6400
+    },
+    "stock": 2000
+  },
+  {
+    "name": "environmentaltech:lonsdaleite_crystal",
+    "maxDamage": 0,
+    "label": "Lonsdaleite Crystal",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 256,
+      "8": 512,
+      "16": 4096,
+      "32": 8192,
+      "64": 16384
+    },
+    "stock": 2000
+  },
+  {
+    "name": "actuallyadditions:item_solidified_experience",
+    "maxDamage": 0,
+    "label": "Solidified Experience",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 3,
+      "8": 25,
+      "16": 50,
+      "32": 100,
+      "64": 200,
+      "256": 800
+    },
+    "stock": 2048
+  },
+  {
+    "name": "minecraft:arrow",
+    "maxDamage": 0,
+    "label": "Arrow",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "8": 8,
+      "16": 16,
+      "32": 32,
+      "64": 64,
+      "256": 256
+    },
+    "stock": 2048
+  },
+  {
+    "name": "minecraft:blaze_rod",
+    "maxDamage": 0,
+    "label": "Blaze Rod",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 5,
+      "8": 40,
+      "16": 80,
+      "32": 160,
+      "64": 320,
+      "256": 1280
+    },
+    "stock": 2048
+  },
+  {
+    "name": "minecraft:flint",
+    "maxDamage": 0,
+    "label": "Flint",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "8": 6,
+      "16": 12,
+      "32": 24,
+      "64": 48,
+      "256": 192
+    },
+    "stock": 2048
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Pure Certus Quartz Crystal",
+    "maxSize": 64,
+    "damage": 10,
+    "hasTag": false,
+    "amounts": {
+      "1": 20,
+      "8": 160,
+      "16": 320,
+      "32": 640,
+      "64": 1280,
+      "256": 5120
+    },
+    "stock": 2048
+  },
+  {
+    "name": "minecraft:nether_star",
+    "maxDamage": 0,
+    "label": "Nether Star",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 160,
+      "8": 1280,
+      "16": 2560,
+      "32": 5120,
+      "64": 10240
+    },
+    "stock": 1024
+  },
+  {
+    "name": "minecraft:clay_ball",
+    "maxDamage": 0,
+    "label": "Clay",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "8": 3,
+      "16": 6,
+      "32": 13,
+      "64": 26,
+      "256": 104,
+      "1024": 416
+    },
+    "label_friendly": "Clay (Ball)",
+    "stock": 4096
+  },
+  {
+    "name": "minecraft:feather",
+    "maxDamage": 0,
+    "label": "Feather",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "8": 12,
+      "16": 24,
+      "32": 48,
+      "64": 96,
+      "256": 384
+    },
+    "stock": 2048
+  },
+  {
+    "name": "industrialforegoing:plastic",
+    "maxDamage": 0,
+    "label": "Plastic",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 12,
+      "8": 100,
+      "16": 200,
+      "32": 400,
+      "64": 800,
+      "256": 3200
+    },
+    "stock": 2048
+  },
+  {
+    "name": "minecraft:wool",
+    "maxDamage": 0,
+    "label": "White Wool",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 3,
+      "8": 24,
+      "16": 48,
+      "32": 96,
+      "64": 192,
+      "256": 768
+    },
+    "stock": 2048
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Fluix Crystal",
+    "maxSize": 64,
+    "damage": 7,
+    "hasTag": false,
+    "amounts": {
+      "1": 10,
+      "8": 80,
+      "16": 160,
+      "32": 320,
+      "64": 640,
+      "256": 2560
+    },
+    "stock": 2048
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Pure Fluix Crystal",
+    "maxSize": 64,
+    "damage": 12,
+    "hasTag": false,
+    "amounts": {
+      "1": 20,
+      "8": 160,
+      "16": 320,
+      "32": 640,
+      "64": 1280
+    },
+    "stock": 1024
+  },
+  {
+    "name": "minecraft:egg",
+    "maxDamage": 0,
+    "label": "Egg",
+    "maxSize": 16,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "8": 7,
+      "16": 15,
+      "32": 30,
+      "64": 60
+    },
+    "stock": 1024
+  },
+  {
+    "name": "minecraft:cactus",
+    "maxDamage": 0,
+    "label": "Cactus",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "8": 7,
+      "16": 15,
+      "32": 30,
+      "64": 60,
+      "256": 240
+    },
+    "stock": 2048
+  },
+  {
+    "name": "minecraft:skull",
+    "maxDamage": 0,
+    "label": "Creeper Head",
+    "maxSize": 64,
+    "damage": 4,
+    "hasTag": false,
+    "amounts": {
+      "1": 80,
+      "8": 640,
+      "16": 1280,
+      "32": 2560
+    },
+    "stock": 256
+  },
+  {
+    "name": "minecraft:skull",
+    "maxDamage": 0,
+    "label": "Zombie Head",
+    "maxSize": 64,
+    "damage": 2,
+    "hasTag": false,
+    "amounts": {
+      "1": 80,
+      "8": 640,
+      "16": 1280,
+      "32": 2560
+    },
+    "stock": 256
+  },
+  {
+    "name": "minecraft:skull",
+    "maxDamage": 0,
+    "label": "Skeleton Skull",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 80,
+      "8": 640,
+      "16": 1280,
+      "32": 2560
+    },
+    "stock": 256
+  },
+  {
+    "name": "minecraft:obsidian",
+    "maxDamage": 0,
+    "label": "Obsidian",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 3,
+      "8": 24,
+      "32": 96,
+      "64": 192,
+      "256": 768
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "stock": 2048
+  },
+  {
+    "name": "minecraft:glowstone_dust",
+    "maxDamage": 0,
+    "label": "Glowstone Dust",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 4,
+      "8": 32,
+      "32": 128,
+      "64": 256,
+      "256": 1024
+    },
+    "stock": 2048
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Silicon",
+    "maxSize": 64,
+    "damage": 5,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "8": 8,
+      "32": 32,
+      "64": 64,
+      "256": 256
+    },
+    "stock": 2048
+  },
+  {
+    "name": "ic2:resource",
+    "maxDamage": 0,
+    "label": "Uranium Ore",
+    "maxSize": 64,
+    "damage": 4,
+    "hasTag": false,
+    "amounts": {
+      "1": 3,
+      "8": 25,
+      "32": 100,
+      "64": 200,
+      "256": 800
+    },
+    "stock": 2048
+  },
+  {
+    "name": "actuallyadditions:item_misc",
+    "maxDamage": 0,
+    "label": "Black Quartz",
+    "maxSize": 64,
+    "damage": 5,
+    "hasTag": false,
+    "amounts": {
+      "1": 10,
+      "8": 80,
+      "32": 320,
+      "64": 640,
+      "256": 2560
+    },
+    "stock": 2048
+  },
+  {
+    "name": "minecraft:sponge",
+    "maxDamage": 0,
+    "label": "Sponge",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 25,
+      "8": 200,
+      "32": 800,
+      "64": 1600,
+      "256": 6400
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "stock": 2048
+  },
+  {
+    "name": "minecraft:stone",
+    "maxDamage": 0,
+    "label": "Granite",
+    "maxSize": 64,
+    "damage": 1,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 3,
+      "64": 12,
+      "256": 48,
+      "1024": 192,
+      "4032": 756
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "stock": 8192
+  },
+  {
+    "name": "minecraft:stone",
+    "maxDamage": 0,
+    "label": "Diorite",
+    "maxSize": 64,
+    "damage": 3,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 8,
+      "64": 32,
+      "256": 128,
+      "1024": 512,
+      "4032": 2016
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "stock": 8192
+  },
+  {
+    "name": "chisel:marble2",
+    "maxDamage": 0,
+    "label": "Marble",
+    "maxSize": 64,
+    "damage": 7,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 8,
+      "64": 32,
+      "256": 128,
+      "1024": 512,
+      "4032": 2016
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "stock": 8192
+  },
+  {
+    "name": "minecraft:sandstone",
+    "maxDamage": 0,
+    "label": "Sandstone",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 2,
+      "16": 32,
+      "64": 128,
+      "256": 512,
+      "1024": 2048,
+      "4032": 8064
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "stock": 8192
+  },
+  {
+    "name": "minecraft:dirt",
+    "maxDamage": 0,
+    "label": "Dirt",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 8,
+      "64": 32,
+      "256": 128,
+      "1024": 512,
+      "4032": 2016
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "stock": 8192
+  },
+  {
+    "name": "minecraft:gravel",
+    "maxDamage": 0,
+    "label": "Gravel",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 8,
+      "64": 32,
+      "256": 128,
+      "1024": 512,
+      "4032": 2016
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "stock": 8192
+  },
+  {
+    "name": "minecraft:sand",
+    "maxDamage": 0,
+    "label": "Sand",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 8,
+      "64": 32,
+      "256": 128,
+      "1024": 512,
+      "4032": 2016
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "stock": 8192
+  },
+  {
+    "name": "minecraft:stone",
+    "maxDamage": 0,
+    "label": "Stone",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 16,
+      "64": 64,
+      "256": 256,
+      "1024": 1024,
+      "4032": 4032
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "stock": 8192
+  },
+  {
+    "name": "minecraft:clay",
+    "maxDamage": 0,
+    "label": "Clay",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 2,
+      "8": 13,
+      "16": 25,
+      "64": 102,
+      "256": 408,
+      "1024": 1632
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "label_friendly": "Clay (Block)",
+    "stock": 4096
+  },
+  {
+    "name": "minecraft:packed_ice",
+    "maxDamage": 0,
+    "label": "Packed Ice",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 8,
+      "64": 32,
+      "256": 128,
+      "1024": 512,
+      "4032": 2016
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "stock": 4096
+  },
+  {
+    "name": "minecraft:end_stone",
+    "maxDamage": 0,
+    "label": "End Stone",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 30,
+      "64": 120,
+      "256": 480,
+      "1024": 1920
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "stock": 2048
+  },
+  {
+    "name": "minecraft:glowstone",
+    "maxDamage": 0,
+    "label": "Glowstone",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 16,
+      "16": 256,
+      "64": 1024,
+      "256": 4096
+    },
+    "categories": [
+      "_blocks"
+    ],
+    "stock": 2048
+  },
+  {
+    "name": "environmentaltech:mica",
+    "maxDamage": 0,
+    "label": "Mica",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 150,
+      "4": 600,
+      "8": 1200,
+      "16": 2400
+    },
+    "stock": 320
+  },
+  {
+    "name": "thermaldynamics:duct_32",
+    "maxDamage": 0,
+    "label": "Itemduct (Opaque)",
+    "maxSize": 64,
+    "damage": 1.0,
+    "hasTag": false,
+    "amounts": {
+      "1": 3,
+      "4": 10,
+      "8": 19,
+      "16": 37.5,
+      "32": 75,
+      "64": 150
+    },
+    "categories": [
+      "_starterKit"
+    ],
+    "stock": 512
+  },
+  {
+    "name": "thermaldynamics:duct_0",
+    "maxDamage": 0,
+    "label": "Cryo-Stabilized Fluxduct",
+    "maxSize": 64,
+    "damage": 5.0,
+    "hasTag": false,
+    "amounts": {
+      "1": 100,
+      "4": 400,
+      "8": 800,
+      "16": 1600,
+      "32": 3200
+    },
+    "stock": 256
+  },
+  {
+    "name": "thermalfoundation:upgrade",
+    "maxDamage": 0,
+    "label": "Resonant Conversion Kit",
+    "maxSize": 64,
+    "damage": 35.0,
+    "hasTag": false,
+    "amounts": {
+      "1": 500,
+      "4": 2000,
+      "8": 4000
+    },
+    "stock": 128
+  },
+  {
+    "name": "thermalexpansion:dynamo",
+    "maxDamage": 0,
+    "label": "Magmatic Dynamo (Basic)",
+    "maxSize": 64,
+    "damage": 1.0,
+    "Energy": 0.0,
+    "hasTag": true,
+    "amounts": {
+      "1": 90,
+      "4": 360,
+      "8": 720,
+      "16": 1440
+    },
+    "categories": [
+      "_starterKit",
+      "_machines"
+    ],
+    "stock": 256
+  },
+  {
+    "name": "thermaldynamics:duct_0",
+    "maxDamage": 0,
+    "label": "Leadstone Fluxduct",
+    "maxSize": 64,
+    "damage": 0.0,
+    "hasTag": false,
+    "amounts": {
+      "1": 25,
+      "4": 100,
+      "8": 200,
+      "16": 400,
+      "32": 800,
+      "64": 1600
+    },
+    "categories": [
+      "_starterKit"
+    ],
+    "stock": 512
+  },
+  {
+    "name": "thermaldynamics:servo",
+    "maxDamage": 0,
+    "label": "Servo",
+    "maxSize": 64,
+    "damage": 0.0,
+    "hasTag": false,
+    "amounts": {
+      "1": 15,
+      "4": 60,
+      "8": 120,
+      "16": 240,
+      "32": 480,
+      "64": 960
+    },
+    "categories": [
+      "_starterKit"
+    ],
+    "stock": 512
+  },
+  {
+    "name": "thermaldynamics:servo",
+    "maxDamage": 0,
+    "label": "Resonant Servo",
+    "maxSize": 64,
+    "damage": 4.0,
+    "hasTag": false,
+    "amounts": {
+      "1": 40,
+      "4": 160,
+      "8": 320,
+      "16": 640,
+      "32": 1280
+    },
+    "stock": 256
+  },
+  {
+    "name": "thermaldynamics:filter",
+    "maxDamage": 0,
+    "label": "Filter",
+    "maxSize": 64,
+    "damage": 0.0,
+    "hasTag": false,
+    "amounts": {
+      "1": 15,
+      "4": 60,
+      "8": 120,
+      "16": 240,
+      "32": 480,
+      "64": 960
+    },
+    "stock": 512
+  },
+  {
+    "name": "minecraft:glass",
+    "maxDamage": 0,
+    "label": "Glass",
+    "maxSize": 64,
+    "damage": 0.0,
+    "hasTag": false,
+    "amounts": {
+      "1": 2,
+      "16": 32,
+      "64": 128,
+      "256": 512,
+      "1024": 2048,
+      "4032": 8064
+    },
+    "stock": 8192
+  },
+  {
+    "name": "appliedenergistics2:drive",
+    "maxDamage": 0,
+    "label": "ME Drive",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 75,
+      "4": 300,
+      "8": 600,
+      "16": 1200,
+      "32": 2400,
+      "64": 4800
+    },
+    "stock": 256
+  },
+  {
+    "name": "appliedenergistics2:part",
+    "maxDamage": 0,
+    "label": "ME Export Bus",
+    "maxSize": 64,
+    "damage": 260,
+    "hasTag": false,
+    "amounts": {
+      "1": 30,
+      "4": 120,
+      "8": 240,
+      "16": 480,
+      "32": 960,
+      "64": 1920
+    },
+    "stock": 256
+  },
+  {
+    "name": "appliedenergistics2:part",
+    "maxDamage": 0,
+    "label": "ME Glass Cable - Fluix",
+    "maxSize": 64,
+    "damage": 16,
+    "hasTag": false,
+    "amounts": {
+      "1": 41,
+      "4": 164,
+      "8": 328,
+      "16": 656,
+      "32": 1312,
+      "64": 2624
+    },
+    "stock": 256
+  },
+  {
+    "name": "appliedenergistics2:molecular_assembler",
+    "maxDamage": 0,
+    "label": "Molecular Assembler",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 55,
+      "4": 220,
+      "8": 440,
+      "16": 880,
+      "32": 1760,
+      "64": 3520
+    },
+    "stock": 256
+  },
+  {
+    "name": "appliedenergistics2:controller",
+    "maxDamage": 0,
+    "label": "ME Controller",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 60,
+      "4": 240,
+      "8": 480,
+      "16": 960,
+      "32": 1920,
+      "64": 3840
+    },
+    "stock": 256
+  },
+  {
+    "name": "appliedenergistics2:part",
+    "maxDamage": 0,
+    "label": "ME Crafting Terminal",
+    "maxSize": 64,
+    "damage": 360,
+    "hasTag": false,
+    "amounts": {
+      "1": 200,
+      "4": 800,
+      "8": 1600,
+      "16": 3200,
+      "32": 6400,
+      "64": 12800
+    },
+    "stock": 256
+  },
+  {
+    "name": "appliedenergistics2:interface",
+    "maxDamage": 0,
+    "label": "ME Interface",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 52,
+      "4": 208,
+      "8": 416,
+      "16": 832,
+      "32": 1664,
+      "64": 3328
+    },
+    "stock": 256
+  },
+  {
+    "name": "appliedenergistics2:part",
+    "maxDamage": 0,
+    "label": "ME Import Bus",
+    "maxSize": 64,
+    "damage": 240,
+    "hasTag": false,
+    "amounts": {
+      "1": 40,
+      "4": 160,
+      "8": 320,
+      "16": 640,
+      "32": 1280,
+      "64": 2560
+    },
+    "stock": 256
+  },
+  {
+    "name": "appliedenergistics2:storage_cell_1k",
+    "maxDamage": 0,
+    "label": "1k ME Storage Cell",
+    "maxSize": 1,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 50,
+      "4": 200,
+      "8": 400,
+      "16": 800,
+      "32": 1600,
+      "64": 3200
+    },
+    "stock": 128
+  },
+  {
+    "name": "appliedenergistics2:storage_cell_64k",
+    "maxDamage": 0,
+    "label": "64k ME Storage Cell",
+    "maxSize": 1,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1230,
+      "4": 4920,
+      "8": 9840
+    },
+    "stock": 64
+  },
+  {
+    "name": "minecraft:cooked_mutton",
+    "maxDamage": 0,
+    "label": "Cooked Mutton",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 1,
+      "16": 16,
+      "64": 64,
+      "256": 256,
+      "1024": 1024
+    },
+    "stock": 4096
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "64k ME Storage Component",
+    "maxSize": 64,
+    "damage": 38,
+    "hasTag": false,
+    "amounts": {
+      "1": 800,
+      "4": 3200
+    },
+    "stock": 8
+  },
+  {
+    "name": "appliedenergistics2:storage_cell_4k",
+    "maxDamage": 0,
+    "label": "4k ME Storage Cell",
+    "maxSize": 1,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 160,
+      "4": 640
+    },
+    "stock": 8
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Logic Processor",
+    "maxSize": 64,
+    "damage": 22,
+    "hasTag": false,
+    "amounts": {
+      "1": 48,
+      "4": 192,
+      "8": 384,
+      "16": 768,
+      "32": 1536,
+      "64": 3072
+    },
+    "stock": 256
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Engineering Processor",
+    "maxSize": 64,
+    "damage": 24,
+    "hasTag": false,
+    "amounts": {
+      "1": 72,
+      "4": 288,
+      "8": 576,
+      "16": 1152,
+      "32": 2304,
+      "64": 4608
+    },
+    "stock": 256
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Calculation Processor",
+    "maxSize": 64,
+    "damage": 23,
+    "hasTag": false,
+    "amounts": {
+      "1": 40,
+      "4": 160,
+      "8": 320,
+      "16": 640,
+      "32": 1280,
+      "64": 2560
+    },
+    "stock": 256
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Inscriber Logic Press",
+    "maxSize": 64,
+    "damage": 15,
+    "hasTag": false,
+    "amounts": {
+      "1": 50,
+      "4": 200
+    },
+    "stock": 128
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Inscriber Silicon Press",
+    "maxSize": 64,
+    "damage": 19,
+    "hasTag": false,
+    "amounts": {
+      "1": 50,
+      "4": 200
+    },
+    "stock": 128
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Inscriber Engineering Press",
+    "maxSize": 64,
+    "damage": 14,
+    "hasTag": false,
+    "amounts": {
+      "1": 50,
+      "4": 200
+    },
+    "stock": 128
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Inscriber Calculation Press",
+    "maxSize": 64,
+    "damage": 13,
+    "hasTag": false,
+    "amounts": {
+      "1": 50,
+      "4": 200
+    },
+    "stock": 128
+  },
+  {
+    "name": "appliedenergistics2:inscriber",
+    "maxDamage": 0,
+    "label": "Inscriber",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 100,
+      "4": 400,
+      "8": 800
+    },
+    "stock": 128
+  },
+  {
+    "name": "appliedenergistics2:part",
+    "maxDamage": 0,
+    "label": "ME Smart Cable - Fluix",
+    "maxSize": 64,
+    "damage": 56,
+    "hasTag": false,
+    "amounts": {
+      "1": 30,
+      "4": 120,
+      "8": 240,
+      "16": 480,
+      "32": 960,
+      "64": 1920
+    },
+    "stock": 256
+  },
+  {
+    "name": "appliedenergistics2:part",
+    "maxDamage": 0,
+    "label": "ME Dense Smart Cable - Fluix",
+    "maxSize": 64,
+    "damage": 76,
+    "hasTag": false,
+    "amounts": {
+      "1": 60,
+      "4": 240,
+      "8": 480,
+      "16": 960,
+      "32": 1920,
+      "64": 3840
+    },
+    "stock": 256
+  },
+  {
+    "name": "appliedenergistics2:material",
+    "maxDamage": 0,
+    "label": "Acceleration Card",
+    "maxSize": 64,
+    "damage": 30,
+    "hasTag": false,
+    "amounts": {
+      "1": 20,
+      "4": 80,
+      "8": 160,
+      "16": 320,
+      "32": 640,
+      "64": 1280
+    },
+    "stock": 256
+  },
+  {
+    "label": "Draconic Core",
+    "maxDamage": 0,
+    "maxSize": 64,
+    "damage": 0,
+    "name": "draconicevolution:draconic_core",
+    "hasTag": false,
+    "amounts": {
+      "1": 170,
+      "4": 680,
+      "8": 1360,
+      "16": 2720
+    },
+    "stock": 100
+  },
+  {
+    "label": "Wyvern Core",
+    "maxDamage": 0,
+    "maxSize": 64,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_core",
+    "hasTag": false,
+    "amounts": {
+      "1": 490,
+      "4": 1960,
+      "8": 3920
+    },
+    "stock": 50
+  },
+  {
+    "label": "Wyvern Energy Core",
+    "maxDamage": 0,
+    "maxSize": 64,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_energy_core",
+    "hasTag": false,
+    "amounts": {
+      "1": 342,
+      "4": 1368,
+      "8": 2736
+    },
+    "stock": 64
+  },
+  {
+    "label": "Wyvern Flux Capacitor",
+    "Energy": 64000000,
+    "hasTag": true,
+    "maxDamage": 0,
+    "damage": 0,
+    "name": "draconicevolution:draconium_capacitor",
+    "maxSize": 1,
+    "amounts": {
+      "1": 1958
+    },
+    "stock": 16,
+    "label_friendly": "Wyvern Flux Capacitor (charged)"
+  },
+  {
+    "label": "Axe of the Wyvern",
+    "Energy": 4000000,
+    "hasTag": true,
+    "maxDamage": 0,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_axe",
+    "maxSize": 1,
+    "amounts": {
+      "1": 1000
+    },
+    "stock": 16,
+    "label_friendly": "Axe of the Wyvern (charged)"
+  },
+  {
+    "label": "Bow of the Wyvern",
+    "Energy": 4000000,
+    "hasTag": true,
+    "maxDamage": 0,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_bow",
+    "maxSize": 1,
+    "amounts": {
+      "1": 3000
+    },
+    "stock": 16,
+    "label_friendly": "Bow of the Wyvern (charged)"
+  },
+  {
+    "label": "Pickaxe of the Wyvern",
+    "Energy": 4000000,
+    "hasTag": true,
+    "maxDamage": 0,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_pick",
+    "maxSize": 1,
+    "amounts": {
+      "1": 1400
+    },
+    "stock": 16,
+    "label_friendly": "Pickaxe of the Wyvern (charged)"
+  },
+  {
+    "label": "Shovel of the Wyvern",
+    "Energy": 4000000,
+    "hasTag": true,
+    "maxDamage": 0,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_shovel",
+    "maxSize": 1,
+    "amounts": {
+      "1": 1000
+    },
+    "stock": 16,
+    "label_friendly": "Shovel of the Wyvern (charged)"
+  },
+  {
+    "label": "Sword of the Wyvern",
+    "Energy": 4000000,
+    "hasTag": true,
+    "maxDamage": 0,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_sword",
+    "maxSize": 1,
+    "amounts": {
+      "1": 1000
+    },
+    "stock": 16,
+    "label_friendly": "Sword of the Wyvern (charged)"
+  },
+  {
+    "label": "Wyvern Helm",
+    "Energy": 4000000,
+    "hasTag": true,
+    "maxDamage": -1,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_helm",
+    "maxSize": 1,
+    "amounts": {
+      "1": 1000
+    },
+    "stock": 16,
+    "label_friendly": "Wyvern Helm (charged)"
+  },
+  {
+    "label": "Wyvern Chestplate",
+    "Energy": 4000000,
+    "hasTag": true,
+    "maxDamage": -1,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_chest",
+    "maxSize": 1,
+    "amounts": {
+      "1": 1000
+    },
+    "stock": 16,
+    "label_friendly": "Wyvern Chestplate (charged)"
+  },
+  {
+    "label": "Wyvern Leggings",
+    "Energy": 4000000,
+    "hasTag": true,
+    "maxDamage": -1,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_legs",
+    "maxSize": 1,
+    "amounts": {
+      "1": 1000
+    },
+    "stock": 16,
+    "label_friendly": "Wyvern Leggings (charged)"
+  },
+  {
+    "label": "Wyvern Boots",
+    "Energy": 4000000,
+    "hasTag": true,
+    "maxDamage": -1,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_boots",
+    "maxSize": 1,
+    "amounts": {
+      "1": 1000
+    },
+    "stock": 16,
+    "label_friendly": "Wyvern Boots (charged)"
+  },
+  {
+    "name": "draconicevolution:draconium_capacitor",
+    "Energy": 256000000,
+    "maxDamage": 0,
+    "maxSize": 1,
+    "damage": 1,
+    "label": "Draconic Flux Capacitor",
+    "hasTag": true,
+    "amounts": {
+      "1": 10000
+    },
+    "stock": 2,
+    "label_friendly": "Draconic Flux Capacitor (charged)"
+  },
+  {
+    "name": "draconicevolution:draconic_axe",
+    "Energy": 16000000,
+    "maxDamage": 0,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Axe",
+    "hasTag": true,
+    "amounts": {
+      "1": 4000
+    },
+    "stock": 2,
+    "label_friendly": "Draconic Axe (charged)"
+  },
+  {
+    "name": "draconicevolution:draconic_bow",
+    "Energy": 16000000,
+    "maxDamage": 0,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Bow",
+    "hasTag": true,
+    "amounts": {
+      "1": 4000
+    },
+    "stock": 2,
+    "label_friendly": "Draconic Bow (charged)"
+  },
+  {
+    "name": "draconicevolution:draconic_pick",
+    "Energy": 16000000,
+    "maxDamage": 0,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Pickaxe",
+    "hasTag": true,
+    "amounts": {
+      "1": 4000
+    },
+    "stock": 2,
+    "label_friendly": "Draconic Pickaxe (charged)"
+  },
+  {
+    "name": "draconicevolution:draconic_shovel",
+    "Energy": 16000000,
+    "maxDamage": 0,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Shovel",
+    "hasTag": true,
+    "amounts": {
+      "1": 4000
+    },
+    "stock": 2,
+    "label_friendly": "Draconic Shovel (charged)"
+  },
+  {
+    "name": "draconicevolution:draconic_sword",
+    "Energy": 16000000,
+    "maxDamage": 0,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Sword",
+    "hasTag": true,
+    "amounts": {
+      "1": 4000
+    },
+    "stock": 2,
+    "label_friendly": "Draconic Sword (charged)"
+  },
+  {
+    "name": "draconicevolution:draconic_helm",
+    "Energy": 16000000,
+    "maxDamage": -1,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Helm",
+    "hasTag": true,
+    "amounts": {
+      "1": 9000
+    },
+    "stock": 2,
+    "label_friendly": "Draconic Helm (charged)"
+  },
+  {
+    "name": "draconicevolution:draconic_chest",
+    "Energy": 16000000,
+    "maxDamage": -1,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Chestplate",
+    "hasTag": true,
+    "amounts": {
+      "1": 9000
+    },
+    "stock": 2,
+    "label_friendly": "Draconic Chestplate (charged)"
+  },
+  {
+    "name": "draconicevolution:draconic_legs",
+    "Energy": 16000000,
+    "maxDamage": -1,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Leggings",
+    "hasTag": true,
+    "amounts": {
+      "1": 9000
+    },
+    "stock": 2,
+    "label_friendly": "Draconic Leggings (charged)"
+  },
+  {
+    "name": "draconicevolution:draconic_boots",
+    "Energy": 16000000,
+    "maxDamage": -1,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Boots",
+    "hasTag": true,
+    "amounts": {
+      "1": 9000
+    },
+    "stock": 2,
+    "label_friendly": "Draconic Boots (charged)"
+  },
+  {
+    "name": "draconicevolution:draconic_staff_of_power",
+    "Energy": 48000000,
+    "maxDamage": 0,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Staff of Power",
+    "hasTag": true,
+    "amounts": {
+      "1": 10000
+    },
+    "stock": 2,
+    "label_friendly": "Draconic Staff of Power (charged)"
+  },
+  {
+    "name": "enderio:block_enhanced_wired_charger",
+    "maxDamage": 0,
+    "label": "Enhanced Wired Charger",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 750,
+      "4": 3000
+    },
+    "categories": [
+      "_machines"
+    ],
+    "stock": 20
+  },
+  {
+    "name": "enderio:block_enhanced_alloy_smelter",
+    "maxDamage": 0,
+    "label": "Enhanced Alloy Smelter",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 750,
+      "4": 3000
+    },
+    "categories": [
+      "_machines"
+    ],
+    "stock": 50
+  },
+  {
+    "name": "enderio:block_enhanced_sag_mill",
+    "maxDamage": 0,
+    "label": "Enhanced SAG Mill",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 750,
+      "4": 3000
+    },
+    "categories": [
+      "_machines"
+    ],
+    "stock": 50
+  },
+  {
+    "name": "enderstorage:ender_storage",
+    "maxDamage": 0,
+    "label": "Ender Tank",
+    "maxSize": 64,
+    "damage": 1,
+    "hasTag": true,
+    "amounts": {
+      "1": 200,
+      "4": 800,
+      "8": 1600,
+      "16": 3200
+    },
+    "categories": [
+      "_starterKit"
+    ],
+    "stock": 50
+  },
+  {
+    "name": "enderstorage:ender_storage",
+    "maxDamage": 0,
+    "label": "Ender Chest",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": true,
+    "amounts": {
+      "1": 35,
+      "4": 140,
+      "8": 280,
+      "16": 560
+    },
+    "categories": [
+      "_starterKit"
+    ],
+    "stock": 200
+  },
+  {
+    "name": "enderio:item_material",
+    "maxDamage": 0,
+    "label": "Organic Black Dye",
+    "maxSize": 64,
+    "damage": 50,
+    "hasTag": false,
+    "amounts": {
+      "1": 10,
+      "4": 40,
+      "16": 160,
+      "64": 640
+    },
+    "stock": 1024
+  },
+  {
+    "name": "enderio:item_material",
+    "maxDamage": 0,
+    "label": "Enhanced Dye Blend",
+    "maxSize": 64,
+    "damage": 67,
+    "hasTag": false,
+    "amounts": {
+      "1": 50,
+      "4": 200,
+      "16": 800,
+      "64": 3200
+    },
+    "stock": 200
+  },
+  {
+    "name": "enderio:item_material",
+    "maxDamage": 0,
+    "label": "Industrial Dye Blend",
+    "maxSize": 64,
+    "damage": 51,
+    "hasTag": false,
+    "amounts": {
+      "1": 6,
+      "4": 24,
+      "16": 96,
+      "64": 384
+    },
+    "stock": 1024
+  },
+  {
+    "name": "enderio:item_material",
+    "maxDamage": 0,
+    "label": "Organic Green Dye",
+    "maxSize": 64,
+    "damage": 48,
+    "hasTag": false,
+    "amounts": {
+      "1": 3,
+      "4": 12,
+      "16": 48,
+      "64": 194
+    },
+    "stock": 1024
+  },
+  {
+    "name": "enderio:item_material",
+    "maxDamage": 0,
+    "label": "Organic Brown Dye",
+    "maxSize": 64,
+    "damage": 49,
+    "hasTag": false,
+    "amounts": {
+      "1": 3,
+      "4": 12,
+      "16": 48,
+      "64": 194
+    },
+    "stock": 1024
+  },
+  {
+    "name": "enderio:item_material",
+    "maxDamage": 0,
+    "label": "Soul Attuned Dye Blend",
+    "maxSize": 64,
+    "damage": 52,
+    "hasTag": false,
+    "amounts": {
+      "1": 6,
+      "4": 24,
+      "16": 96,
+      "64": 384
+    },
+    "stock": 1024
+  },
+  {
+    "name": "enderio:item_basic_capacitor",
+    "maxDamage": 0,
+    "label": "Basic Capacitor",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 8,
+      "4": 32,
+      "16": 128,
+      "64": 512
+    },
+    "stock": 1024
+  },
+  {
+    "name": "enderio:item_basic_capacitor",
+    "maxDamage": 0,
+    "label": "Double-Layer Capacitor",
+    "maxSize": 64,
+    "damage": 1,
+    "hasTag": false,
+    "amounts": {
+      "1": 47,
+      "4": 188,
+      "16": 752,
+      "32": 1504
+    },
+    "stock": 500
+  },
+  {
+    "name": "enderio:item_basic_capacitor",
+    "maxDamage": 0,
+    "label": "Octadic Capacitor",
+    "maxSize": 64,
+    "damage": 2,
+    "hasTag": false,
+    "amounts": {
+      "1": 156,
+      "4": 624,
+      "8": 1248,
+      "16": 2496
+    },
+    "stock": 200
+  },
+  {
+    "name": "enderio:block_cap_bank",
+    "maxDamage": 0,
+    "label": "Basic Capacitor Bank",
+    "maxSize": 64,
+    "damage": 1,
+    "hasTag": false,
+    "amounts": {
+      "1": 66,
+      "4": 264,
+      "8": 528,
+      "16": 1056
+    },
+    "stock": 100
+  },
+  {
+    "name": "enderio:block_cap_bank",
+    "maxDamage": 0,
+    "label": "Capacitor Bank",
+    "maxSize": 64,
+    "damage": 2,
+    "hasTag": false,
+    "amounts": {
+      "1": 269,
+      "4": 1076,
+      "8": 2152,
+      "16": 4304
+    },
+    "stock": 100
+  },
+  {
+    "name": "enderio:block_cap_bank",
+    "maxDamage": 0,
+    "label": "Vibrant Capacitor Bank",
+    "maxSize": 64,
+    "damage": 3,
+    "hasTag": false,
+    "amounts": {
+      "1": 742,
+      "4": 2964,
+      "8": 5928
+    },
+    "stock": 50
+  },
+  {
+    "name": "enderio:block_transceiver",
+    "maxDamage": 0,
+    "label": "Dimensional Transceiver",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 750,
+      "4": 3000,
+      "8": 6000
+    },
+    "stock": 20
+  },
+  {
+    "name": "enderio:block_soul_binder",
+    "maxDamage": 0,
+    "label": "Soul Binder",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 400,
+      "4": 1600,
+      "8": 3200
+    },
+    "stock": 20
+  },
+  {
+    "name": "enderio:item_me_conduit",
+    "maxDamage": 0,
+    "label": "ME Conduit",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 7,
+      "4": 25,
+      "16": 100,
+      "64": 400
+    },
+    "stock": 1024
+  },
+  {
+    "name": "enderio:item_me_conduit",
+    "maxDamage": 0,
+    "label": "Dense ME Conduit",
+    "maxSize": 64,
+    "damage": 1,
+    "hasTag": false,
+    "amounts": {
+      "1": 8,
+      "4": 29,
+      "16": 116,
+      "64": 464
+    },
+    "stock": 1024
+  },
+  {
+    "name": "enderio:block_travel_anchor",
+    "maxDamage": 0,
+    "label": "Travel Anchor",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 55,
+      "4": 220,
+      "16": 880,
+      "64": 3520
+    },
+    "stock": 200
+  },
+  {
+    "name": "minecraft:book",
+    "maxDamage": 0,
+    "label": "Book",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 7,
+      "4": 28,
+      "16": 111,
+      "64": 441
+    },
+    "stock": 400
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "minecraft:log",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Oak Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "minecraft:log",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Birch Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "minecraft:log",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Jungle Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "minecraft:log2",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Acacia Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "minecraft:log2",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Dark Oak Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.0",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Larch Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.0",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Teak Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.0",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Desert Acacia Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.0",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Lime Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.1",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Chestnut Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.1",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Wenge Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.1",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Baobab Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.1",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Sequoia Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.2",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Kapok Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.2",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Ebony Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.2",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Mahogany Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.2",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Balsa Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.3",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Willow Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.3",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Walnut Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.3",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Greenheart Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.3",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Cherry Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.4",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Mahoe Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.4",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Poplar Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.4",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Palm Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.4",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Papaya Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.5",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Pine Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.5",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Plum Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.5",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Maple Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.5",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Citrus Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.6",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Giant Sequoia Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.6",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Ipe Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.6",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Padauk Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.6",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Cocobolo Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.7",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Zebrawood Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.0",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Larch Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.0",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Teak Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.0",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Desert Acacia Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.0",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Lime Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.1",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Chestnut Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.1",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Wenge Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.1",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Baobab Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.1",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Sequoia Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.2",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Kapok Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.2",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Ebony Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.2",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Mahogany Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.2",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Balsa Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.3",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Willow Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.3",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Walnut Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.3",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Greenheart Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.3",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Cherry Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.4",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Mahoe Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.4",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Poplar Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.4",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Palm Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.4",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Papaya Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.5",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Pine Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.5",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Plum Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.5",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Maple Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.5",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Citrus Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.6",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Giant Sequoia Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.6",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Ipe Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.6",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Padauk Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.6",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Cocobolo Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.fireproof.7",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Zebrawood Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.vanilla.fireproof.0",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Oak Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.vanilla.fireproof.0",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Birch Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.vanilla.fireproof.0",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Jungle Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.vanilla.fireproof.1",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Acacia Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.vanilla.fireproof.1",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Dark Oak Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.0",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Apple Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.0",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Fig Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.0",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Butternut Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.0",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Whitebeam Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.1",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Rowan Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.1",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Hemlock Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.1",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Ash Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.1",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Alder Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.2",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Beech Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.2",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Hawthorn Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.2",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Banana Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.2",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Yew Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.3",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Cypress Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.3",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Fir Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.3",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Hazel Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.3",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Hickory Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.4",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Elm Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.4",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Elder Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.4",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Holly Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.4",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Hornbeam Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.5",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Cedar Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.5",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Olive Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.5",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Sweetgum Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.5",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Locust Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.6",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Pear Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.6",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Maclura Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.6",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Brazilwood Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.6",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Logwood Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.7",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Rosewood Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.7",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Purpleheart Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.7",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Iroko Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.7",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Gingko Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.8",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Eucalyptus Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.8",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Box Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.8",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Syzgium Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.8",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Pink Ivory Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.9",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Eucalyptus Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.9",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Eucalyptus Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.9",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Cherry Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.9",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Cinnamon Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.0",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Apple Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.0",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Fig Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.0",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Butternut Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.0",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Whitebeam Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.1",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Rowan Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.1",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Hemlock Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.1",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Ash Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.1",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Alder Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.2",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Beech Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.2",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Hawthorn Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.2",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Banana Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.2",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Yew Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.3",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Cypress Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.3",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Fir Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.3",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Hazel Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.3",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Hickory Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.4",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Elm Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.4",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Elder Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.4",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Holly Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.4",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Hornbeam Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.5",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Cedar Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.5",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Olive Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.5",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Sweetgum Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.5",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Locust Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.6",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Pear Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.6",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Maclura Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.6",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Brazilwood Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.6",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Logwood Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.7",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Rosewood Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.7",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Purpleheart Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.7",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Iroko Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.7",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Gingko Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.8",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Eucalyptus Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.8",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Box Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.8",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Syzgium Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.8",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Pink Ivory Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.9",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Eucalyptus Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.9",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Eucalyptus Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.9",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Cherry Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "extratrees:logs.fireproof.9",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Cinnamon Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_0",
+    "hasTag": false,
+    "damage": 4,
+    "label": "Sacred Oak Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_0",
+    "hasTag": false,
+    "damage": 5,
+    "label": "Cherry Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_0",
+    "hasTag": false,
+    "damage": 6,
+    "label": "Umbran Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_0",
+    "hasTag": false,
+    "damage": 7,
+    "label": "Fir Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_1",
+    "hasTag": false,
+    "damage": 4,
+    "label": "Ethereal Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_1",
+    "hasTag": false,
+    "damage": 5,
+    "label": "Magic Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_1",
+    "hasTag": false,
+    "damage": 6,
+    "label": "Mangrove Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_1",
+    "hasTag": false,
+    "damage": 7,
+    "label": "Palm Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_2",
+    "hasTag": false,
+    "damage": 4,
+    "label": "Redwood Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_2",
+    "hasTag": false,
+    "damage": 5,
+    "label": "Willow Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_2",
+    "hasTag": false,
+    "damage": 6,
+    "label": "Pine Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_2",
+    "hasTag": false,
+    "damage": 7,
+    "label": "Hellbark Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_3",
+    "hasTag": false,
+    "damage": 4,
+    "label": "Jacaranda Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_3",
+    "hasTag": false,
+    "damage": 5,
+    "label": "Mahogany Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_3",
+    "hasTag": false,
+    "damage": 6,
+    "label": "Ebony Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_3",
+    "hasTag": false,
+    "damage": 7,
+    "label": "Eucalyptus Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "biomesoplenty:log_4",
+    "hasTag": false,
+    "damage": 5,
+    "label": "Dead Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "twilightforest:twilight_log",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Twilight Oak Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "twilightforest:twilight_log",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Canopy Tree Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "twilightforest:twilight_log",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Mangrove Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "twilightforest:twilight_log",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Darkwood Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "twilightforest:magic_log",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Timewood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "twilightforest:magic_log",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Transwood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "twilightforest:magic_log",
+    "hasTag": false,
+    "damage": 2,
+    "label": "Minewood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "twilightforest:magic_log",
+    "hasTag": false,
+    "damage": 3,
+    "label": "Sortingwood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "integrateddynamics:menril_log",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Menril Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "integrateddynamics:menril_log_filled",
+    "hasTag": false,
+    "damage": 0,
+    "label": "Enriched Menril Wood",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood"
+    ]
+  },
+  {
+    "maxDamage": 0,
+    "maxSize": 64,
+    "name": "forestry:logs.vanilla.fireproof.0",
+    "hasTag": false,
+    "damage": 1,
+    "label": "Spruce Wood (Fireproof)",
+    "amounts": {
+      "64": 25,
+      "256": 100,
+      "1024": 400,
+      "4032": 1575
+    },
+    "stock": 431,
+    "categories": [
+      "_wood_fireproof"
+    ]
+  },
+  {
+    "name": "minecraft:leather",
+    "maxDamage": 0,
+    "label": "Leather",
+    "maxSize": 64,
+    "damage": 0,
+    "hasTag": false,
+    "amounts": {
+      "1": 10,
+      "4": 40,
+      "16": 160,
+      "64": 640
+    },
+    "stock": 1024
+  }
+]

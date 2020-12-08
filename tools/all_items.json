@@ -12004,5 +12004,306 @@
     "maxSize": 64,
     "damage": 0,
     "hasTag": false
+  },
+  {
+    "label": "Draconic Core",
+    "maxDamage": 0,
+    "maxSize": 64,
+    "damage": 0,
+    "name": "draconicevolution:draconic_core",
+    "hasTag": false
+  },
+  {
+    "label": "Wyvern Core",
+    "maxDamage": 0,
+    "maxSize": 64,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_core",
+    "hasTag": false
+  },
+  {
+    "label": "Wyvern Energy Core",
+    "maxDamage": 0,
+    "maxSize": 64,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_energy_core",
+    "hasTag": false
+  },
+  {
+    "label": "Wyvern Flux Capacitor",
+    "maxDamage": 0,
+    "maxSize": 1,
+    "damage": 0,
+    "name": "draconicevolution:draconium_capacitor",
+    "hasTag": false
+  },
+  {
+    "label": "Axe of the Wyvern",
+    "maxDamage": 0,
+    "maxSize": 1,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_axe",
+    "hasTag": false
+  },
+  {
+    "label": "Bow of the Wyvern",
+    "maxDamage": 0,
+    "maxSize": 1,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_bow",
+    "hasTag": false
+  },
+  {
+    "label": "Pickaxe of the Wyvern",
+    "maxDamage": 0,
+    "maxSize": 1,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_pick",
+    "hasTag": false
+  },
+  {
+    "label": "Shovel of the Wyvern",
+    "maxDamage": 0,
+    "maxSize": 1,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_shovel",
+    "hasTag": false
+  },
+  {
+    "label": "Sword of the Wyvern",
+    "maxDamage": 0,
+    "maxSize": 1,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_sword",
+    "hasTag": false
+  },
+  {
+    "label": "Wyvern Helm",
+    "maxDamage": -1,
+    "maxSize": 1,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_helm",
+    "hasTag": false
+  },
+  {
+    "label": "Wyvern Chestplate",
+    "maxDamage": -1,
+    "maxSize": 1,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_chest",
+    "hasTag": false
+  },
+  {
+    "label": "Wyvern Leggings",
+    "maxDamage": -1,
+    "maxSize": 1,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_legs",
+    "hasTag": false
+  },
+  {
+    "label": "Wyvern Boots",
+    "maxDamage": -1,
+    "maxSize": 1,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_boots",
+    "hasTag": false
+  },
+  {
+    "label": "Wyvern Flux Capacitor",
+    "Energy": 64000000,
+    "hasTag": true,
+    "maxDamage": 0,
+    "damage": 0,
+    "name": "draconicevolution:draconium_capacitor",
+    "maxSize": 1
+  },
+  {
+    "label": "Axe of the Wyvern",
+    "Energy": 4000000,
+    "hasTag": true,
+    "maxDamage": 0,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_axe",
+    "maxSize": 1
+  },
+  {
+    "label": "Bow of the Wyvern",
+    "Energy": 4000000,
+    "hasTag": true,
+    "maxDamage": 0,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_bow",
+    "maxSize": 1
+  },
+  {
+    "label": "Pickaxe of the Wyvern",
+    "Energy": 4000000,
+    "hasTag": true,
+    "maxDamage": 0,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_pick",
+    "maxSize": 1
+  },
+  {
+    "label": "Shovel of the Wyvern",
+    "Energy": 4000000,
+    "hasTag": true,
+    "maxDamage": 0,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_shovel",
+    "maxSize": 1
+  },
+  {
+    "label": "Sword of the Wyvern",
+    "Energy": 4000000,
+    "hasTag": true,
+    "maxDamage": 0,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_sword",
+    "maxSize": 1
+  },
+  {
+    "label": "Wyvern Helm",
+    "Energy": 4000000,
+    "hasTag": true,
+    "maxDamage": -1,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_helm",
+    "maxSize": 1
+  },
+  {
+    "label": "Wyvern Chestplate",
+    "Energy": 4000000,
+    "hasTag": true,
+    "maxDamage": -1,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_chest",
+    "maxSize": 1
+  },
+  {
+    "label": "Wyvern Leggings",
+    "Energy": 4000000,
+    "hasTag": true,
+    "maxDamage": -1,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_legs",
+    "maxSize": 1
+  },
+  {
+    "label": "Wyvern Boots",
+    "Energy": 4000000,
+    "hasTag": true,
+    "maxDamage": -1,
+    "damage": 0,
+    "name": "draconicevolution:wyvern_boots",
+    "maxSize": 1
+  },
+  {
+    "name": "draconicevolution:draconic_ingot",
+    "maxDamage": 0,
+    "maxSize": 64,
+    "hasTag": false,
+    "damage": 0,
+    "label": "Awakened Draconium Ingot"
+  },
+  {
+    "name": "draconicevolution:draconium_capacitor",
+    "Energy": 256000000,
+    "maxDamage": 0,
+    "maxSize": 1,
+    "damage": 1,
+    "label": "Draconic Flux Capacitor",
+    "hasTag": true
+  },
+  {
+    "name": "draconicevolution:draconic_axe",
+    "Energy": 16000000,
+    "maxDamage": 0,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Axe",
+    "hasTag": true
+  },
+  {
+    "name": "draconicevolution:draconic_bow",
+    "Energy": 16000000,
+    "maxDamage": 0,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Bow",
+    "hasTag": true
+  },
+  {
+    "name": "draconicevolution:draconic_pick",
+    "Energy": 16000000,
+    "maxDamage": 0,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Pickaxe",
+    "hasTag": true
+  },
+  {
+    "name": "draconicevolution:draconic_shovel",
+    "Energy": 16000000,
+    "maxDamage": 0,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Shovel",
+    "hasTag": true
+  },
+  {
+    "name": "draconicevolution:draconic_sword",
+    "Energy": 16000000,
+    "maxDamage": 0,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Sword",
+    "hasTag": true
+  },
+  {
+    "name": "draconicevolution:draconic_helm",
+    "Energy": 16000000,
+    "maxDamage": -1,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Helm",
+    "hasTag": true
+  },
+  {
+    "name": "draconicevolution:draconic_chest",
+    "Energy": 16000000,
+    "maxDamage": -1,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Chestplate",
+    "hasTag": true
+  },
+  {
+    "name": "draconicevolution:draconic_legs",
+    "Energy": 16000000,
+    "maxDamage": -1,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Leggings",
+    "hasTag": true
+  },
+  {
+    "name": "draconicevolution:draconic_boots",
+    "Energy": 16000000,
+    "maxDamage": -1,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Boots",
+    "hasTag": true
+  },
+  {
+    "name": "draconicevolution:draconic_staff_of_power",
+    "Energy": 48000000,
+    "maxDamage": 0,
+    "maxSize": 1,
+    "damage": 0,
+    "label": "Draconic Staff of Power",
+    "hasTag": true
   }
 ]

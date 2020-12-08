@@ -14,14 +14,14 @@ local json                   = require("json")
 local config                 = require("shop.config")
 local notice                 = require("shop.gui_notice")
 
-local application            = gui.application
-local panel                  = application:addChild(GUI.panel(1, 2, application.width, application.height, 0xFFFFFF, 0.5))
+local workspace            = gui.workspace
+local panel                  = workspace:addChild(GUI.panel(1, 2, workspace.width, workspace.height, 0xFFFFFF, 0.5))
 panel.hidden                 = true
 
-gui.menu_exit.onTouch        = function(application, object, e2, e3, e4, e5, e6, user)
-    if user == config.owner then
+gui.menu_exit.onTouch        = function(workspace, object, e2, e3, e4, e5, e6, user)
+    if config.isOwner(user) then
         should_terminate = true
-        gui.application:stop()
+        gui.workspace:stop()
         return
     end
     gui.on_alert = true
@@ -31,10 +31,10 @@ end
 
 gui.menu_money_disks.onTouch = function()
     --panel.hidden = not panel.hidden
-    --application:draw()
-    GUI.notice(application, 10, "Testing new alert!\nWith lots of lines\napparently", "tough so..")
-    GUI.notice(application, 5, "Testing new alert above!\nWith lots of lines\napparently", "tough so..")
+    --workspace:draw()
+    GUI.notice(workspace, 10, "Testing new alert!\nWith lots of lines\napparently", "tough so..")
+    GUI.notice(workspace, 5, "Testing new alert above!\nWith lots of lines\napparently", "tough so..")
 end
 
-gui.application:draw(true)
-gui.application:start()
+gui.workspace:draw(true)
+gui.workspace:start()

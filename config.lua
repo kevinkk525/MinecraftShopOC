@@ -6,17 +6,51 @@
 
 local sides  = require("sides")
 local json   = require("json")
+local math   = require("math")
 local config = {}
 
 ------- helper functions
+function config.isOwner(user)
+    if type(config.owner) ~= "table" then
+        return config.owner == user
+    end
+    for i, name in pairs(config.owner) do
+        if name == user then
+            return true
+        end
+    end
+    return false
+end
+
+function config.ownerToString()
+    local st = ""
+    if type(config.owner) ~= "table" then
+        return config.owner
+    end
+    for i, name in pairs(config.owner) do
+        if i > 1 then
+            st = st .. ", "
+        end
+        st = st .. name
+    end
+    return st
+end
+
 function config.getItemIdentityName(item, blacklist)
     -- still has problems with some IC2 items that suddenly have hasTag=false after crafting
     -- but are supposed to have hasTag=True before crafting..
     -- affected: "ic2:lapotron_crystal", "ic2:advanced_re_battery","ic2:re_battery", etc
     local name = ""
     local keys = {}
+    local blk  = {}
+    for key, val in pairs(config.identity_blacklist) do
+        blk[key] = true
+    end
     if blacklist == nil then
         blacklist = {}
+    end
+    for i, key in pairs(blacklist) do
+        blk[key] = true
     end
     for key, value in pairs(item) do
         if key ~= "label" and key ~= "name" and key ~= "size" then
@@ -26,16 +60,15 @@ function config.getItemIdentityName(item, blacklist)
     table.sort(keys)
     table.insert(keys, 1, "label")
     table.insert(keys, 2, "name")
-    for i, k in pairs(blacklist) do
-        table.remove(keys, i)
-    end
     for _, key in pairs(keys) do
-        local it = item[key]
-        if type(it) == "number" then
-            it = it + .0 -- to enforce float representation on all numbers
+        if blk[key] == nil then
+            local it = item[key]
+            if type(it) == "number" then
+                it = it + .0 -- to enforce float representation on all numbers
+            end
+            it   = tostring(it)
+            name = name .. it .. ";"
         end
-        it   = tostring(it)
-        name = name .. it .. ";"
     end
     return name
 end
@@ -64,9 +97,24 @@ local function calculateCellsNeeded(trans)
             end
         end
     end
-    trans.leased_cells      = cells
-    trans.lease_value       = cells * config.price_lease_storage_cell
-    trans.transaction_value = trans.item_value + trans.lease_value
+    if cells == 1 and cell_slots_used <= config.dropper_export_max_slots and cell_items_stored <= config.dropper_export_max_items then
+        -- no cell needed
+        trans.leased_cells      = 0
+        trans.lease_value       = 0
+        trans.transaction_value = trans.item_value
+    else
+        trans.leased_cells      = cells
+        trans.lease_value       = cells * config.price_lease_storage_cell
+        trans.transaction_value = trans.item_value + trans.lease_value
+    end
+end
+
+function config.calculateExportActivations(item, size)
+    local full_stack, restf = math.modf(size / item.maxSize)
+    restf                   = size - (full_stack * item.maxSize)
+    local half_stack, resth = math.modf(restf / (item.maxSize / 2))
+    local single            = size - full_stack * item.maxSize - half_stack * (item.maxSize / 2)
+    return full_stack, half_stack, single
 end
 
 function config.newTransaction()
@@ -136,73 +184,73 @@ function config.newTransaction()
 end
 
 -- ME controller Item storage
-config.address_me_storage              = "6ffbe891-07b7-4516-ab54-857b267cbe60"
+config.address_me_storage              = "ececd6ef-48ba-44c1-bff9-6190eb029ee0"
 -- ME controller for ME Chest
-config.address_me_chest                = "9fd21c13-4d1b-42d8-9c25-06c357868558"
--- ME controller Money
-config.address_me_money                = "22f7f7a0-e848-40d6-a662-9cb2141aa083"
+config.address_me_chest                = "a1a24fc5-3409-4b8a-ab1c-d06ed2005723"
+-- ME controller Money for money creation --> remove in next version.
+config.address_me_money                = "15b52916-6f33-4fcb-89f1-ccdfd57c080b"
 -- ME exportbus chest
-config.address_export_stack            = "b4caa6ca-0fc1-41bd-98f4-cc99c3621a02"
-config.side_export_stack               = sides.west
-config.address_export_half             = "d31ef119-48ec-4e49-a5bc-8168aa71fbe2"
+config.address_export_stack            = "bd490ff5-16fd-4d98-b42b-1366df6e9563"
+config.side_export_stack               = sides.south
+config.address_export_half             = "5e25eeb1-7971-46bf-b751-8c282a4ed5db"
 config.side_export_half                = sides.east
-config.address_export_single           = "f5f40931-ab84-467a-bd3f-201529d3b181"
-config.side_export_single              = sides.up
+config.address_export_single           = "6f3c1ace-8043-4e80-93b9-168de1f6ea95"
+config.side_export_single              = sides.north
 -- ME exportbus single item
-config.address_export_single_dropper   = "b7492057-30f0-489b-aff4-3a789786eb5f"
-config.side_export_dropper             = sides.west
+config.address_export_single_dropper   = "73995cd2-732b-4513-a0fa-4799549361f7"
+config.side_export_dropper             = sides.south
 -- ME exportbus portable cell
-config.address_export_portable_cell    = "3eccea41-6dc1-4a0b-bfe0-6a95af472093"
-config.side_export_portable_cell       = sides.east
+config.address_export_portable_cell    = "3de2cb69-e851-4d77-92f4-f2de794cdd92"
+config.side_export_portable_cell       = sides.north
 
--- Redstone block export bus
-config.address_redstone_export         = "2034c414-14a8-4acb-9040-6ed55f7f6db6"
-config.side_export_redstone            = sides.north
 -- Redstone block vacuum chest
-config.address_redstone_vacuum_chest   = "de3545bb-c12e-4341-beee-01568f24df3e"
-config.side_redstone_vacuum_chest      = sides.south
+config.address_redstone_vacuum_chest   = "e27998b2-062e-44f2-bbdb-4f8398efd20d"
+config.side_redstone_vacuum_chest      = sides.east
+-- Redstone block dropper
+config.address_redstone_dropper        = "3ee85d44-e174-4bcc-8b25-c1344779cf43"
+config.side_redstone_dropper           = sides.west
+-- Redstone block autostart
+config.address_redstone_autostart      = "92dbf0a4-d6c8-4e88-a538-27ebde6f809c"
 
--- Transposer
-config.address_transposer              = "0e07e3ae-1ecf-4c87-85a9-cabfd1742f09"
-config.side_chest_cell_input           = sides.up -- not used for user input anymore
-config.side_floppy                     = sides.north
-config.side_vacuum_input               = sides.west
-config.side_dropper_transposer         = sides.east
+-- Transposer ME Chest export/import
+config.address_transposer_me_chest     = "bb08d9a2-9871-4c7e-8aad-361d2bee09a1"
+config.side_transposer_me_chest_output = sides.east
+config.side_transposer_me_chest_input  = sides.up
+config.side_transposer_me_chest        = sides.west
+-- Transposer input
+config.address_transposer_input        = "b0281ee8-91bc-4a44-be49-4e20b639bef8"
+config.side_floppy                     = sides.west
+config.side_dropper_input              = sides.up
+config.side_vacuum_input               = sides.south
 config.side_ioport_input               = sides.down
 
--- Transposer for system flushing (remainder of export to 4k)
-config.address_transposer_flushing     = "58ff08c5-eb2a-4f66-911e-e4d1bc35cf7d"
-config.side_chest_flushing             = sides.up
-config.side_ioport_flushing            = sides.east
-config.side_mechest_flushing           = sides.down
+-- Transposer for system flushing (remainder of export to 4k) --> not used at the moment
+--config.address_transposer_flushing     = "58ff08c5-eb2a-4f66-911e-e4d1bc35cf7d"
+--config.side_chest_flushing             = sides.up
+--config.side_ioport_flushing            = sides.east
+--config.side_mechest_flushing           = sides.down
 
--- Transposer ME Chest export
-config.address_transposer_me_chest     = "8415091f-ca1a-4ab6-908d-c0ab643cadbd"
-config.side_transposer_me_chest        = sides.north
-config.side_transposer_me_chest_input  = sides.south
-config.side_transposer_me_chest_output = sides.up
-
--- Transposer Disk Drive
-config.address_transposer_drive        = "89504ea6-f8a7-4a0c-92c3-ce92cb52566c"
-config.side_drive_transposer_eject     = sides.up
-config.side_drive_chest_eject          = sides.west
+-- Transposer Disk Drive for input of money
+config.address_transposer_drive        = "b0281ee8-91bc-4a44-be49-4e20b639bef8"
+config.side_drive_transposer_eject     = sides.west -- TODO: name unclear
+config.side_drive_chest_eject          = sides.up -- TODO: name unclear, trash?
 
 -- Transposer Money Disk Drive
-config.address_transposer_money_drive  = "2296cb15-7497-47c8-895f-77eaba721594"
+config.address_transposer_money_drive  = "b2950f7d-94d6-46f1-bc3f-f5fe74cabbdc"
 config.side_money_drive                = sides.down
 config.side_money_disk_input           = sides.up
 
 
 -- Disk Drive input for money
-config.address_disk_drive              = "e955d3da-8190-4d2c-92e8-563d37e11793"
+config.address_disk_drive              = "a6aa5f69-8bcc-43dc-9c71-0813f100cdbd"
 
 -- Disk Drive creating money
-config.address_disk_drive_money        = "6ce0fd56-5956-4439-8691-755b8d2893f4"
+config.address_disk_drive_money        = "8566181b-a1bc-4268-be90-d19d2a19ef3e"
 
 -- Identity configurations
 config.identity_blacklist              = { ["isCraftable"] = true, ["size"] = true,
                                            ["amounts"]     = true, ["label_friendly"] = true,
-                                           ["categories"]  = true }
+                                           ["categories"]  = true, ["stock"] = true }
 config.identity_empty                  = "Air;minecraft:air;0.0;false;0.0;64.0;"
 config.identity_portable_cell          = "Portable Cell;appliedenergistics2:portable_cell;0.0;true;32.0;1.0;"
 config.nbt_portable_cell               = {
@@ -217,22 +265,29 @@ config.maxSlots_portableCell           = 63
 config.maxSlots_money_storage          = 63 * 2
 
 -- Timeouts
-config.timeout_buyer                   = 30 -- timeout for keeping buyer valid, might have left or new buyer not recognized
 config.timeout_export                  = 60
-config.price_lease_storage_cell        = 10
+config.price_lease_storage_cell        = 50
 
 
 --
-config.path_file_items                 = "/home/shop/items.json"
-config.path_accounts                   = "/mnt/59b/accounts/"
-config.path_money_disks                = "/mnt/59b/money_disks.json"
-config.path_logfile                    = "/mnt/59b/shop.log"
-config.path_logfile_transactions       = "/mnt/59b/transactions.log"
+config.path_file_items                 = "/home/shop/items_dirtcraft.json"
+config.path_mounts                     = { "/mnt/066", "/mnt/71c", "/mnt/b0d" }
+config.path_accounts                   = "/mnt/066/accounts/"
+config.path_money_disks                = "/mnt/71c/money_disks.json"
+config.path_logfile                    = "/mnt/b0d/shop.log"
+config.path_logfile_transactions       = "/mnt/71c/transactions.log"
 config.log_lines_textbox               = 500
-config.max_filesize_log                = 4 * 1024 * 1024 --4 MB
-config.buyer_start_money               = 1000
-config.owner                           = "kevinkk525"
+config.max_filesize_log                = 2 * 1024 * 1024 --2 MB
+config.buyer_start_money               = config.price_lease_storage_cell + 150
+config.owner                           = { "kevinkk525", "MPMob", "HipjeHopje" }
 config.shop_name                       = "KK's Shop"
+config.version                         = "0.8Beta"
+config.stock_scanning_interval         = 300 -- 5 minutes
+config.dropper_export_max_slots        = 9
+config.dropper_export_max_items        = 16
+config.time_sync                       = false
+config.time_sync_url                   = nil
+config.time_sync_interval              = nil
 
 
 -- Notes ingame:
@@ -245,7 +300,7 @@ config.shop_name                       = "KK's Shop"
 -- other screens are not accessible
 -- except for with shift click, so be careful with GUIs on other screens
 
--- install GUI library from: pastebin run ryhyXUKZ
+-- install forked GUI library from: pastebin run EVWjkBxg
 -- OpenOS updater: pastebin run -f icKy25PF
 
 return config

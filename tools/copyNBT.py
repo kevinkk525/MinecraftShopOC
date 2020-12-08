@@ -6,35 +6,46 @@ import json
 source = "all_items.json"
 with open(source, "r") as f:
     items = json.loads(f.read())
-target = ("../items.json")
+server = input("Server:")
+target = ("../items_{!s}.json".format(server))
 with open(target, "r") as f:
     items_target = json.loads(f.read())
 
 amounts = input("Amounts separated by ,:")
-print("Got amounts:", amounts)
 if amounts:
     amounts = amounts.split(",")
     amounts = [int(x) for x in amounts]
     amounts.sort()
 else:
-    amounts = [64, 256, 1024, 2016, 4032]
+    amounts = [1, 16, 32, 64, 256, 1024, 2016, 4032]
+print("Got amounts:", amounts)
 categories = input("Categories separated by ,:")
 print("Got categories:", categories)
 if categories:
     categories = categories.split(",")
 use_price_func = input("Use price func?")
+default_stock = input("Default stock multiplier of max amount:")
+if default_stock:
+    default_stock = float(default_stock)
 
 ask_frn = input("Ask friendly name?")
 ask_cat = input("Ask category?")
+is_craftable = input("Should items be crafted if unavailable?")
 
 
 def myround(x, base=5):
     return base * round(x / base)
 
 
-def price_func(price, x):
-    return myround(x * price / 64.0 * 0.9864 ** (x / 64.0))
-
+if server != "dirtcraft":  # linear prices for dirtcraft
+    def price_func(price, x):
+        return myround(x * price / 64.0 * 0.9864 ** (x / 64.0))
+else:
+    def price_func(price, x):
+        res = x / 64 * price
+        if res < 1:
+            res = 1
+        return res
 
 while True:
     print("")
@@ -80,6 +91,12 @@ while True:
                 item["categories"] += cats
         if not item["categories"]:
             del item["categories"]  # no empty entries
+        if default_stock:
+            item["stock"] = int(amounts[-1] * default_stock)
+        else:
+            item["stock"] = int(input("Stock:"))
+        if not is_craftable:
+            item["craftable"] = False
         if ask_frn:
             frn = input("Friendly_name")
             if frn:
